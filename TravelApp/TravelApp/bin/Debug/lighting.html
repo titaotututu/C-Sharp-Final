@@ -1,0 +1,130 @@
+<!doctype html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="initial-scale=1.0, user-scalable=no, width=device-width">
+    <title>行政区边界查询</title>
+    <link rel="stylesheet" href="https://a.amap.com/jsapi_demos/static/demo-center/css/demo-center.css"/> 
+    <style>
+        html, body, #container {
+            margin:0;
+            height:100%;
+        }
+        .input-item-text {
+            width:7rem;
+        }
+        .input-card {
+            display: none; /* Initially hide the input card */
+        }
+    </style>
+    <script type="text/javascript">
+        window._AMapSecurityConfig = {
+            securityJsCode: '18e9f5dc97240123ea944c31c008d1f7',
+        }
+    </script>
+</head>
+<body>
+<div id="container"></div>
+<div class="input-card" id="inputCard">
+    <label style='color: grey'>行政区边界查询</label>
+    <div class="input-item">
+        <div class="input-item-prepend">
+            <span class="input-item-text">行政级别</span>
+        </div>
+        <select id="level">
+            <option value="district">district</option>
+            <option value="city">city</option>
+            <option value="province">province</option>
+        </select>
+    </div>
+    <div class="input-item">
+        <div class="input-item-prepend">
+            <span class="input-item-text">名称/adcode</span>
+        </div>
+        <input id='district' type="text" value='北京,上海,广州'>
+    </div>
+    <input id="draw" type="button" class="btn" value="查询"/>
+</div>
+<script type="text/javascript" src="https://webapi.amap.com/maps?v=1.4.15&key=6e55ea6069492d3b69f2bb419e1bcd86&plugin=AMap.DistrictSearch"></script>
+<script type="text/javascript">
+    // 初始化地图对象，加载地图
+    var map = new AMap.Map("container", {
+        resizeEnable: true,
+        center: [116.397428, 39.90923], //地图中心点
+        zoom: 10 //地图显示的缩放级别
+    });
+
+    var district = null;
+    var polygons = [];
+
+    function drawBounds(city) {
+        // 加载行政区划插件
+        if (!district) {
+            // 实例化DistrictSearch
+            var opts = {
+                subdistrict: 0,   // 获取边界不需要返回下级行政区
+                extensions: 'all',  // 返回行政区边界坐标组等具体信息
+                level: 'city'  // 查询行政级别为 市
+            };
+            district = new AMap.DistrictSearch(opts);
+        }
+
+        // 行政区查询
+        district.search(city, function (status, result) {
+            var bounds = result.districtList[0].boundaries;
+            if (bounds) {
+                for (var i = 0, l = bounds.length; i < l; i++) {
+                    // 生成行政区划polygon
+                    var polygon = new AMap.Polygon({
+                        strokeWeight: 1,
+                        path: bounds[i],
+                        fillOpacity: 0.4,
+                        fillColor: '#80d8ff',
+                        strokeColor: '#0091ea'
+                    });
+                    polygons.push(polygon);
+                    map.add(polygon);
+                }
+                map.setFitView(polygons); // 视口自适应
+            }
+        });
+    }
+
+    document.getElementById('draw').onclick = function () {
+        var cities = document.getElementById('district').value.split(',');
+        clearPolygons();
+        cities.forEach(function (city) {
+            drawBounds(city.trim());
+        });
+    };
+
+    document.getElementById('district').onkeydown = function (e) {
+        if (e.keyCode === 13) {
+            var cities = document.getElementById('district').value.split(',');
+            clearPolygons();
+            cities.forEach(function (city) {
+                drawBounds(city.trim());
+            });
+            return false;
+        }
+        return true;
+    };
+
+    function clearPolygons() {
+        polygons.forEach(function (polygon) {
+            map.remove(polygon);
+        });
+        polygons = [];
+    }
+
+    window.highlightCity = function (city) {
+        drawBounds(city);
+    }
+
+    window.showInputCard = function () {
+        document.getElementById('inputCard').style.display = 'block';
+    }
+</script>
+</body>
+</html>
