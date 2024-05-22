@@ -12,6 +12,6 @@ namespace TravelApi.Repository
             this.Database.EnsureCreated(); //自动建库建表
         }
 
-        //public DbSet<...> ... { get; set; }
+        //public DbSet<User> Users { get; set; }
     }
 }
