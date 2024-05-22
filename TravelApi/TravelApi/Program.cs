@@ -1,3 +1,5 @@
+using TravelApi.Repository;
+using Microsoft.EntityFrameworkCore;
 
 namespace TravelApi
 {
@@ -13,6 +15,10 @@ namespace TravelApi
             // Learn more about configuring Swagger/OpenAPI at https://aka.ms/aspnetcore/swashbuckle
             builder.Services.AddEndpointsApiExplorer();
             builder.Services.AddSwaggerGen();
+
+            String? connectionString = builder.Configuration.GetConnectionString("travelDB");
+            builder.Services.AddDbContext<TravelContext>(opt => opt.UseMySQL(connectionString));
+            //builder.Services.AddScoped<...Service>(); //后期要加上所有
 
             var app = builder.Build();
 
