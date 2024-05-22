@@ -8,13 +8,32 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 
+using System.Runtime.InteropServices;       //添加类对COM可见-ComVisibleAttribute(true)/ 
+using System.IO;
+using System.Threading;
+using System.Collections;
+
+
 namespace TravelApp
 {
-    public partial class Car_Routing : Form
+    [System.Runtime.InteropServices.ComVisible(true)]
+    public partial class Car_Routing : Form  //驾车形成规划
     {
         public Car_Routing()
         {
             InitializeComponent();
+        }
+
+        private void Car_Routing_Load(object sender, EventArgs e)
+        {
+            string str_url = Application.StartupPath + "\\Car_Map.html";
+            webBrowser_car.Navigate(new Uri(str_url));
+            webBrowser_car.ObjectForScripting = this;
+        }
+
+        private void webBrowser_car_DocumentCompleted(object sender, WebBrowserDocumentCompletedEventArgs e)
+        {
+
         }
     }
 }

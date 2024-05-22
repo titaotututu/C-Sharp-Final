@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Navigation</title>
+    <style>
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background-color: #f0f0f0;
+            margin: 0;
+            padding: 0;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh; /* 使用视窗高度 */
+        }
+        .container {
+            width: 80%; /* 使用百分比宽度 */
+            max-width: 800px; /* 最大宽度限制 */
+            height: 80%; /* 使用百分比高度 */
+            max-height: 400px; /* 最大高度限制 */
+            padding: 20px;
+            border: 1px solid #ccc;
+            border-radius: 8px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+            justify-items: center;
+            align-items: center;
+            gap: 20px;
+            background-image: url('image/bg_image.png'); /* 背景图片的URL */
+            background-size: cover; /* 让背景图片充满整个容器 */
+            background-position: center; /* 居中对齐背景图片 */
+            background-repeat: no-repeat; /* 不重复背景图片 */
+        }
+        h2 {
+            grid-column: 1 / -1;
+            text-align: center;
+            margin-top: 0;
+            margin-bottom: 20px;
+            z-index: 2; /* 提升标题层级，使其在背景图片之上 */
+            position: relative; /* 让标题相对定位 */
+        }
+        .btn {
+            display: block;
+            width: 100%; /* 按钮宽度为容器的100% */
+            padding: 12px 0;
+            margin-bottom: 10px;
+            text-align: center;
+            background-color: rgba(134, 184, 238, 0.8); /* 半透明背景色 */
+            color: #5373b7;
+            text-decoration: none;
+            border: none;
+            border-radius: 4px;
+            cursor: pointer;
+            font-size: 16px;
+            transition: background-color 0.3s ease;
+            z-index: 2; /* 提升按钮层级，使其在背景图片之上 */
+            position: relative; /* 让按钮相对定位 */
+        }
+        .btn:hover {
+            background-color: #0056b3;
+        }
+        .title-addon {
+            position: absolute;
+            top: 10px;
+            right: 10px;
+            font-size: 14px;
+            color: #000000;
+            z-index: 2; /* 提升行迹精灵APP文字层级，使其在背景图片之上 */
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h2>旅行助手——导航模块</h2>
+        <button class="btn" onclick="window.external.NavigateTo('DrivingRouteForm')">驾驶路线规划</button>
+        <button class="btn" onclick="window.external.NavigateTo('BikingRouteForm')">骑行路线规划</button>
+        <button class="btn" onclick="window.external.NavigateTo('WalkingRouteForm')">步行路线规划</button>
+        <button class="btn" onclick="window.external.NavigateTo('TransitRouteForm')">公交路线规划</button>
+        <div class="title-addon">行迹精灵APP</div>
+    </div>
+</body>
+</html>

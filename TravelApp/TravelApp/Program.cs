@@ -16,7 +16,7 @@ namespace TravelApp
         {
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
-            Application.Run(new Walk_Routing());
+            Application.Run(new Navigation());
         }
     }
 }

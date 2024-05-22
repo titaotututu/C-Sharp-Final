@@ -81,6 +81,12 @@
     <EmbeddedResource Include="Bike_Routing.resx">
       <DependentUpon>Bike_Routing.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="Bus_Routing.resx">
+      <DependentUpon>Bus_Routing.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Car_Routing.resx">
+      <DependentUpon>Car_Routing.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Navigation.resx">
       <DependentUpon>Navigation.cs</DependentUpon>
     </EmbeddedResource>
