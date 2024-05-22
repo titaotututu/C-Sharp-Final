@@ -1,6 +1,6 @@
 ﻿namespace TravelApp
 {
-    partial class Biking_Routing
+    partial class Bike_Routing
     {
         /// <summary>
         /// Required designer variable.

@@ -16,9 +16,9 @@ using System.Collections;
 namespace TravelApp
 {
     [System.Runtime.InteropServices.ComVisible(true)]
-    public partial class Biking_Routing : Form
+    public partial class Bike_Routing : Form
     {
-        public Biking_Routing()
+        public Bike_Routing()
         {
             InitializeComponent();
         }

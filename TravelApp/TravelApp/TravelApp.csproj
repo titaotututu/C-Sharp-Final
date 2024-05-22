@@ -46,14 +46,44 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Form1.cs">
+    <Compile Include="Bike_Routing.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Form1.Designer.cs">
-      <DependentUpon>Form1.cs</DependentUpon>
+    <Compile Include="Bike_Routing.Designer.cs">
+      <DependentUpon>Bike_Routing.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Bus_Routing.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Bus_Routing.Designer.cs">
+      <DependentUpon>Bus_Routing.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Car_Routing.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Car_Routing.Designer.cs">
+      <DependentUpon>Car_Routing.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Navigation.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Navigation.Designer.cs">
+      <DependentUpon>Navigation.cs</DependentUpon>
     </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Walk_Routing.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Walk_Routing.Designer.cs">
+      <DependentUpon>Walk_Routing.cs</DependentUpon>
+    </Compile>
+    <EmbeddedResource Include="Bike_Routing.resx">
+      <DependentUpon>Bike_Routing.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Navigation.resx">
+      <DependentUpon>Navigation.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>
       <LastGenOutput>Resources.Designer.cs</LastGenOutput>
@@ -63,6 +93,9 @@
       <AutoGen>True</AutoGen>
       <DependentUpon>Resources.resx</DependentUpon>
     </Compile>
+    <EmbeddedResource Include="Walk_Routing.resx">
+      <DependentUpon>Walk_Routing.cs</DependentUpon>
+    </EmbeddedResource>
     <None Include="Properties\Settings.settings">
       <Generator>SettingsSingleFileGenerator</Generator>
       <LastGenOutput>Settings.Designer.cs</LastGenOutput>
