@@ -55,7 +55,7 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(9F, 18F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(1232, 692);
+            this.ClientSize = new System.Drawing.Size(1052, 553);
             this.Controls.Add(this.panel1);
             this.Name = "Navigation";
             this.Text = "Navigation";
