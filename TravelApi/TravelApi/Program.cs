@@ -23,6 +23,7 @@ namespace TravelApi
             builder.Services.AddScoped <TravelService> ();
             builder.Services.AddScoped<JournalService>();
             builder.Services.AddScoped<TodoItemService>();
+            builder.Services.AddScoped<UserService>();
             var app = builder.Build();
 
             // Configure the HTTP request pipeline.

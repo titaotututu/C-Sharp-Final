@@ -7,7 +7,7 @@ namespace TravelApi.Services
     {
         IQueryable<Journal> GetJournalByDate(string date);
         Journal GetJournalById(long journalId);
-        IQueryable<Journal> GetJournalByUserId(int uid);// 嗯uid怎么变成int，应该是long叭
+        IQueryable<Journal> GetJournalByUserId(long uid);
     }
 
     public class JournalService : EntityService<Journal>, IJournalService
@@ -26,7 +26,7 @@ namespace TravelApi.Services
             return this.dbset.FirstOrDefault(t => t.JournalId == journalId);
         }
         
-        public IQueryable<Journal> GetJournalByUserId(int uid)
+        public IQueryable<Journal> GetJournalByUserId(long uid)
         {
             return this.dbset.Where(d => d.UserId == uid).OrderByDescending(d => d.Time);
         }

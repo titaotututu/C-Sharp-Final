@@ -5,7 +5,7 @@ using TravelApi.Models;
 namespace TravelApi.Controllers
 {
     [ApiController]
-    [Route("[controller]")]
+    [Route("api/[controller]")]
     public class JournalController : ControllerBase
     {
         private readonly IJournalService _JournalService;
