@@ -2,6 +2,7 @@
 using System.Diagnostics;
 using Microsoft.EntityFrameworkCore;
 using Mysqlx.Crud;
+using TravelApi.Models;
 
 namespace TravelApi.Repository
 {
@@ -13,5 +14,8 @@ namespace TravelApi.Repository
         }
 
         //public DbSet<User> Users { get; set; }
+        public DbSet<Travel> Travels { get; set; }
+        public DbSet<Journal> Journals { get; set; }
+        public DbSet<TodoItem> TodoItems { get; set; }
     }
 }

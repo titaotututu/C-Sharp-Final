@@ -1,5 +1,6 @@
 using TravelApi.Repository;
 using Microsoft.EntityFrameworkCore;
+using TravelApi.Services;
 
 namespace TravelApi
 {
@@ -19,7 +20,9 @@ namespace TravelApi
             String? connectionString = builder.Configuration.GetConnectionString("travelDB");
             builder.Services.AddDbContext<TravelContext>(opt => opt.UseMySQL(connectionString));
             //builder.Services.AddScoped<...Service>(); //后期要加上所有
-
+            builder.Services.AddScoped <TravelService> ();
+            builder.Services.AddScoped<JournalService>();
+            builder.Services.AddScoped<TodoItemService>();
             var app = builder.Build();
 
             // Configure the HTTP request pipeline.

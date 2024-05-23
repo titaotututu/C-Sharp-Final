@@ -7,7 +7,7 @@ namespace TravelApi.Services
     {
         IQueryable<Journal> GetJournalByDate(string date);
         Journal GetJournalById(long journalId);
-        IQueryable<Journal> GetJournalByUserId(int uid);
+        IQueryable<Journal> GetJournalByUserId(int uid);// 嗯uid怎么变成int，应该是long叭
     }
 
     public class JournalService : EntityService<Journal>, IJournalService
