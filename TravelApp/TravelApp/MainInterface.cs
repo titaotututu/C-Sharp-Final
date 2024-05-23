@@ -7,6 +7,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using Weather_space;
 
 namespace TravelApp
 {
@@ -34,6 +35,11 @@ namespace TravelApp
         private void OpenForm(Form form)
         {
             form.Show();
+        }
+
+        private void button_weather_Click(object sender, EventArgs e)
+        {
+            OpenForm(new Weather());
         }
     }
 }

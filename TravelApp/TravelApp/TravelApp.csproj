@@ -82,6 +82,7 @@
     <Compile Include="Navigation.Designer.cs">
       <DependentUpon>Navigation.cs</DependentUpon>
     </Compile>
+    <Compile Include="Place.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="Walk_Routing.cs">
@@ -90,6 +91,20 @@
     <Compile Include="Walk_Routing.Designer.cs">
       <DependentUpon>Walk_Routing.cs</DependentUpon>
     </Compile>
+    <Compile Include="Weather.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Weather.Designer.cs">
+      <DependentUpon>Weather.cs</DependentUpon>
+    </Compile>
+    <Compile Include="WeatherDay.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="WeatherDay.Designer.cs">
+      <DependentUpon>WeatherDay.cs</DependentUpon>
+    </Compile>
+    <Compile Include="WeatherDetail.cs" />
+    <Compile Include="XmlOperator.cs" />
     <EmbeddedResource Include="Bike_Routing.resx">
       <DependentUpon>Bike_Routing.cs</DependentUpon>
     </EmbeddedResource>
