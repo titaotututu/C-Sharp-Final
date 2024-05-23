@@ -12,5 +12,17 @@ namespace TravelApi.Models
     {
         [Key]
         public long UserId { get; set; }
+        public string UserName { get; set; }
+        public long password { get; set; }
+
+        public User(long userId, string userName, long pwd)
+        {
+            this.UserId = userId;
+            this.UserName = userName;
+            this.password = pwd;
+        }
+        public User() { }
     }
+
+
 }

@@ -13,7 +13,7 @@ namespace TravelApi.Repository
             this.Database.EnsureCreated(); //自动建库建表
         }
 
-        //public DbSet<User> Users { get; set; }
+        public DbSet<User> Users { get; set; }
         public DbSet<Travel> Travels { get; set; }
         public DbSet<Journal> Journals { get; set; }
         public DbSet<TodoItem> TodoItems { get; set; }
