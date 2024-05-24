@@ -24,6 +24,10 @@ namespace TravelApi.Controllers
         //用户登录
         [HttpGet]
         public ActionResult<string> CheckLogin(long id, long pwd)
+        // 已测试，成功。
+        // 示例 api：https://localhost:7119/api/User?id=1234&pwd=123456 无请求体
+        // 成功的话返回id
+        // 不成功返回text"不存在该用户或用户密码错误！"
         {
             var user = userService.CheckLogin(id, pwd);
             if (user == null)
@@ -36,6 +40,12 @@ namespace TravelApi.Controllers
 
         //增加用户
         [HttpPost]
+        // 已测试，成功。
+        // 示例：api https://localhost:7119/api/User 
+        // 请求体：json格式：{ "UserId": 1234,"UserName": "wangyao","password": 123456 }
+        // xml格式：好像不行，会报错
+        // 成功的话返回整个user
+        // 不成功返回“该用户已存在”
         public ActionResult<User> PostUser(User user)
         {
             try
@@ -59,6 +69,10 @@ namespace TravelApi.Controllers
 
         //删除指定id用户
         [HttpDelete("{id}")]
+        // 已测试，成功
+        // 示例：api https://localhost:7119/api/User/1234 无请求体
+        // 成功的话无返回值。
+        // 不成功的话返回text：不存在该用户！
         public ActionResult DeleteUser(string id)
         {
             try
@@ -75,6 +89,10 @@ namespace TravelApi.Controllers
         }
 
         //修改指定id用户账号信息
+        // 已测试，成功
+        // 示例：api https://localhost:7119/api/User/123
+        // 请求体：json：{"UserId": 123,"UserName": "duhuang2","password": 123456}
+        // 修改成功的话没有返回值，不成功的话返回text"Id cannot be modified!"
         [HttpPut("{id}")]
         public ActionResult<User> ModifyUser(string id, User user)
         {
@@ -94,6 +112,10 @@ namespace TravelApi.Controllers
         }
 
         //根据用户id查找用户
+        // 已测试，成功
+        //示例： api https://localhost:7119/api/User/123 无请求体
+        // 成功的话返回user
+        // 不成功的话没有返回文本（建议可以加上）
         [HttpGet("{id}")]
         public ActionResult<User> GetUser(string id)
         {
@@ -111,6 +133,10 @@ namespace TravelApi.Controllers
         }
 
         //根据用户姓名查找用户
+        // 已测试，成功、
+        // 示例：api https://localhost:7119/api/User/name?name=duhuang 无请求体
+        // 如果成功返回整个user，如果失败则返回text"未找到符合要求的用户！"
+
         [HttpGet("name")]
         public ActionResult<List<User>> GetUserByName(string name)
         {
@@ -118,7 +144,7 @@ namespace TravelApi.Controllers
             try
             {
                 var users = userService.QueryUserByName(name);
-                if (users != null)
+                if (users.Count > 0)
                 {
                     return users;
                 }

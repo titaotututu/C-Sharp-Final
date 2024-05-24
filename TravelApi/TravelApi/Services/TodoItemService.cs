@@ -7,7 +7,7 @@ namespace TravelApi.Services
 {
     public interface ITodoItemService : IEntityService<TodoItem>
     {
-
+        
         TodoItem GetItemById(long itemId);
         IQueryable<TodoItem> GetItemByTravel(long travelid);
     }
@@ -22,7 +22,8 @@ namespace TravelApi.Services
         }
         public IQueryable<TodoItem> GetItemByTravel(long travelid)
         {
-            return this.dbset.Where(t => t.Travel.TravelId == travelid).OrderByDescending(t => t.ItemId);
+            return this.dbset.Where(t => t.TravelId == travelid).OrderByDescending(t => t.ItemId);
         }
+        
     }
 }

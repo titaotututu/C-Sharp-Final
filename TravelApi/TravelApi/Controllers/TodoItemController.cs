@@ -8,7 +8,6 @@ namespace TravelApi.Controllers
 {
     [ApiController]
     [Route("api/[controller]")]
-    [Produces("application/xml")]
     public class TodoItemController : ControllerBase
     {
         private readonly ITodoItemService _todoItemService;
@@ -20,20 +19,25 @@ namespace TravelApi.Controllers
 
         //新建待办
         [HttpPost]
+        // 已测试，成功。
+        // 示例：api http://localhost:5199/api/TodoItem 
+        // 请求体：{ "TravelId": 202405240000,"Time":"2024-05-24T00:00:00","Place":"武汉大学","Description":"Eating","IsCompleted":false }
+        // 成功会返回“成功创建待办” 失败返回失败信息
         public ActionResult<TodoItem> AddTodo(TodoItem item)
         {
             try
             {
-                IQueryable<TodoItem> query = _todoItemService.GetItemByTravel(item.Travel.TravelId);
+                IQueryable<TodoItem> query = _todoItemService.GetItemByTravel(item.TravelId);
                 if (query.Count() != 0)
                 {
                     item.ItemId = query.ToList().First().ItemId + 1;
                 }
                 else
                 {
-                    item.ItemId = item.Travel.TravelId * 100 + 1;
+                    item.ItemId = item.TravelId * 100 + 1;
                 }
                 _todoItemService.Add(item);
+                return Ok("成功创建待办！");
             }
             catch (Exception e)
             {
@@ -44,10 +48,13 @@ namespace TravelApi.Controllers
 
         //根据travelid获取待办
         [HttpGet("get")]
+        // 已测试，成功。
+        // 示例：api=http://localhost:5199/api/TodoItem/get?travelId=202405240000 无请求体
+        // 找到了返回Item列表。找不到返回404
         public ActionResult<List<TodoItem>> GetRoute(long travelId)
         {
             IQueryable<TodoItem> query = _todoItemService.GetItemByTravel(travelId);
-            if (query == null)
+            if (query.Count() == 0)
             {
                 return NotFound();
             }
@@ -56,6 +63,10 @@ namespace TravelApi.Controllers
 
         //更该待办信息
         [HttpPut("update")]
+        // 已测试，成功
+        // 示例：api http://localhost:5199/api/TodoItem/update?itemid=20240524000001 
+        // 请求体：{ "ItemId": 20240524000001,"Time": "2024-05-24T00:00:00", "Place": "湖北大学","Description": "Eating"，
+        //"ComplicationNote": "Updated ComplicationNote", "Picture": "Updated Picture", "IsCompleted": true,"TravelId": 202405240000}
         public ActionResult<TodoItem> UpdateRoute(long itemid, TodoItem todo)
         {
             if (itemid != todo.ItemId)
@@ -65,6 +76,7 @@ namespace TravelApi.Controllers
             try
             {
                 _todoItemService.Update(todo);
+                return Ok("成功修改待办！");
             }
             catch (Exception e)
             {
@@ -77,6 +89,9 @@ namespace TravelApi.Controllers
 
         //按照id删除待办
         [HttpDelete("delete")]
+        // 已测试，成功
+        // 示例：api http://localhost:5199/api/TodoItem/delete?itemId=20240524000001 无请求体
+        // 成功不返回内容，失败了返回错误信息
         public ActionResult DeleteRoute(long itemId)
         {
             try

@@ -10,7 +10,7 @@ namespace TravelApi.Controllers
 {
     [ApiController]
     [Route("api/[controller]")]
-    [Produces("application/xml")]
+
     public class TravelController : ControllerBase
     {
         private readonly ITravelService _travelService;
@@ -22,6 +22,10 @@ namespace TravelApi.Controllers
 
         // POST: api/travel
         [HttpPost]
+        // 已测试，成功
+        // 示例：api http://localhost:5199/api/Travel 
+        // 请求体：json { "TravelTitle": "Summer Vacation","TravelCity": "Beach City","TodoItems": [],"TravelTime": "2024-07-01","UserId": 1234 }
+        // 成功的话会返回text：成功创建旅行。 失败（比如说用户不存在会报错具体信息
         public ActionResult<Travel> AddTravel(Travel travel)
         {
             try
@@ -37,6 +41,7 @@ namespace TravelApi.Controllers
                     travel.TravelId = query.First().TravelId + 1;
                 }
                 _travelService.Add(travel);
+                return Ok("成功创建旅行。");
             }
             catch (Exception e)
             {
@@ -46,13 +51,30 @@ namespace TravelApi.Controllers
         }
 
         [HttpGet("get")]
+        // 根据uid获取travel
+        // 已测试，成功。不过由于创建的时候没有添加user和todoitem，所以是空的
+        //示例： api http://localhost:5199/api/Travel/get?uid=1234 无请求体
+        // 如果有travel会返回travel列表，如果没有travel就返回不存在旅行
+        // 不过查询前要先确认uid存在。在api中似乎没有直接实现，可能需要在实际应用的时候调用user的api确认之后再实现
+
         public ActionResult<List<Travel>> GetTravel(long uid)
         {
             var query = _travelService.GetTravelByUserId(uid);
-            return query.ToList();
+            var travelList = query.ToList();
+
+            if (travelList.Count == 0)
+            {
+                return NotFound("不存在旅行");
+            }
+
+            return Ok(travelList);
         }
 
         [HttpPut("update")]
+        // 已测试，成功
+        // 示例：api http://localhost:5199/api/Travel/update?travelId=1234 
+        // 请求体：{ "TravelId":202405240000,"TravelTitle": "Vacation","TravelCity": "City","TodoItems": [],"TravelTime": "2024-07-01","UserId": 123 }
+        //注意请求体要提供travelId。成功会返回text“成功修改travel”。失败会返回"The travel cannot be modified."
         public ActionResult<Travel> UpdateTravel(long travelId, Travel travel)
         {
             if (travelId != travel.TravelId)
@@ -62,6 +84,7 @@ namespace TravelApi.Controllers
             try
             {
                 _travelService.Update(travel);
+                return Ok("成功修改travel！");
             }
             catch (Exception e)
             {
@@ -73,6 +96,9 @@ namespace TravelApi.Controllers
         }
 
         [HttpDelete("delete")]
+        // 已测试，成功。
+        // 示例：api http://localhost:5199/api/Travel/delete?travelId=202405240000 无请求体
+        // 成功会返回“已删除”，失败会返回"不存在该travel！"
         public ActionResult DeleteTravel(long travelId)
         {
             try
@@ -81,11 +107,12 @@ namespace TravelApi.Controllers
                 if (travel != null)
                 {
                     _travelService.Delete(travel);
+                    return Ok("已删除！");
                 }
             }
             catch (Exception e)
             {
-                return BadRequest(e.InnerException.Message);
+                return BadRequest("不存在该travel！");
             }
             return NoContent();
         }

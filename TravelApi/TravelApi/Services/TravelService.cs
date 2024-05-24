@@ -19,10 +19,12 @@ namespace TravelApi.Services
         {
         }
 
-        public IQueryable<Travel> GetTravelByDate(string date)
+        public IQueryable<Travel> GetTravelByDate(String date)
         {
-            return this.dbset.Where(t => t.TravelTime.ToString().StartsWith(date)).OrderBy(t => t.TravelId);
+            return this.dbset.Where(t => t.CreatedAt== date).OrderByDescending(t => t.TravelId);
         }
+
+
 
         public Travel GetTravelById(long travelId)
         {
@@ -31,7 +33,7 @@ namespace TravelApi.Services
 
         public IQueryable<Travel> GetTravelByUserId(long uid)
         {
-            return this.dbset.Where(t => t.User.UserId == uid).OrderByDescending(t => t.TravelId);
+            return this.dbset.Where(t => t.UserId == uid).OrderByDescending(t => t.TravelId);
         }
     }
 }

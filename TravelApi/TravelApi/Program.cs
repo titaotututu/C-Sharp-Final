@@ -20,9 +20,9 @@ namespace TravelApi
             String? connectionString = builder.Configuration.GetConnectionString("travelDB");
             builder.Services.AddDbContext<TravelContext>(opt => opt.UseMySQL(connectionString));
             //builder.Services.AddScoped<...Service>(); //后期要加上所有
-            builder.Services.AddScoped <TravelService> ();
-            builder.Services.AddScoped<JournalService>();
-            builder.Services.AddScoped<TodoItemService>();
+            builder.Services.AddScoped <ITravelService,TravelService> ();
+            builder.Services.AddScoped<IJournalService,JournalService>();
+            builder.Services.AddScoped<ITodoItemService,TodoItemService>();
             builder.Services.AddScoped<UserService>();
             var app = builder.Build();
 

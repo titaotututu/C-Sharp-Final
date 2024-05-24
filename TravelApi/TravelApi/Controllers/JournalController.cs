@@ -1,6 +1,7 @@
 ﻿using Microsoft.AspNetCore.Mvc;
 using TravelApi.Services;
 using TravelApi.Models;
+using System.Diagnostics;
 
 namespace TravelApi.Controllers
 {
@@ -16,6 +17,10 @@ namespace TravelApi.Controllers
         }
        
         [HttpPost]
+        // 已测试，成功
+        // 示例：api http://localhost:5199/api/Journal 
+        // 请求体：{ "Time": "2024-05-24T10:30:00"，"Title": "My Travel Journal","Weather": "Sunny","Emotion": "Happy",
+        // "Description": "Today was a great day!","Picture": "https://example.com/image.jpg","UserId": 123,"TravelId": 202405240000}
         public ActionResult<Journal> AddJournal(Journal journal)
         {
             try
@@ -40,6 +45,9 @@ namespace TravelApi.Controllers
         }
 
         [HttpGet("get")]
+        // 已测试，成功
+        // 示例：api http://localhost:5199/api/Journal/get?journalid=202405240000 无请求体
+        // 成功则返回journal，失败返回404
         public ActionResult<Journal> GetJournal(long journalId)
         {
             var journal = _JournalService.GetJournalById(journalId);
@@ -54,9 +62,13 @@ namespace TravelApi.Controllers
         }
 
         [HttpPut("update")]
+        // 已测试，成功。
+        // 示例：api http://localhost:5199/api/Journal/update?journalId=202405240000
+        // 请求体：{ "JournalId":202405240000,Time": "2024-05-24T10:30:00"，"Title": "My Travel Journal","Weather": "Sunny","Emotion": "Happy",
+        // "Description": "Today was a great day!","Picture": "https://example.com/image.jpg","UserId": 123,"TravelId": 202405240000}
         public ActionResult<Journal> UpdateJournal(long journalId, Journal journal)
         {
-            if (!journalId.Equals(journal.JournalId))
+            if (journalId != journal.JournalId)
             {
                 return BadRequest("The Journal cannot be modified.");
             }
@@ -74,6 +86,7 @@ namespace TravelApi.Controllers
         }
 
         [HttpDelete("delete")]
+        // 已测试，成功。
         public ActionResult DeleteJournal(long journalId)
         {
             try
@@ -82,6 +95,7 @@ namespace TravelApi.Controllers
                 if (journal != null)
                 {
                     _JournalService.Delete(journal);
+                    return Ok("已删除！");
                 }
             }
             catch (Exception e)
