@@ -3,20 +3,8 @@
   "WorkspaceRootPath": "C:\\Users\\asus\\Desktop\\C-Sharp-Final-main\\TravelApi\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{56F9DC37-8448-4BBF-A71C-AD14126DA7E2}|TravelApi\\TravelApi.csproj|c:\\users\\asus\\desktop\\c-sharp-final-main\\travelapi\\travelapi\\controllers\\journalcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{56F9DC37-8448-4BBF-A71C-AD14126DA7E2}|TravelApi\\TravelApi.csproj|solutionrelative:travelapi\\controllers\\journalcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
       "AbsoluteMoniker": "D:0:0:{56F9DC37-8448-4BBF-A71C-AD14126DA7E2}|TravelApi\\TravelApi.csproj|c:\\users\\asus\\desktop\\c-sharp-final-main\\travelapi\\travelapi\\controllers\\travelcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{56F9DC37-8448-4BBF-A71C-AD14126DA7E2}|TravelApi\\TravelApi.csproj|solutionrelative:travelapi\\controllers\\travelcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{56F9DC37-8448-4BBF-A71C-AD14126DA7E2}|TravelApi\\TravelApi.csproj|c:\\users\\asus\\desktop\\c-sharp-final-main\\travelapi\\travelapi\\models\\journal.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{56F9DC37-8448-4BBF-A71C-AD14126DA7E2}|TravelApi\\TravelApi.csproj|solutionrelative:travelapi\\models\\journal.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{56F9DC37-8448-4BBF-A71C-AD14126DA7E2}|TravelApi\\TravelApi.csproj|c:\\users\\asus\\desktop\\c-sharp-final-main\\travelapi\\travelapi\\services\\journalservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{56F9DC37-8448-4BBF-A71C-AD14126DA7E2}|TravelApi\\TravelApi.csproj|solutionrelative:travelapi\\services\\journalservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
   ],
   "DocumentGroupContainers": [
@@ -26,7 +14,7 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 6,
+          "SelectedChildIndex": 3,
           "Children": [
             {
               "$type": "Bookmark",
@@ -42,51 +30,15 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 1,
+              "DocumentIndex": 0,
               "Title": "TravelController.cs",
               "DocumentMoniker": "C:\\Users\\asus\\Desktop\\C-Sharp-Final-main\\TravelApi\\TravelApi\\Controllers\\TravelController.cs",
               "RelativeDocumentMoniker": "TravelApi\\Controllers\\TravelController.cs",
               "ToolTip": "C:\\Users\\asus\\Desktop\\C-Sharp-Final-main\\TravelApi\\TravelApi\\Controllers\\TravelController.cs",
               "RelativeToolTip": "TravelApi\\Controllers\\TravelController.cs",
-              "ViewState": "AQIAAGQAAAAAAAAAAAAUwE4AAAAJAAAA",
+              "ViewState": "AQIAAFgAAAAAAAAAAAAUwGUAAAAoAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-05-24T08:31:32.94Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 3,
-              "Title": "JournalService.cs",
-              "DocumentMoniker": "C:\\Users\\asus\\Desktop\\C-Sharp-Final-main\\TravelApi\\TravelApi\\Services\\JournalService.cs",
-              "RelativeDocumentMoniker": "TravelApi\\Services\\JournalService.cs",
-              "ToolTip": "C:\\Users\\asus\\Desktop\\C-Sharp-Final-main\\TravelApi\\TravelApi\\Services\\JournalService.cs",
-              "RelativeToolTip": "TravelApi\\Services\\JournalService.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAABUAAAAJAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-05-24T08:19:16.399Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 2,
-              "Title": "Journal.cs",
-              "DocumentMoniker": "C:\\Users\\asus\\Desktop\\C-Sharp-Final-main\\TravelApi\\TravelApi\\Models\\Journal.cs",
-              "RelativeDocumentMoniker": "TravelApi\\Models\\Journal.cs",
-              "ToolTip": "C:\\Users\\asus\\Desktop\\C-Sharp-Final-main\\TravelApi\\TravelApi\\Models\\Journal.cs",
-              "RelativeToolTip": "TravelApi\\Models\\Journal.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAA8AAAAvAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-05-24T08:18:16.137Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 0,
-              "Title": "JournalController.cs",
-              "DocumentMoniker": "C:\\Users\\asus\\Desktop\\C-Sharp-Final-main\\TravelApi\\TravelApi\\Controllers\\JournalController.cs",
-              "RelativeDocumentMoniker": "TravelApi\\Controllers\\JournalController.cs",
-              "ToolTip": "C:\\Users\\asus\\Desktop\\C-Sharp-Final-main\\TravelApi\\TravelApi\\Controllers\\JournalController.cs",
-              "RelativeToolTip": "TravelApi\\Controllers\\JournalController.cs",
-              "ViewState": "AQIAAFsAAAAAAAAAAAAYwGwAAAAAAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-05-24T08:17:22.183Z",
+              "WhenOpened": "2024-05-24T08:31:32.94Z",
               "EditorCaption": ""
             }
           ]

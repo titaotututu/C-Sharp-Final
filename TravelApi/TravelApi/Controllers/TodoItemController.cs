@@ -56,7 +56,7 @@ namespace TravelApi.Controllers
             IQueryable<TodoItem> query = _todoItemService.GetItemByTravel(travelId);
             if (query.Count() == 0)
             {
-                return NotFound();
+                return  new List<TodoItem>(); // 返回一个空列表
             }
             return query.ToList();
         }

@@ -7,6 +7,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using TravelApp.controller;
 using Weather_space;
 
 namespace TravelApp
@@ -16,14 +17,15 @@ namespace TravelApp
     {
         private Point formPoint = new Point();
         public ChangePanel changePanel;
-        int Uid;
-        public MainFormFianl()
+        long Uid;
+        public MainFormFianl()// 应该传入一个uid参数
         {
             InitializeComponent();
         }
 
         public void AddControlsToPanel(Control c)
         {
+            
             c.Dock = DockStyle.Fill;
             panelControl.Controls.Clear();
             panelControl.Controls.Add(c);
@@ -33,6 +35,12 @@ namespace TravelApp
         {
             Travel_Weather travel_weather= new Travel_Weather(changePanel);
             AddControlsToPanel(travel_weather);
+        }
+
+        private void button_Travel_Click(object sender, EventArgs e)
+        {
+            MyTravel mytravel = new MyTravel(changePanel);
+            AddControlsToPanel(mytravel);
         }
     }
 }

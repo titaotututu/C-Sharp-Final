@@ -112,6 +112,7 @@
             this.button_Travel.TabIndex = 2;
             this.button_Travel.Text = "行程";
             this.button_Travel.UseVisualStyleBackColor = true;
+            this.button_Travel.Click += new System.EventHandler(this.button_Travel_Click);
             // 
             // button_UserInfo
             // 

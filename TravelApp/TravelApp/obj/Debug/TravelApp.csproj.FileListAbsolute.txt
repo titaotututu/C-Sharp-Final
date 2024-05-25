@@ -35,3 +35,12 @@ C:\Users\asus\Desktop\C-Sharp-Final-main\TravelApp\TravelApp\obj\Debug\TravelApp
 C:\Users\asus\Desktop\C-Sharp-Final-main\TravelApp\TravelApp\obj\Debug\TravelApp.csproj.Up2Date
 C:\Users\asus\Desktop\C-Sharp-Final-main\TravelApp\TravelApp\obj\Debug\TravelApp.MainFormFianl.resources
 C:\Users\asus\Desktop\C-Sharp-Final-main\TravelApp\TravelApp\obj\Debug\Weather_space.Travel_Weather.resources
+C:\Users\asus\Desktop\C-Sharp-Final-main\TravelApp\TravelApp\obj\Debug\TravelApp.controller.MyTravel.resources
+C:\Users\asus\Desktop\C-Sharp-Final-main\TravelApp\TravelApp\obj\Debug\TravelApp.controller.OldTravel.resources
+C:\Users\asus\Desktop\C-Sharp-Final-main\TravelApp\TravelApp\bin\Debug\Newtonsoft.Json.dll
+C:\Users\asus\Desktop\C-Sharp-Final-main\TravelApp\TravelApp\bin\Debug\Newtonsoft.Json.xml
+C:\Users\asus\Desktop\C-Sharp-Final-main\TravelApp\TravelApp\obj\Debug\TravelApp.controller.NewTravel.resources
+C:\Users\asus\Desktop\C-Sharp-Final-main\TravelApp\TravelApp\obj\Debug\TravelApp.controller.TodoPage.resources
+C:\Users\asus\Desktop\C-Sharp-Final-main\TravelApp\TravelApp\obj\Debug\TravelApp.TravelTodo.resources
+C:\Users\asus\Desktop\C-Sharp-Final-main\TravelApp\TravelApp\obj\Debug\TravelApp.controller.AddTodo.resources
+C:\Users\asus\Desktop\C-Sharp-Final-main\TravelApp\TravelApp\obj\Debug\TravelApp.controller.HistoryPage.resources
