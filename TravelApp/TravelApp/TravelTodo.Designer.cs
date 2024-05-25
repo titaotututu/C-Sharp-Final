@@ -42,6 +42,7 @@
             this.labelTravelTitle.Size = new System.Drawing.Size(295, 55);
             this.labelTravelTitle.TabIndex = 0;
             this.labelTravelTitle.Text = "旅行名称";
+            this.labelTravelTitle.Text=TravelTitle;
             // 
             // panelTodo
             // 

@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\asus\\Desktop\\C-Sharp-Final-main\\TravelApi\\TravelApi\\TravelApi.csproj": {}
+    "C:\\Users\\asus\\Desktop\\好好传git\\C-Sharp-Final\\TravelApi\\TravelApi\\TravelApi.csproj": {}
   },
   "projects": {
-    "C:\\Users\\asus\\Desktop\\C-Sharp-Final-main\\TravelApi\\TravelApi\\TravelApi.csproj": {
+    "C:\\Users\\asus\\Desktop\\好好传git\\C-Sharp-Final\\TravelApi\\TravelApi\\TravelApi.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\asus\\Desktop\\C-Sharp-Final-main\\TravelApi\\TravelApi\\TravelApi.csproj",
+        "projectUniqueName": "C:\\Users\\asus\\Desktop\\好好传git\\C-Sharp-Final\\TravelApi\\TravelApi\\TravelApi.csproj",
         "projectName": "TravelApi",
-        "projectPath": "C:\\Users\\asus\\Desktop\\C-Sharp-Final-main\\TravelApi\\TravelApi\\TravelApi.csproj",
+        "projectPath": "C:\\Users\\asus\\Desktop\\好好传git\\C-Sharp-Final\\TravelApi\\TravelApi\\TravelApi.csproj",
         "packagesPath": "C:\\Users\\asus\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\asus\\Desktop\\C-Sharp-Final-main\\TravelApi\\TravelApi\\obj\\",
+        "outputPath": "C:\\Users\\asus\\Desktop\\好好传git\\C-Sharp-Final\\TravelApi\\TravelApi\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"

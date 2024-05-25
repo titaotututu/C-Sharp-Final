@@ -1,7 +1,16 @@
 {
   "Version": 1,
-  "WorkspaceRootPath": "C:\\Users\\asus\\Desktop\\C-Sharp-Final-main\\TravelApp\\",
-  "Documents": [],
+  "WorkspaceRootPath": "C:\\Users\\asus\\Desktop\\\u597D\u597D\u4F20git\\C-Sharp-Final\\TravelApp\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{455A8ACC-D685-4677-8F81-018BD921DD70}|TravelApp\\TravelApp.csproj|c:\\users\\asus\\desktop\\\u597D\u597D\u4F20git\\c-sharp-final\\travelapp\\travelapp\\traveltodo.designer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{455A8ACC-D685-4677-8F81-018BD921DD70}|TravelApp\\TravelApp.csproj|solutionrelative:travelapp\\traveltodo.designer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{455A8ACC-D685-4677-8F81-018BD921DD70}|TravelApp\\TravelApp.csproj|c:\\users\\asus\\desktop\\\u597D\u597D\u4F20git\\c-sharp-final\\travelapp\\travelapp\\traveltodo.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{455A8ACC-D685-4677-8F81-018BD921DD70}|TravelApp\\TravelApp.csproj|solutionrelative:travelapp\\traveltodo.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+    }
+  ],
   "DocumentGroupContainers": [
     {
       "Orientation": 0,
@@ -9,7 +18,7 @@
       "DocumentGroups": [
         {
           "DockedWidth": 70,
-          "SelectedChildIndex": -1,
+          "SelectedChildIndex": 3,
           "Children": [
             {
               "$type": "Bookmark",
@@ -22,6 +31,31 @@
             {
               "$type": "Bookmark",
               "Name": "ST:0:0:{eefa5220-e298-11d0-8f78-00a0c9110057}"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "TravelTodo.Designer.cs",
+              "DocumentMoniker": "C:\\Users\\asus\\Desktop\\\u597D\u597D\u4F20git\\C-Sharp-Final\\TravelApp\\TravelApp\\TravelTodo.Designer.cs",
+              "RelativeDocumentMoniker": "TravelApp\\TravelTodo.Designer.cs",
+              "ToolTip": "C:\\Users\\asus\\Desktop\\\u597D\u597D\u4F20git\\C-Sharp-Final\\TravelApp\\TravelApp\\TravelTodo.Designer.cs",
+              "RelativeToolTip": "TravelApp\\TravelTodo.Designer.cs",
+              "ViewState": "AQIAABwAAAAAAAAAAAAAwCwAAAAzAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-05-25T16:39:50.59Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "TravelTodo.cs [\u8BBE\u8BA1]",
+              "DocumentMoniker": "C:\\Users\\asus\\Desktop\\\u597D\u597D\u4F20git\\C-Sharp-Final\\TravelApp\\TravelApp\\TravelTodo.cs",
+              "RelativeDocumentMoniker": "TravelApp\\TravelTodo.cs",
+              "ToolTip": "C:\\Users\\asus\\Desktop\\\u597D\u597D\u4F20git\\C-Sharp-Final\\TravelApp\\TravelApp\\TravelTodo.cs [\u8BBE\u8BA1]",
+              "RelativeToolTip": "TravelApp\\TravelTodo.cs [\u8BBE\u8BA1]",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-05-25T16:39:43.071Z",
+              "EditorCaption": " [\u8BBE\u8BA1]"
             }
           ]
         }
