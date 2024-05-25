@@ -30,3 +30,8 @@ C:\Users\asus\Desktop\C-Sharp-Final-main\TravelApp\TravelApp\obj\Debug\TravelApp
 C:\Users\asus\Desktop\C-Sharp-Final-main\TravelApp\TravelApp\obj\Debug\TravelApp.csproj.CoreCompileInputs.cache
 C:\Users\asus\Desktop\C-Sharp-Final-main\TravelApp\TravelApp\obj\Debug\TravelApp.exe
 C:\Users\asus\Desktop\C-Sharp-Final-main\TravelApp\TravelApp\obj\Debug\TravelApp.pdb
+C:\Users\asus\Desktop\C-Sharp-Final-main\TravelApp\TravelApp\bin\Debug\MaterialSkin.dll
+C:\Users\asus\Desktop\C-Sharp-Final-main\TravelApp\TravelApp\obj\Debug\TravelApp.MainForm.resources
+C:\Users\asus\Desktop\C-Sharp-Final-main\TravelApp\TravelApp\obj\Debug\TravelApp.csproj.Up2Date
+C:\Users\asus\Desktop\C-Sharp-Final-main\TravelApp\TravelApp\obj\Debug\TravelApp.MainFormFianl.resources
+C:\Users\asus\Desktop\C-Sharp-Final-main\TravelApp\TravelApp\obj\Debug\Weather_space.Travel_Weather.resources

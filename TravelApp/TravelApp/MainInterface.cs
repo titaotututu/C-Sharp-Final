@@ -39,7 +39,7 @@ namespace TravelApp
 
         private void button_weather_Click(object sender, EventArgs e)
         {
-            OpenForm(new Weather());
+            //OpenForm(new Weather());
         }
     }
 }
