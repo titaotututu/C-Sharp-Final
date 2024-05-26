@@ -21,6 +21,7 @@ namespace TravelApp
         public Walk_Routing()
         {
             InitializeComponent();
+           
         }
 
         private void Walk_Routing_Load(object sender, EventArgs e)
@@ -28,6 +29,13 @@ namespace TravelApp
             string str_url = Application.StartupPath + "\\Walk_Map.html";
             webBrowser_walk.Navigate(new Uri(str_url));
             webBrowser_walk.ObjectForScripting = this;
+            pictureBox1.BackColor = Color.Transparent;
         }
+
+        private void pictureBox1_Click(object sender, EventArgs e)
+        {
+            this.Close();
+        }
+
     }
 }

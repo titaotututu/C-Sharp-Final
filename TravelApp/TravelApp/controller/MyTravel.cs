@@ -36,5 +36,10 @@ namespace TravelApp.controller
             panelTravel.Controls.Clear();
             panelTravel.Controls.Add(newtravel);
         }
+
+        private void MyTravel_Load(object sender, EventArgs e)
+        {
+
+        }
     }
 }

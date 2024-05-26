@@ -40,9 +40,10 @@
             this.buttonNewTravel.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.buttonNewTravel.Font = new System.Drawing.Font("宋体", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
             this.buttonNewTravel.ForeColor = System.Drawing.SystemColors.ControlLightLight;
-            this.buttonNewTravel.Location = new System.Drawing.Point(0, 372);
+            this.buttonNewTravel.Location = new System.Drawing.Point(0, 279);
+            this.buttonNewTravel.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.buttonNewTravel.Name = "buttonNewTravel";
-            this.buttonNewTravel.Size = new System.Drawing.Size(274, 96);
+            this.buttonNewTravel.Size = new System.Drawing.Size(206, 72);
             this.buttonNewTravel.TabIndex = 1;
             this.buttonNewTravel.Text = "开启一个新行程";
             this.buttonNewTravel.UseVisualStyleBackColor = false;
@@ -55,9 +56,10 @@
             this.buttonOldTravel.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.buttonOldTravel.Font = new System.Drawing.Font("宋体", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
             this.buttonOldTravel.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.buttonOldTravel.Location = new System.Drawing.Point(0, 155);
+            this.buttonOldTravel.Location = new System.Drawing.Point(0, 116);
+            this.buttonOldTravel.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.buttonOldTravel.Name = "buttonOldTravel";
-            this.buttonOldTravel.Size = new System.Drawing.Size(274, 96);
+            this.buttonOldTravel.Size = new System.Drawing.Size(206, 72);
             this.buttonOldTravel.TabIndex = 0;
             this.buttonOldTravel.Text = "查看我的历史行程";
             this.buttonOldTravel.UseVisualStyleBackColor = false;
@@ -66,14 +68,15 @@
             // panelTravel
             // 
             this.panelTravel.BackColor = System.Drawing.Color.Transparent;
-            this.panelTravel.Location = new System.Drawing.Point(349, 0);
+            this.panelTravel.Location = new System.Drawing.Point(262, 0);
+            this.panelTravel.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.panelTravel.Name = "panelTravel";
-            this.panelTravel.Size = new System.Drawing.Size(835, 611);
+            this.panelTravel.Size = new System.Drawing.Size(626, 458);
             this.panelTravel.TabIndex = 2;
             // 
             // MyTravel
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(12F, 24F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(9F, 18F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackgroundImage = global::TravelApp.Properties.Resources.在路上旅行;
             this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
@@ -81,8 +84,10 @@
             this.Controls.Add(this.buttonOldTravel);
             this.Controls.Add(this.buttonNewTravel);
             this.DoubleBuffered = true;
+            this.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.Name = "MyTravel";
-            this.Size = new System.Drawing.Size(1184, 699);
+            this.Size = new System.Drawing.Size(888, 524);
+            this.Load += new System.EventHandler(this.MyTravel_Load);
             this.ResumeLayout(false);
 
         }

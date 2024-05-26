@@ -17,7 +17,7 @@ namespace TravelApp
         {
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
-            Application.Run(new MainFormFianl());
+            Application.Run(new MainFormFinal());
         }
     }
 }

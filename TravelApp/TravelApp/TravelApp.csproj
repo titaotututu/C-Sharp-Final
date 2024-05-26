@@ -149,6 +149,12 @@
     <Compile Include="controller\Travel_Weather.Designer.cs">
       <DependentUpon>Travel_Weather.cs</DependentUpon>
     </Compile>
+    <Compile Include="Else.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Else.Designer.cs">
+      <DependentUpon>Else.cs</DependentUpon>
+    </Compile>
     <Compile Include="Lighting.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -161,17 +167,11 @@
     <Compile Include="MainForm.Designer.cs">
       <DependentUpon>MainForm.cs</DependentUpon>
     </Compile>
-    <Compile Include="MainFormFianl.cs">
+    <Compile Include="MainFormFinal.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="MainFormFianl.Designer.cs">
-      <DependentUpon>MainFormFianl.cs</DependentUpon>
-    </Compile>
-    <Compile Include="MainInterface.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="MainInterface.Designer.cs">
-      <DependentUpon>MainInterface.cs</DependentUpon>
+    <Compile Include="MainFormFinal.Designer.cs">
+      <DependentUpon>MainFormFinal.cs</DependentUpon>
     </Compile>
     <Compile Include="models\TodoItem.cs" />
     <Compile Include="models\Travel.cs" />
@@ -234,17 +234,17 @@
     <EmbeddedResource Include="controller\Travel_Weather.resx">
       <DependentUpon>Travel_Weather.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="Else.resx">
+      <DependentUpon>Else.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Lighting.resx">
       <DependentUpon>Lighting.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="MainForm.resx">
       <DependentUpon>MainForm.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="MainFormFianl.resx">
-      <DependentUpon>MainFormFianl.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="MainInterface.resx">
-      <DependentUpon>MainInterface.cs</DependentUpon>
+    <EmbeddedResource Include="MainFormFinal.resx">
+      <DependentUpon>MainFormFinal.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Navigation.resx">
       <DependentUpon>Navigation.cs</DependentUpon>
@@ -281,6 +281,54 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="Resources\在路上旅行.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\导航背景.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\navi2.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\驾驶icon.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\步行icon.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\骑行icon.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\公交icon.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\退出black .png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\个人信息.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\历史行程.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\导航地址.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\天气.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\点亮.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\日志.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\其他.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\精灵.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\开发者信息.png" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

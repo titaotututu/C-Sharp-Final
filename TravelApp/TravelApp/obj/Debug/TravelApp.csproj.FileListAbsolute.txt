@@ -13,7 +13,6 @@ D:\learngit\Csharp-work\C-Sharp-Final\TravelApp\TravelApp\obj\Debug\TravelApp.pd
 D:\learngit\Csharp-work\C-Sharp-Final\TravelApp\TravelApp\obj\Debug\TravelApp.Bus_Routing.resources
 D:\learngit\Csharp-work\C-Sharp-Final\TravelApp\TravelApp\obj\Debug\TravelApp.Car_Routing.resources
 D:\learngit\Csharp-work\C-Sharp-Final\TravelApp\TravelApp\obj\Debug\TravelApp.Lighting.resources
-D:\learngit\Csharp-work\C-Sharp-Final\TravelApp\TravelApp\obj\Debug\TravelApp.MainInterface.resources
 C:\Users\asus\Desktop\C-Sharp-Final-main\TravelApp\TravelApp\bin\Debug\TravelApp.exe.config
 C:\Users\asus\Desktop\C-Sharp-Final-main\TravelApp\TravelApp\bin\Debug\TravelApp.exe
 C:\Users\asus\Desktop\C-Sharp-Final-main\TravelApp\TravelApp\bin\Debug\TravelApp.pdb
@@ -74,3 +73,18 @@ C:\Users\asus\Desktop\好好传git\C-Sharp-Final\TravelApp\TravelApp\obj\Debug\T
 C:\Users\asus\Desktop\好好传git\C-Sharp-Final\TravelApp\TravelApp\obj\Debug\TravelApp.csproj.Up2Date
 C:\Users\asus\Desktop\好好传git\C-Sharp-Final\TravelApp\TravelApp\obj\Debug\TravelApp.exe
 C:\Users\asus\Desktop\好好传git\C-Sharp-Final\TravelApp\TravelApp\obj\Debug\TravelApp.pdb
+D:\learngit\Csharp-work\C-Sharp-Final\TravelApp\TravelApp\bin\Debug\MaterialSkin.dll
+D:\learngit\Csharp-work\C-Sharp-Final\TravelApp\TravelApp\bin\Debug\Newtonsoft.Json.dll
+D:\learngit\Csharp-work\C-Sharp-Final\TravelApp\TravelApp\bin\Debug\Newtonsoft.Json.xml
+D:\learngit\Csharp-work\C-Sharp-Final\TravelApp\TravelApp\obj\Debug\TravelApp.controller.AddTodo.resources
+D:\learngit\Csharp-work\C-Sharp-Final\TravelApp\TravelApp\obj\Debug\TravelApp.controller.HistoryPage.resources
+D:\learngit\Csharp-work\C-Sharp-Final\TravelApp\TravelApp\obj\Debug\TravelApp.controller.MyTravel.resources
+D:\learngit\Csharp-work\C-Sharp-Final\TravelApp\TravelApp\obj\Debug\TravelApp.controller.NewTravel.resources
+D:\learngit\Csharp-work\C-Sharp-Final\TravelApp\TravelApp\obj\Debug\TravelApp.controller.OldTravel.resources
+D:\learngit\Csharp-work\C-Sharp-Final\TravelApp\TravelApp\obj\Debug\TravelApp.controller.TodoPage.resources
+D:\learngit\Csharp-work\C-Sharp-Final\TravelApp\TravelApp\obj\Debug\Weather_space.Travel_Weather.resources
+D:\learngit\Csharp-work\C-Sharp-Final\TravelApp\TravelApp\obj\Debug\TravelApp.MainForm.resources
+D:\learngit\Csharp-work\C-Sharp-Final\TravelApp\TravelApp\obj\Debug\TravelApp.TravelTodo.resources
+D:\learngit\Csharp-work\C-Sharp-Final\TravelApp\TravelApp\obj\Debug\TravelApp.csproj.Up2Date
+D:\learngit\Csharp-work\C-Sharp-Final\TravelApp\TravelApp\obj\Debug\TravelApp.MainFormFinal.resources
+D:\learngit\Csharp-work\C-Sharp-Final\TravelApp\TravelApp\obj\Debug\TravelApp.Else.resources
