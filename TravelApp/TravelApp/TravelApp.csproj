@@ -119,6 +119,24 @@
     <Compile Include="controller\HistoryPage.Designer.cs">
       <DependentUpon>HistoryPage.cs</DependentUpon>
     </Compile>
+    <Compile Include="controller\JournalCell.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="controller\JournalCell.Designer.cs">
+      <DependentUpon>JournalCell.cs</DependentUpon>
+    </Compile>
+    <Compile Include="controller\JournalDetail.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="controller\JournalDetail.Designer.cs">
+      <DependentUpon>JournalDetail.cs</DependentUpon>
+    </Compile>
+    <Compile Include="controller\JournalList.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="controller\JournalList.Designer.cs">
+      <DependentUpon>JournalList.cs</DependentUpon>
+    </Compile>
     <Compile Include="controller\MyTravel.cs">
       <SubType>UserControl</SubType>
     </Compile>
@@ -136,6 +154,12 @@
     </Compile>
     <Compile Include="controller\OldTravel.Designer.cs">
       <DependentUpon>OldTravel.cs</DependentUpon>
+    </Compile>
+    <Compile Include="controller\PictureBox.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="controller\PictureBox.Designer.cs">
+      <DependentUpon>PictureBox.cs</DependentUpon>
     </Compile>
     <Compile Include="controller\TodoPage.cs">
       <SubType>UserControl</SubType>
@@ -155,6 +179,7 @@
     <Compile Include="Else.Designer.cs">
       <DependentUpon>Else.cs</DependentUpon>
     </Compile>
+    <Compile Include="FileClient.cs" />
     <Compile Include="Lighting.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -173,6 +198,7 @@
     <Compile Include="MainFormFinal.Designer.cs">
       <DependentUpon>MainFormFinal.cs</DependentUpon>
     </Compile>
+    <Compile Include="models\Journal.cs" />
     <Compile Include="models\TodoItem.cs" />
     <Compile Include="models\Travel.cs" />
     <Compile Include="Navigation.cs">
@@ -219,6 +245,15 @@
     <EmbeddedResource Include="controller\HistoryPage.resx">
       <DependentUpon>HistoryPage.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="controller\JournalCell.resx">
+      <DependentUpon>JournalCell.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="controller\JournalDetail.resx">
+      <DependentUpon>JournalDetail.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="controller\JournalList.resx">
+      <DependentUpon>JournalList.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="controller\MyTravel.resx">
       <DependentUpon>MyTravel.cs</DependentUpon>
     </EmbeddedResource>
@@ -227,6 +262,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="controller\OldTravel.resx">
       <DependentUpon>OldTravel.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="controller\PictureBox.resx">
+      <DependentUpon>PictureBox.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="controller\TodoPage.resx">
       <DependentUpon>TodoPage.cs</DependentUpon>

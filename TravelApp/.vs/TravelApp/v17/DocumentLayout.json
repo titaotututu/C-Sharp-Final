@@ -1,90 +1,42 @@
 {
   "Version": 1,
-  "WorkspaceRootPath": "D:\\learngit\\Csharp-work\\C-Sharp-Final\\TravelApp\\",
+  "WorkspaceRootPath": "D:\\Git\\tmp\\C-Sharp-Final\\TravelApp\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{455A8ACC-D685-4677-8F81-018BD921DD70}|TravelApp\\TravelApp.csproj|D:\\learngit\\Csharp-work\\C-Sharp-Final\\TravelApp\\travelapp\\mainformfinal.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{455A8ACC-D685-4677-8F81-018BD921DD70}|TravelApp\\TravelApp.csproj|d:\\git\\tmp\\c-sharp-final\\travelapp\\travelapp\\controller\\journallist.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{455A8ACC-D685-4677-8F81-018BD921DD70}|TravelApp\\TravelApp.csproj|solutionrelative:travelapp\\controller\\journallist.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{455A8ACC-D685-4677-8F81-018BD921DD70}|TravelApp\\TravelApp.csproj|d:\\git\\tmp\\c-sharp-final\\travelapp\\travelapp\\mainformfinal.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{455A8ACC-D685-4677-8F81-018BD921DD70}|TravelApp\\TravelApp.csproj|solutionrelative:travelapp\\mainformfinal.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{455A8ACC-D685-4677-8F81-018BD921DD70}|TravelApp\\TravelApp.csproj|D:\\learngit\\Csharp-work\\C-Sharp-Final\\TravelApp\\travelapp\\mainformfinal.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "AbsoluteMoniker": "D:0:0:{455A8ACC-D685-4677-8F81-018BD921DD70}|TravelApp\\TravelApp.csproj|d:\\git\\tmp\\c-sharp-final\\travelapp\\travelapp\\mainformfinal.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
       "RelativeMoniker": "D:0:0:{455A8ACC-D685-4677-8F81-018BD921DD70}|TravelApp\\TravelApp.csproj|solutionrelative:travelapp\\mainformfinal.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{455A8ACC-D685-4677-8F81-018BD921DD70}|TravelApp\\TravelApp.csproj|d:\\learngit\\csharp-work\\c-sharp-final\\travelapp\\travelapp\\else.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
-      "RelativeMoniker": "D:0:0:{455A8ACC-D685-4677-8F81-018BD921DD70}|TravelApp\\TravelApp.csproj|solutionrelative:travelapp\\else.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+      "AbsoluteMoniker": "D:0:0:{455A8ACC-D685-4677-8F81-018BD921DD70}|TravelApp\\TravelApp.csproj|d:\\git\\tmp\\c-sharp-final\\travelapp\\travelapp\\fileclient.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{455A8ACC-D685-4677-8F81-018BD921DD70}|TravelApp\\TravelApp.csproj|solutionrelative:travelapp\\fileclient.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{455A8ACC-D685-4677-8F81-018BD921DD70}|TravelApp\\TravelApp.csproj|D:\\learngit\\Csharp-work\\C-Sharp-Final\\TravelApp\\travelapp\\walk_routing.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
-      "RelativeMoniker": "D:0:0:{455A8ACC-D685-4677-8F81-018BD921DD70}|TravelApp\\TravelApp.csproj|solutionrelative:travelapp\\walk_routing.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+      "AbsoluteMoniker": "D:0:0:{455A8ACC-D685-4677-8F81-018BD921DD70}|TravelApp\\TravelApp.csproj|d:\\git\\tmp\\c-sharp-final\\travelapp\\travelapp\\controller\\picturebox.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{455A8ACC-D685-4677-8F81-018BD921DD70}|TravelApp\\TravelApp.csproj|solutionrelative:travelapp\\controller\\picturebox.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{455A8ACC-D685-4677-8F81-018BD921DD70}|TravelApp\\TravelApp.csproj|d:\\learngit\\csharp-work\\c-sharp-final\\travelapp\\travelapp\\else.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{455A8ACC-D685-4677-8F81-018BD921DD70}|TravelApp\\TravelApp.csproj|solutionrelative:travelapp\\else.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{455A8ACC-D685-4677-8F81-018BD921DD70}|TravelApp\\TravelApp.csproj|d:\\git\\tmp\\c-sharp-final\\travelapp\\travelapp\\controller\\journallist.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{455A8ACC-D685-4677-8F81-018BD921DD70}|TravelApp\\TravelApp.csproj|solutionrelative:travelapp\\controller\\journallist.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{455A8ACC-D685-4677-8F81-018BD921DD70}|TravelApp\\TravelApp.csproj|D:\\learngit\\Csharp-work\\C-Sharp-Final\\TravelApp\\travelapp\\lighting.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
-      "RelativeMoniker": "D:0:0:{455A8ACC-D685-4677-8F81-018BD921DD70}|TravelApp\\TravelApp.csproj|solutionrelative:travelapp\\lighting.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+      "AbsoluteMoniker": "D:0:0:{455A8ACC-D685-4677-8F81-018BD921DD70}|TravelApp\\TravelApp.csproj|d:\\git\\tmp\\c-sharp-final\\travelapp\\travelapp\\models\\journal.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{455A8ACC-D685-4677-8F81-018BD921DD70}|TravelApp\\TravelApp.csproj|solutionrelative:travelapp\\models\\journal.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{455A8ACC-D685-4677-8F81-018BD921DD70}|TravelApp\\TravelApp.csproj|d:\\learngit\\csharp-work\\c-sharp-final\\travelapp\\travelapp\\car_routing.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
-      "RelativeMoniker": "D:0:0:{455A8ACC-D685-4677-8F81-018BD921DD70}|TravelApp\\TravelApp.csproj|solutionrelative:travelapp\\car_routing.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+      "AbsoluteMoniker": "D:0:0:{455A8ACC-D685-4677-8F81-018BD921DD70}|TravelApp\\TravelApp.csproj|d:\\git\\tmp\\c-sharp-final\\travelapp\\travelapp\\controller\\journaldetail.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{455A8ACC-D685-4677-8F81-018BD921DD70}|TravelApp\\TravelApp.csproj|solutionrelative:travelapp\\controller\\journaldetail.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{455A8ACC-D685-4677-8F81-018BD921DD70}|TravelApp\\TravelApp.csproj|d:\\learngit\\csharp-work\\c-sharp-final\\travelapp\\travelapp\\bus_routing.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
-      "RelativeMoniker": "D:0:0:{455A8ACC-D685-4677-8F81-018BD921DD70}|TravelApp\\TravelApp.csproj|solutionrelative:travelapp\\bus_routing.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{455A8ACC-D685-4677-8F81-018BD921DD70}|TravelApp\\TravelApp.csproj|D:\\learngit\\Csharp-work\\C-Sharp-Final\\TravelApp\\travelapp\\bike_routing.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
-      "RelativeMoniker": "D:0:0:{455A8ACC-D685-4677-8F81-018BD921DD70}|TravelApp\\TravelApp.csproj|solutionrelative:travelapp\\bike_routing.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{455A8ACC-D685-4677-8F81-018BD921DD70}|TravelApp\\TravelApp.csproj|d:\\learngit\\csharp-work\\c-sharp-final\\travelapp\\travelapp\\navigation.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{455A8ACC-D685-4677-8F81-018BD921DD70}|TravelApp\\TravelApp.csproj|solutionrelative:travelapp\\navigation.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{455A8ACC-D685-4677-8F81-018BD921DD70}|TravelApp\\TravelApp.csproj|D:\\learngit\\Csharp-work\\C-Sharp-Final\\TravelApp\\travelapp\\navigation.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
-      "RelativeMoniker": "D:0:0:{455A8ACC-D685-4677-8F81-018BD921DD70}|TravelApp\\TravelApp.csproj|solutionrelative:travelapp\\navigation.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{455A8ACC-D685-4677-8F81-018BD921DD70}|TravelApp\\TravelApp.csproj|D:\\learngit\\Csharp-work\\C-Sharp-Final\\TravelApp\\travelapp\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{455A8ACC-D685-4677-8F81-018BD921DD70}|TravelApp\\TravelApp.csproj|solutionrelative:travelapp\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{455A8ACC-D685-4677-8F81-018BD921DD70}|TravelApp\\TravelApp.csproj|D:\\learngit\\Csharp-work\\C-Sharp-Final\\TravelApp\\travelapp\\controller\\mytravel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
-      "RelativeMoniker": "D:0:0:{455A8ACC-D685-4677-8F81-018BD921DD70}|TravelApp\\TravelApp.csproj|solutionrelative:travelapp\\controller\\mytravel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{455A8ACC-D685-4677-8F81-018BD921DD70}|TravelApp\\TravelApp.csproj|D:\\learngit\\Csharp-work\\C-Sharp-Final\\TravelApp\\travelapp\\walk_routing.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{455A8ACC-D685-4677-8F81-018BD921DD70}|TravelApp\\TravelApp.csproj|solutionrelative:travelapp\\walk_routing.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{455A8ACC-D685-4677-8F81-018BD921DD70}|TravelApp\\TravelApp.csproj|D:\\learngit\\Csharp-work\\C-Sharp-Final\\TravelApp\\travelapp\\car_routing.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{455A8ACC-D685-4677-8F81-018BD921DD70}|TravelApp\\TravelApp.csproj|solutionrelative:travelapp\\car_routing.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{455A8ACC-D685-4677-8F81-018BD921DD70}|TravelApp\\TravelApp.csproj|D:\\learngit\\Csharp-work\\C-Sharp-Final\\TravelApp\\travelapp\\traveltodo.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
-      "RelativeMoniker": "D:0:0:{455A8ACC-D685-4677-8F81-018BD921DD70}|TravelApp\\TravelApp.csproj|solutionrelative:travelapp\\traveltodo.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{455A8ACC-D685-4677-8F81-018BD921DD70}|TravelApp\\TravelApp.csproj|D:\\learngit\\Csharp-work\\C-Sharp-Final\\TravelApp\\travelapp\\client.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{455A8ACC-D685-4677-8F81-018BD921DD70}|TravelApp\\TravelApp.csproj|solutionrelative:travelapp\\client.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{455A8ACC-D685-4677-8F81-018BD921DD70}|TravelApp\\TravelApp.csproj|D:\\learngit\\Csharp-work\\C-Sharp-Final\\TravelApp\\travelapp\\bus_routing.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{455A8ACC-D685-4677-8F81-018BD921DD70}|TravelApp\\TravelApp.csproj|solutionrelative:travelapp\\bus_routing.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{455A8ACC-D685-4677-8F81-018BD921DD70}|TravelApp\\TravelApp.csproj|D:\\learngit\\Csharp-work\\C-Sharp-Final\\TravelApp\\travelapp\\bike_routing.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{455A8ACC-D685-4677-8F81-018BD921DD70}|TravelApp\\TravelApp.csproj|solutionrelative:travelapp\\bike_routing.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{455A8ACC-D685-4677-8F81-018BD921DD70}|TravelApp\\TravelApp.csproj|D:\\learngit\\Csharp-work\\C-Sharp-Final\\TravelApp\\travelapp\\walk_routing.designer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{455A8ACC-D685-4677-8F81-018BD921DD70}|TravelApp\\TravelApp.csproj|solutionrelative:travelapp\\walk_routing.designer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{455A8ACC-D685-4677-8F81-018BD921DD70}|TravelApp\\TravelApp.csproj|D:\\learngit\\Csharp-work\\C-Sharp-Final\\TravelApp\\travelapp\\mainform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
-      "RelativeMoniker": "D:0:0:{455A8ACC-D685-4677-8F81-018BD921DD70}|TravelApp\\TravelApp.csproj|solutionrelative:travelapp\\mainform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+      "AbsoluteMoniker": "D:0:0:{455A8ACC-D685-4677-8F81-018BD921DD70}|TravelApp\\TravelApp.csproj|d:\\git\\tmp\\c-sharp-final\\travelapp\\travelapp\\controller\\journalcell.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{455A8ACC-D685-4677-8F81-018BD921DD70}|TravelApp\\TravelApp.csproj|solutionrelative:travelapp\\controller\\journalcell.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
     }
   ],
   "DocumentGroupContainers": [
@@ -97,271 +49,124 @@
           "SelectedChildIndex": 2,
           "Children": [
             {
-              "$type": "Document",
-              "DocumentIndex": 2,
-              "Title": "Else.cs [\u8BBE\u8BA1]",
-              "DocumentMoniker": "D:\\learngit\\Csharp-work\\C-Sharp-Final\\TravelApp\\TravelApp\\Else.cs",
-              "RelativeDocumentMoniker": "TravelApp\\Else.cs",
-              "ToolTip": "D:\\learngit\\Csharp-work\\C-Sharp-Final\\TravelApp\\TravelApp\\Else.cs [\u8BBE\u8BA1]",
-              "RelativeToolTip": "TravelApp\\Else.cs [\u8BBE\u8BA1]",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-05-26T05:42:40.609Z",
-              "EditorCaption": " [\u8BBE\u8BA1]"
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{b1e99781-ab81-11d0-b683-00aa00a3ee26}"
             },
             {
-              "$type": "Document",
-              "DocumentIndex": 1,
-              "Title": "MainFormFinal.cs [\u8BBE\u8BA1]",
-              "DocumentMoniker": "D:\\learngit\\Csharp-work\\C-Sharp-Final\\TravelApp\\TravelApp\\MainFormFinal.cs",
-              "RelativeDocumentMoniker": "TravelApp\\MainFormFinal.cs",
-              "ToolTip": "D:\\learngit\\Csharp-work\\C-Sharp-Final\\TravelApp\\TravelApp\\MainFormFinal.cs [\u8BBE\u8BA1]",
-              "RelativeToolTip": "TravelApp\\MainFormFinal.cs [\u8BBE\u8BA1]",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-05-26T02:18:53.784Z",
-              "EditorCaption": " [\u8BBE\u8BA1]"
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{eefa5220-e298-11d0-8f78-00a0c9110057}"
             },
             {
               "$type": "Document",
               "DocumentIndex": 0,
-              "Title": "MainFormFinal.cs",
-              "DocumentMoniker": "D:\\learngit\\Csharp-work\\C-Sharp-Final\\TravelApp\\TravelApp\\MainFormFinal.cs",
-              "RelativeDocumentMoniker": "TravelApp\\MainFormFinal.cs",
-              "ToolTip": "D:\\learngit\\Csharp-work\\C-Sharp-Final\\TravelApp\\TravelApp\\MainFormFinal.cs",
-              "RelativeToolTip": "TravelApp\\MainFormFinal.cs",
-              "ViewState": "AQIAAB0AAAAAAAAAAAAmwCwAAAAHAAAA",
+              "Title": "JournalList.cs",
+              "DocumentMoniker": "D:\\Git\\tmp\\C-Sharp-Final\\TravelApp\\TravelApp\\controller\\JournalList.cs",
+              "RelativeDocumentMoniker": "TravelApp\\controller\\JournalList.cs",
+              "ToolTip": "D:\\Git\\tmp\\C-Sharp-Final\\TravelApp\\TravelApp\\controller\\JournalList.cs",
+              "RelativeToolTip": "TravelApp\\controller\\JournalList.cs",
+              "ViewState": "AQIAABkAAAAAAAAAAAAtwCIAAAANAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-05-26T04:12:23.568Z",
+              "WhenOpened": "2024-05-26T10:53:06.914Z",
               "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "MainFormFinal.cs",
+              "DocumentMoniker": "D:\\Git\\tmp\\C-Sharp-Final\\TravelApp\\TravelApp\\MainFormFinal.cs",
+              "RelativeDocumentMoniker": "TravelApp\\MainFormFinal.cs",
+              "ToolTip": "D:\\Git\\tmp\\C-Sharp-Final\\TravelApp\\TravelApp\\MainFormFinal.cs",
+              "RelativeToolTip": "TravelApp\\MainFormFinal.cs",
+              "ViewState": "AQIAAFYAAAAAAAAAAAAswIAAAAAFAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-05-26T10:51:28.42Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "MainFormFinal.cs [\u8BBE\u8BA1]",
+              "DocumentMoniker": "D:\\Git\\tmp\\C-Sharp-Final\\TravelApp\\TravelApp\\MainFormFinal.cs",
+              "RelativeDocumentMoniker": "TravelApp\\MainFormFinal.cs",
+              "ToolTip": "D:\\Git\\tmp\\C-Sharp-Final\\TravelApp\\TravelApp\\MainFormFinal.cs [\u8BBE\u8BA1]",
+              "RelativeToolTip": "TravelApp\\MainFormFinal.cs [\u8BBE\u8BA1]",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-05-26T10:50:01.077Z",
+              "EditorCaption": " [\u8BBE\u8BA1]"
             },
             {
               "$type": "Document",
               "DocumentIndex": 3,
-              "Title": "Walk_Routing.cs [\u8BBE\u8BA1]",
-              "DocumentMoniker": "D:\\learngit\\Csharp-work\\C-Sharp-Final\\TravelApp\\TravelApp\\Walk_Routing.cs",
-              "RelativeDocumentMoniker": "TravelApp\\Walk_Routing.cs",
-              "ToolTip": "D:\\learngit\\Csharp-work\\C-Sharp-Final\\TravelApp\\TravelApp\\Walk_Routing.cs [\u8BBE\u8BA1]",
-              "RelativeToolTip": "TravelApp\\Walk_Routing.cs [\u8BBE\u8BA1]",
+              "Title": "FileClient.cs",
+              "DocumentMoniker": "D:\\Git\\tmp\\C-Sharp-Final\\TravelApp\\TravelApp\\FileClient.cs",
+              "RelativeDocumentMoniker": "TravelApp\\FileClient.cs",
+              "ToolTip": "D:\\Git\\tmp\\C-Sharp-Final\\TravelApp\\TravelApp\\FileClient.cs",
+              "RelativeToolTip": "TravelApp\\FileClient.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-05-26T03:12:06.39Z",
-              "EditorCaption": " [\u8BBE\u8BA1]"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 4,
-              "Title": "Else.cs",
-              "DocumentMoniker": "D:\\learngit\\Csharp-work\\C-Sharp-Final\\TravelApp\\TravelApp\\Else.cs",
-              "RelativeDocumentMoniker": "TravelApp\\Else.cs",
-              "ToolTip": "D:\\learngit\\Csharp-work\\C-Sharp-Final\\TravelApp\\TravelApp\\Else.cs",
-              "RelativeToolTip": "TravelApp\\Else.cs",
-              "ViewState": "AQIAABIAAAAAAAAAAAAIwB8AAAAAAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-05-26T05:45:49.143Z",
+              "WhenOpened": "2024-05-26T10:48:12.895Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "PictureBox.cs [\u8BBE\u8BA1]",
+              "DocumentMoniker": "D:\\Git\\tmp\\C-Sharp-Final\\TravelApp\\TravelApp\\controller\\PictureBox.cs",
+              "RelativeDocumentMoniker": "TravelApp\\controller\\PictureBox.cs",
+              "ToolTip": "D:\\Git\\tmp\\C-Sharp-Final\\TravelApp\\TravelApp\\controller\\PictureBox.cs [\u8BBE\u8BA1]",
+              "RelativeToolTip": "TravelApp\\controller\\PictureBox.cs [\u8BBE\u8BA1]",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-05-26T10:47:27.715Z",
+              "EditorCaption": " [\u8BBE\u8BA1]"
+            },
+            {
+              "$type": "Document",
               "DocumentIndex": 5,
-              "Title": "Lighting.cs [\u8BBE\u8BA1]",
-              "DocumentMoniker": "D:\\learngit\\Csharp-work\\C-Sharp-Final\\TravelApp\\TravelApp\\Lighting.cs",
-              "RelativeDocumentMoniker": "TravelApp\\Lighting.cs",
-              "ToolTip": "D:\\learngit\\Csharp-work\\C-Sharp-Final\\TravelApp\\TravelApp\\Lighting.cs [\u8BBE\u8BA1]",
-              "RelativeToolTip": "TravelApp\\Lighting.cs [\u8BBE\u8BA1]",
+              "Title": "JournalList.cs [\u8BBE\u8BA1]",
+              "DocumentMoniker": "D:\\Git\\tmp\\C-Sharp-Final\\TravelApp\\TravelApp\\controller\\JournalList.cs",
+              "RelativeDocumentMoniker": "TravelApp\\controller\\JournalList.cs",
+              "ToolTip": "D:\\Git\\tmp\\C-Sharp-Final\\TravelApp\\TravelApp\\controller\\JournalList.cs [\u8BBE\u8BA1]",
+              "RelativeToolTip": "TravelApp\\controller\\JournalList.cs [\u8BBE\u8BA1]",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-05-26T03:35:18.991Z",
-              "EditorCaption": " [\u8BBE\u8BA1]"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 6,
-              "Title": "Car_Routing.cs [\u8BBE\u8BA1]",
-              "DocumentMoniker": "D:\\learngit\\Csharp-work\\C-Sharp-Final\\TravelApp\\TravelApp\\Car_Routing.cs",
-              "RelativeDocumentMoniker": "TravelApp\\Car_Routing.cs",
-              "ToolTip": "D:\\learngit\\Csharp-work\\C-Sharp-Final\\TravelApp\\TravelApp\\Car_Routing.cs [\u8BBE\u8BA1]",
-              "RelativeToolTip": "TravelApp\\Car_Routing.cs [\u8BBE\u8BA1]",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-05-26T05:41:15.852Z",
-              "EditorCaption": " [\u8BBE\u8BA1]"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 8,
-              "Title": "Bike_Routing.cs [\u8BBE\u8BA1]",
-              "DocumentMoniker": "D:\\learngit\\Csharp-work\\C-Sharp-Final\\TravelApp\\TravelApp\\Bike_Routing.cs",
-              "RelativeDocumentMoniker": "TravelApp\\Bike_Routing.cs",
-              "ToolTip": "D:\\learngit\\Csharp-work\\C-Sharp-Final\\TravelApp\\TravelApp\\Bike_Routing.cs [\u8BBE\u8BA1]",
-              "RelativeToolTip": "TravelApp\\Bike_Routing.cs [\u8BBE\u8BA1]",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-05-26T03:32:48.495Z",
+              "WhenOpened": "2024-05-26T10:47:22.098Z",
               "EditorCaption": " [\u8BBE\u8BA1]"
             },
             {
               "$type": "Document",
               "DocumentIndex": 7,
-              "Title": "Bus_Routing.cs [\u8BBE\u8BA1]",
-              "DocumentMoniker": "D:\\learngit\\Csharp-work\\C-Sharp-Final\\TravelApp\\TravelApp\\Bus_Routing.cs",
-              "RelativeDocumentMoniker": "TravelApp\\Bus_Routing.cs",
-              "ToolTip": "D:\\learngit\\Csharp-work\\C-Sharp-Final\\TravelApp\\TravelApp\\Bus_Routing.cs [\u8BBE\u8BA1]",
-              "RelativeToolTip": "TravelApp\\Bus_Routing.cs [\u8BBE\u8BA1]",
+              "Title": "JournalDetail.cs [\u8BBE\u8BA1]",
+              "DocumentMoniker": "D:\\Git\\tmp\\C-Sharp-Final\\TravelApp\\TravelApp\\controller\\JournalDetail.cs",
+              "RelativeDocumentMoniker": "TravelApp\\controller\\JournalDetail.cs",
+              "ToolTip": "D:\\Git\\tmp\\C-Sharp-Final\\TravelApp\\TravelApp\\controller\\JournalDetail.cs [\u8BBE\u8BA1]",
+              "RelativeToolTip": "TravelApp\\controller\\JournalDetail.cs [\u8BBE\u8BA1]",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-05-26T03:33:15.591Z",
+              "WhenOpened": "2024-05-26T10:47:21.315Z",
               "EditorCaption": " [\u8BBE\u8BA1]"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 9,
-              "Title": "Navigation.cs",
-              "DocumentMoniker": "D:\\learngit\\Csharp-work\\C-Sharp-Final\\TravelApp\\TravelApp\\Navigation.cs",
-              "RelativeDocumentMoniker": "TravelApp\\Navigation.cs",
-              "ToolTip": "D:\\learngit\\Csharp-work\\C-Sharp-Final\\TravelApp\\TravelApp\\Navigation.cs",
-              "RelativeToolTip": "TravelApp\\Navigation.cs",
-              "ViewState": "AQIAACIAAAAAAAAAAAAkwC8AAAAyAAAA",
+              "DocumentIndex": 8,
+              "Title": "JournalCell.cs [\u8BBE\u8BA1]",
+              "DocumentMoniker": "D:\\Git\\tmp\\C-Sharp-Final\\TravelApp\\TravelApp\\controller\\JournalCell.cs",
+              "RelativeDocumentMoniker": "TravelApp\\controller\\JournalCell.cs",
+              "ToolTip": "D:\\Git\\tmp\\C-Sharp-Final\\TravelApp\\TravelApp\\controller\\JournalCell.cs [\u8BBE\u8BA1]",
+              "RelativeToolTip": "TravelApp\\controller\\JournalCell.cs [\u8BBE\u8BA1]",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-05-26T05:32:34.278Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 10,
-              "Title": "Navigation.cs [\u8BBE\u8BA1]",
-              "DocumentMoniker": "D:\\learngit\\Csharp-work\\C-Sharp-Final\\TravelApp\\TravelApp\\Navigation.cs",
-              "RelativeDocumentMoniker": "TravelApp\\Navigation.cs",
-              "ToolTip": "D:\\learngit\\Csharp-work\\C-Sharp-Final\\TravelApp\\TravelApp\\Navigation.cs [\u8BBE\u8BA1]",
-              "RelativeToolTip": "TravelApp\\Navigation.cs [\u8BBE\u8BA1]",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-05-26T02:31:40.958Z",
+              "WhenOpened": "2024-05-26T10:47:19.717Z",
               "EditorCaption": " [\u8BBE\u8BA1]"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 11,
-              "Title": "Program.cs",
-              "DocumentMoniker": "D:\\learngit\\Csharp-work\\C-Sharp-Final\\TravelApp\\TravelApp\\Program.cs",
-              "RelativeDocumentMoniker": "TravelApp\\Program.cs",
-              "ToolTip": "D:\\learngit\\Csharp-work\\C-Sharp-Final\\TravelApp\\TravelApp\\Program.cs",
-              "RelativeToolTip": "TravelApp\\Program.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAABMAAAAtAAAA",
+              "DocumentIndex": 6,
+              "Title": "Journal.cs",
+              "DocumentMoniker": "D:\\Git\\tmp\\C-Sharp-Final\\TravelApp\\TravelApp\\models\\Journal.cs",
+              "RelativeDocumentMoniker": "TravelApp\\models\\Journal.cs",
+              "ToolTip": "D:\\Git\\tmp\\C-Sharp-Final\\TravelApp\\TravelApp\\models\\Journal.cs",
+              "RelativeToolTip": "TravelApp\\models\\Journal.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-05-26T03:06:51.036Z",
+              "WhenOpened": "2024-05-26T10:46:33.622Z",
               "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 12,
-              "Title": "MyTravel.cs [\u8BBE\u8BA1]",
-              "DocumentMoniker": "D:\\learngit\\Csharp-work\\C-Sharp-Final\\TravelApp\\TravelApp\\controller\\MyTravel.cs",
-              "RelativeDocumentMoniker": "TravelApp\\controller\\MyTravel.cs",
-              "ToolTip": "D:\\learngit\\Csharp-work\\C-Sharp-Final\\TravelApp\\TravelApp\\controller\\MyTravel.cs [\u8BBE\u8BA1]",
-              "RelativeToolTip": "TravelApp\\controller\\MyTravel.cs [\u8BBE\u8BA1]",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-05-26T05:16:27.847Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 13,
-              "Title": "Walk_Routing.cs",
-              "DocumentMoniker": "D:\\learngit\\Csharp-work\\C-Sharp-Final\\TravelApp\\TravelApp\\Walk_Routing.cs",
-              "RelativeDocumentMoniker": "TravelApp\\Walk_Routing.cs",
-              "ToolTip": "D:\\learngit\\Csharp-work\\C-Sharp-Final\\TravelApp\\TravelApp\\Walk_Routing.cs",
-              "RelativeToolTip": "TravelApp\\Walk_Routing.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAMAAAASAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-05-26T03:12:14.495Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 14,
-              "Title": "Car_Routing.cs",
-              "DocumentMoniker": "D:\\learngit\\Csharp-work\\C-Sharp-Final\\TravelApp\\TravelApp\\Car_Routing.cs",
-              "RelativeDocumentMoniker": "TravelApp\\Car_Routing.cs",
-              "ToolTip": "D:\\learngit\\Csharp-work\\C-Sharp-Final\\TravelApp\\TravelApp\\Car_Routing.cs",
-              "RelativeToolTip": "TravelApp\\Car_Routing.cs",
-              "ViewState": "AQIAABIAAAAAAAAAAAAAAB0AAAA2AAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-05-26T03:18:50.695Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 15,
-              "Title": "TravelTodo.cs [\u8BBE\u8BA1]",
-              "DocumentMoniker": "D:\\learngit\\Csharp-work\\C-Sharp-Final\\TravelApp\\TravelApp\\TravelTodo.cs",
-              "RelativeDocumentMoniker": "TravelApp\\TravelTodo.cs",
-              "ToolTip": "D:\\learngit\\Csharp-work\\C-Sharp-Final\\TravelApp\\TravelApp\\TravelTodo.cs [\u8BBE\u8BA1]",
-              "RelativeToolTip": "TravelApp\\TravelTodo.cs [\u8BBE\u8BA1]",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-05-26T03:35:24.381Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 16,
-              "Title": "Client.cs",
-              "DocumentMoniker": "D:\\learngit\\Csharp-work\\C-Sharp-Final\\TravelApp\\TravelApp\\Client.cs",
-              "RelativeDocumentMoniker": "TravelApp\\Client.cs",
-              "ToolTip": "D:\\learngit\\Csharp-work\\C-Sharp-Final\\TravelApp\\TravelApp\\Client.cs",
-              "RelativeToolTip": "TravelApp\\Client.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAADwvwkAAAAFAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-05-26T03:35:14.355Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 17,
-              "Title": "Bus_Routing.cs",
-              "DocumentMoniker": "D:\\learngit\\Csharp-work\\C-Sharp-Final\\TravelApp\\TravelApp\\Bus_Routing.cs",
-              "RelativeDocumentMoniker": "TravelApp\\Bus_Routing.cs",
-              "ToolTip": "D:\\learngit\\Csharp-work\\C-Sharp-Final\\TravelApp\\TravelApp\\Bus_Routing.cs",
-              "RelativeToolTip": "TravelApp\\Bus_Routing.cs",
-              "ViewState": "AQIAAAsAAAAAAAAAAAApwB8AAAA0AAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-05-26T03:47:12.093Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 18,
-              "Title": "Bike_Routing.cs",
-              "DocumentMoniker": "D:\\learngit\\Csharp-work\\C-Sharp-Final\\TravelApp\\TravelApp\\Bike_Routing.cs",
-              "RelativeDocumentMoniker": "TravelApp\\Bike_Routing.cs",
-              "ToolTip": "D:\\learngit\\Csharp-work\\C-Sharp-Final\\TravelApp\\TravelApp\\Bike_Routing.cs",
-              "RelativeToolTip": "TravelApp\\Bike_Routing.cs",
-              "ViewState": "AQIAAAcAAAAAAAAAAAArwB8AAAAMAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-05-26T03:44:47.89Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 19,
-              "Title": "Walk_Routing.Designer.cs",
-              "DocumentMoniker": "D:\\learngit\\Csharp-work\\C-Sharp-Final\\TravelApp\\TravelApp\\Walk_Routing.Designer.cs",
-              "RelativeDocumentMoniker": "TravelApp\\Walk_Routing.Designer.cs",
-              "ToolTip": "D:\\learngit\\Csharp-work\\C-Sharp-Final\\TravelApp\\TravelApp\\Walk_Routing.Designer.cs",
-              "RelativeToolTip": "TravelApp\\Walk_Routing.Designer.cs",
-              "ViewState": "AQIAADsAAAAAAAAAAAAawEMAAAAAAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-05-26T03:45:14.905Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 20,
-              "Title": "MainForm.cs [\u8BBE\u8BA1]",
-              "DocumentMoniker": "D:\\learngit\\Csharp-work\\C-Sharp-Final\\TravelApp\\TravelApp\\MainForm.cs",
-              "RelativeDocumentMoniker": "TravelApp\\MainForm.cs",
-              "ToolTip": "D:\\learngit\\Csharp-work\\C-Sharp-Final\\TravelApp\\TravelApp\\MainForm.cs [\u8BBE\u8BA1]",
-              "RelativeToolTip": "TravelApp\\MainForm.cs [\u8BBE\u8BA1]",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-05-26T03:34:03.445Z"
-            }
-          ]
-        },
-        {
-          "DockedWidth": 41,
-          "SelectedChildIndex": -1,
-          "Children": [
-            {
-              "$type": "Bookmark",
-              "Name": "ST:0:0:{eefa5220-e298-11d0-8f78-00a0c9110057}"
             }
           ]
         }

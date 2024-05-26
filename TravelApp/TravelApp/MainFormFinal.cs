@@ -17,7 +17,7 @@ namespace TravelApp
     {
         private Point formPoint = new Point();
         public ChangePanel changePanel;
-        long Uid;
+        public long Uid;
         public MainFormFinal()// 应该传入一个uid参数
         {
             InitializeComponent();
@@ -119,6 +119,12 @@ namespace TravelApp
         private void button_Other_Click(object sender, EventArgs e)
         {
             openElsePage();
+        }
+
+        private void button_Journal_Click(object sender, EventArgs e)
+        {
+            JournalList journalList = new JournalList(Uid, changePanel);
+            AddControlsToPanel(journalList);
         }
     }
 }
