@@ -15,26 +15,31 @@ using System.Windows.Forms;
 using TravelApp.models;
 
 namespace TravelApp.controller
+
 {
     public partial class Personalinfo : UserControl
     {
+        public Delegate_init init;
+        ChangePanel changePanel;
         private readonly string baseUrl = "http://localhost:5199/api/User";
         private readonly long Uid;
-        public Personalinfo(long uid)
+        User user = new User();
+        public Personalinfo(long uid, ChangePanel changePanel)
         {
             InitializeComponent();
             this.Uid = uid;
             InitInfo();
+            this.changePanel = changePanel;
         }
 
         private async void InitInfo()
         {
             //初始化相关信息
-            string url = baseUrl + "/get?uid=" + this.Uid;
+            string url = baseUrl +"/"+ this.Uid;
             //
             //XmlSerializer xmlSerializer = new XmlSerializer(typeof(User));
             //
-            User user = new User();
+           // User user = new User();
             Client client = new Client();
             try
             {
@@ -44,10 +49,13 @@ namespace TravelApp.controller
                     //
                     //User user = (User)xmlSerializer.Deserialize(await result.Content.ReadAsStreamAsync());
                     //
-                    new_id.Text = user.Uid.ToString("00000");
-                    new_name.Text = user.Uname;
+                    string jsonContent = await result.Content.ReadAsStringAsync();
+                    user = JsonConvert.DeserializeObject<User>(jsonContent);
+
+                    new_id.Text = user.UserId.ToString();
+                    new_name.Text = user.UserName;
                     //cbGender.Text = user.Sex;
-                    new_pwd.Text = Convert.ToString(user.Password);
+                    new_pwd.Text = Convert.ToString(user.password);
                 }
             }
             catch (Exception e)
@@ -59,26 +67,34 @@ namespace TravelApp.controller
         private async void button1_Click(object sender, EventArgs e)
         {
             //进行代码提交
-            string id = new_id.Text;
-            string url = baseUrl + "/update?uid=" + id;
+           // string id = new_id.Text;
+          //  long newUserid=long.Parse(id);
+            string newUsername=new_name.Text;
+            string Userpwd=new_pwd.Text;
+            long newUserpwd = long.Parse(Userpwd);
+            string url = baseUrl + "/" + user.UserId;
             //
             //XmlSerializer xmlSerializer = new XmlSerializer(typeof(User));
             //
-            User user = new User();
+            User newuser = new User();
+            newuser.UserName = newUsername;
+            newuser.password = newUserpwd;
+            newuser.UserId = user.UserId;
             Client client = new Client();
             try
             {
+                string jsonData = JsonConvert.SerializeObject(newuser);
                 //string data = "";
-                HttpResponseMessage result = await client.Get(baseUrl + "/get?uid=" + id);
+                HttpResponseMessage result = await client.Put(url,jsonData);
                 if (result.IsSuccessStatusCode)
                 {
                     //
                     //User user = (User)xmlSerializer.Deserialize(await result.Content.ReadAsStreamAsync());
                     //
-                    user.Uname = new_name.Text;
+                    user.UserName = new_name.Text;
                     //user.Sex = cbGender.Text;
-                    user.Password = long.Parse(new_pwd.Text);
-
+                    user.password = long.Parse(new_pwd.Text);
+                    MessageBox.Show("修改成功!", "Success", MessageBoxButtons.OK, MessageBoxIcon.Information);
                     //
                     //using (StringWriter sw = new StringWriter())
                     //{
@@ -86,12 +102,7 @@ namespace TravelApp.controller
                     //    data = sw.ToString();
                     //}
                     //
-                    string data = JsonConvert.SerializeObject(user);
-                    result = await client.Put(url, data);
-                    if (result.IsSuccessStatusCode)
-                    {
-                        MessageBox.Show("修改成功", "提示", MessageBoxButtons.OK, MessageBoxIcon.Exclamation);
-                    }
+
                 }
             }
             catch (Exception ex)

@@ -8,9 +8,9 @@ namespace TravelApp.models
 {
     internal class User
     {
-        public long Uid { get; set; }
-        public string Uname { get; set; }
-        public long Password { get; set; }
+        public long UserId { get; set; }
+        public string UserName { get; set; }
+        public long password { get; set; }
 
         public User() { }
     }

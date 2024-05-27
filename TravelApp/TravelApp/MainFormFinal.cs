@@ -40,7 +40,7 @@ namespace TravelApp
 
         private void button_Travel_Click(object sender, EventArgs e)
         {
-            MyTravel mytravel = new MyTravel(changePanel);
+            MyTravel mytravel = new MyTravel(changePanel,Uid);
             AddControlsToPanel(mytravel);
         }
        
@@ -104,7 +104,8 @@ namespace TravelApp
         }
         private void button_UserInfo_Click(object sender, EventArgs e)
         {
-
+            Personalinfo p = new Personalinfo(Uid,changePanel);
+            AddControlsToPanel(p);
         }
 
         private void button_Navigation_Click(object sender, EventArgs e)

@@ -21,6 +21,7 @@ namespace TravelApp
     public partial class Register : Form
     {
         private string baseUrl = "http://localhost:5199/api/User";
+        //private static int idnum = 0;
         public Register()
         {
             InitializeComponent();
@@ -50,10 +51,15 @@ namespace TravelApp
                 try
                 {
                     string url = baseUrl ;
-                    user.Uname = reg_name.Text;
+                    user.UserName = reg_name.Text;
                     // 先不用加密
                    // user.Password = long.Parse(MD5Encrypt(reg_pwd.Text));
-                   user.Password=long.Parse(reg_pwd.Text);
+                   user.password=long.Parse(reg_pwd.Text);
+                    // 获取当前时间的Tick数
+                    long ticks = DateTime.Now.Ticks;
+                    // 取最后5位作为随机数
+                    long randomNum = ticks % 100000;
+                    user.UserId=randomNum;
                     //
                     //using (StringWriter sw = new StringWriter())
                     //{
@@ -66,13 +72,19 @@ namespace TravelApp
                     HttpResponseMessage result = await client.Post(url, data);
                     if (result.IsSuccessStatusCode)
                     {
-                        User newuser = new User();
+                       // User newuser = new User();
                         //
                         //newuser = (User)xmlSerializer.Deserialize(await result.Content.ReadAsStreamAsync());
                         //
-                        user.Uid = long.Parse(newuser.Uid.ToString("00000"));
-                        MessageBox.Show("注册成功!您的ID是" + newuser.Uid.ToString("00000"));
-                        using (MainFormFinal mff = new MainFormFinal(newuser.Uid))
+                        //user.UserId = long.Parse(newuser.UserId.ToString("00000"));
+                        //MessageBox.Show("注册成功!您的ID是" + newuser.UserId.ToString("00000"));
+                        //newuser.UserId = idnum++;
+                        //user.UserId = newuser.UserId;
+                        
+                        
+                        //user.UserId = newuser.UserId;
+                        MessageBox.Show("注册成功!您的ID是" +user.UserId);
+                        using (MainFormFinal mff = new MainFormFinal(user.UserId))
                         {
                             this.Hide();
                             mff.ShowDialog();

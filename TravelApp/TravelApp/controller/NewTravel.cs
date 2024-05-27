@@ -17,10 +17,12 @@ namespace TravelApp.controller
 {
     public partial class NewTravel : UserControl
     {
-        
-        public NewTravel()
+        long Uid;
+        public NewTravel(long uid)
         {
             InitializeComponent();
+            this.Uid = uid;
+
         }
 
         private void buttonOK_Click(object sender, EventArgs e)
@@ -28,7 +30,7 @@ namespace TravelApp.controller
             string title = textTravelTitle.Text; // Assuming textBoxTitle is the TextBox for travel title
             string city = textTravelCity.Text; // Assuming textBoxCity is the TextBox for travel city
             string time = textTravelTime.Text; // Assuming textBoxTime is the TextBox for travel time
-            long uid = 123; // Assuming uid is hardcoded or retrieved from somewhere
+            long uid = Uid; // Assuming uid is hardcoded or retrieved from somewhere
 
             // Call AddTravel method with the extracted values
             AddTravel(title, city, time,uid);

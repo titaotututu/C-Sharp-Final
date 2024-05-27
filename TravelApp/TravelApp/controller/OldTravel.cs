@@ -16,16 +16,20 @@ namespace TravelApp.controller
 {
     public partial class OldTravel : UserControl
     {
+        long Uid;
         // 显示有点问题
-        public OldTravel()
+        public OldTravel(long uid)
         {
             InitializeComponent();
             InitInfo();
+            Uid = uid;
+
         }
 
         public async void InitInfo()
         {   // long id =this.uid;// 多个部分需要注意加上uid
-            long id = 123;
+            //long id = 123;
+            long id=Uid;
             string url = "http://localhost:5199/api/Travel/get?uid=" + id;
             Client client = new Client();
             try

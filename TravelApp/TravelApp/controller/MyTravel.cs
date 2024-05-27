@@ -14,17 +14,18 @@ namespace TravelApp.controller
 
         long Uid;
         
-        public MyTravel(ChangePanel changePanel)// 后面要补一个uid
+        public MyTravel(ChangePanel changePanel,long uid)// 后面要补一个uid
         {
             InitializeComponent();
             this.changePanel = changePanel;
+            this.Uid=uid;
             
         }
 
         private void buttonOldTravel_Click(object sender, EventArgs e)
         {
 
-            OldTravel oldtravel = new OldTravel();
+            OldTravel oldtravel = new OldTravel(Uid);
             panelTravel.Controls.Clear();
             panelTravel.Controls.Add(oldtravel);
 
@@ -32,7 +33,7 @@ namespace TravelApp.controller
 
         private void buttonNewTravel_Click(object sender, EventArgs e)
         {
-            NewTravel newtravel = new NewTravel();
+            NewTravel newtravel = new NewTravel(Uid);
             panelTravel.Controls.Clear();
             panelTravel.Controls.Add(newtravel);
         }
