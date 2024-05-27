@@ -18,9 +18,10 @@ namespace TravelApp
         private Point formPoint = new Point();
         public ChangePanel changePanel;
         public long Uid;
-        public MainFormFinal()// 应该传入一个uid参数
+        public MainFormFinal(long Uid)// 应该传入一个uid参数
         {
             InitializeComponent();
+            this.Uid = Uid;
         }
 
         public void AddControlsToPanel(Control c)
