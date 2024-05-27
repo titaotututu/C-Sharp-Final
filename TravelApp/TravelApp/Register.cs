@@ -49,9 +49,11 @@ namespace TravelApp
 
                 try
                 {
-                    string url = baseUrl + "/register";
+                    string url = baseUrl ;
                     user.Uname = reg_name.Text;
-                    user.Password = long.Parse(MD5Encrypt(reg_pwd.Text));
+                    // 先不用加密
+                   // user.Password = long.Parse(MD5Encrypt(reg_pwd.Text));
+                   user.Password=long.Parse(reg_pwd.Text);
                     //
                     //using (StringWriter sw = new StringWriter())
                     //{
@@ -60,6 +62,7 @@ namespace TravelApp
                     //}
                     //
                     string data = JsonConvert.SerializeObject(user);
+                    Console.WriteLine(data);    
                     HttpResponseMessage result = await client.Post(url, data);
                     if (result.IsSuccessStatusCode)
                     {

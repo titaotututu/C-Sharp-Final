@@ -45,9 +45,10 @@ namespace TravelApp
                 {
                     try
                     {
-                        string url = baseUrl + "/login?Uid=" + userID + "&password=" + passwordMD5;
+                       // string url = baseUrl + "/login?Uid=" + userID + "&password=" + passwordMD5;
+                        string url = baseUrl + "/?id=" + userID + "&pwd=" + password;
                         Client client = new Client();
-                        HttpResponseMessage result = await client.Put(url, "");
+                        HttpResponseMessage result = await client.Get(url);
                         if (result.IsSuccessStatusCode)
                         {
 
@@ -63,7 +64,9 @@ namespace TravelApp
                         }
                         else
                         {
-                            MessageBox.Show("用户名或密码输入错误");
+                            // MessageBox.Show("用户名或密码输入错误");
+                            string errorMessage = await result.Content.ReadAsStringAsync();
+                            MessageBox.Show($"Failed . Error: {errorMessage}", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
                         }
                     }
                     catch (Exception e1)

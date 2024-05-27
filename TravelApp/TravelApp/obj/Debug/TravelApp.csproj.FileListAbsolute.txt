@@ -21,7 +21,6 @@ C:\Users\asus\Desktop\C-Sharp-Final-main\TravelApp\TravelApp\obj\Debug\TravelApp
 C:\Users\asus\Desktop\C-Sharp-Final-main\TravelApp\TravelApp\obj\Debug\TravelApp.Bus_Routing.resources
 C:\Users\asus\Desktop\C-Sharp-Final-main\TravelApp\TravelApp\obj\Debug\TravelApp.Car_Routing.resources
 C:\Users\asus\Desktop\C-Sharp-Final-main\TravelApp\TravelApp\obj\Debug\TravelApp.Lighting.resources
-C:\Users\asus\Desktop\C-Sharp-Final-main\TravelApp\TravelApp\obj\Debug\TravelApp.MainInterface.resources
 C:\Users\asus\Desktop\C-Sharp-Final-main\TravelApp\TravelApp\obj\Debug\TravelApp.Navigation.resources
 C:\Users\asus\Desktop\C-Sharp-Final-main\TravelApp\TravelApp\obj\Debug\TravelApp.Properties.Resources.resources
 C:\Users\asus\Desktop\C-Sharp-Final-main\TravelApp\TravelApp\obj\Debug\TravelApp.Walk_Routing.resources
@@ -32,7 +31,6 @@ C:\Users\asus\Desktop\C-Sharp-Final-main\TravelApp\TravelApp\obj\Debug\TravelApp
 C:\Users\asus\Desktop\C-Sharp-Final-main\TravelApp\TravelApp\bin\Debug\MaterialSkin.dll
 C:\Users\asus\Desktop\C-Sharp-Final-main\TravelApp\TravelApp\obj\Debug\TravelApp.MainForm.resources
 C:\Users\asus\Desktop\C-Sharp-Final-main\TravelApp\TravelApp\obj\Debug\TravelApp.csproj.Up2Date
-C:\Users\asus\Desktop\C-Sharp-Final-main\TravelApp\TravelApp\obj\Debug\TravelApp.MainFormFianl.resources
 C:\Users\asus\Desktop\C-Sharp-Final-main\TravelApp\TravelApp\obj\Debug\Weather_space.Travel_Weather.resources
 C:\Users\asus\Desktop\C-Sharp-Final-main\TravelApp\TravelApp\obj\Debug\TravelApp.controller.MyTravel.resources
 C:\Users\asus\Desktop\C-Sharp-Final-main\TravelApp\TravelApp\obj\Debug\TravelApp.controller.OldTravel.resources
@@ -159,3 +157,12 @@ E:\classes\5大二下\软件构造基础\大作业\克隆项目\C-Sharp-Final-ma
 E:\classes\5大二下\软件构造基础\大作业\克隆项目\C-Sharp-Final-main\C-Sharp-Final-main\TravelApp\TravelApp\obj\Debug\TravelApp.csproj.Up2Date
 E:\classes\5大二下\软件构造基础\大作业\克隆项目\C-Sharp-Final-main\C-Sharp-Final-main\TravelApp\TravelApp\obj\Debug\TravelApp.exe
 E:\classes\5大二下\软件构造基础\大作业\克隆项目\C-Sharp-Final-main\C-Sharp-Final-main\TravelApp\TravelApp\obj\Debug\TravelApp.pdb
+C:\Users\asus\Desktop\C-Sharp-Final-main\TravelApp\TravelApp\obj\Debug\TravelApp.controller.JournalCell.resources
+C:\Users\asus\Desktop\C-Sharp-Final-main\TravelApp\TravelApp\obj\Debug\TravelApp.controller.JournalDetail.resources
+C:\Users\asus\Desktop\C-Sharp-Final-main\TravelApp\TravelApp\obj\Debug\TravelApp.controller.JournalList.resources
+C:\Users\asus\Desktop\C-Sharp-Final-main\TravelApp\TravelApp\obj\Debug\TravelApp.controller.Personalinfo.resources
+C:\Users\asus\Desktop\C-Sharp-Final-main\TravelApp\TravelApp\obj\Debug\TravelApp.controller.PictureBox.resources
+C:\Users\asus\Desktop\C-Sharp-Final-main\TravelApp\TravelApp\obj\Debug\TravelApp.Else.resources
+C:\Users\asus\Desktop\C-Sharp-Final-main\TravelApp\TravelApp\obj\Debug\TravelApp.Login.resources
+C:\Users\asus\Desktop\C-Sharp-Final-main\TravelApp\TravelApp\obj\Debug\TravelApp.MainFormFinal.resources
+C:\Users\asus\Desktop\C-Sharp-Final-main\TravelApp\TravelApp\obj\Debug\TravelApp.Register.resources
