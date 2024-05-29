@@ -34,8 +34,8 @@
             this.label4 = new System.Windows.Forms.Label();
             this.textTravelTitle = new System.Windows.Forms.TextBox();
             this.textTravelCity = new System.Windows.Forms.TextBox();
-            this.textTravelTime = new System.Windows.Forms.TextBox();
             this.buttonOK = new System.Windows.Forms.Button();
+            this.dateTimePicker1 = new System.Windows.Forms.DateTimePicker();
             this.SuspendLayout();
             // 
             // label1
@@ -79,7 +79,7 @@
             this.label4.Name = "label4";
             this.label4.Size = new System.Drawing.Size(279, 33);
             this.label4.TabIndex = 4;
-            this.label4.Text = "添加你的旅行时间";
+            this.label4.Text = "添加你的启程时间";
             // 
             // textTravelTitle
             // 
@@ -95,13 +95,6 @@
             this.textTravelCity.Size = new System.Drawing.Size(287, 35);
             this.textTravelCity.TabIndex = 6;
             // 
-            // textTravelTime
-            // 
-            this.textTravelTime.Location = new System.Drawing.Point(375, 332);
-            this.textTravelTime.Name = "textTravelTime";
-            this.textTravelTime.Size = new System.Drawing.Size(287, 35);
-            this.textTravelTime.TabIndex = 7;
-            // 
             // buttonOK
             // 
             this.buttonOK.Location = new System.Drawing.Point(298, 413);
@@ -112,13 +105,20 @@
             this.buttonOK.UseVisualStyleBackColor = true;
             this.buttonOK.Click += new System.EventHandler(this.buttonOK_Click);
             // 
+            // dateTimePicker1
+            // 
+            this.dateTimePicker1.Location = new System.Drawing.Point(375, 334);
+            this.dateTimePicker1.Name = "dateTimePicker1";
+            this.dateTimePicker1.Size = new System.Drawing.Size(287, 35);
+            this.dateTimePicker1.TabIndex = 9;
+            // 
             // NewTravel
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(12F, 24F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.MintCream;
+            this.Controls.Add(this.dateTimePicker1);
             this.Controls.Add(this.buttonOK);
-            this.Controls.Add(this.textTravelTime);
             this.Controls.Add(this.textTravelCity);
             this.Controls.Add(this.textTravelTitle);
             this.Controls.Add(this.label4);
@@ -140,7 +140,7 @@
         private System.Windows.Forms.Label label4;
         private System.Windows.Forms.TextBox textTravelTitle;
         private System.Windows.Forms.TextBox textTravelCity;
-        private System.Windows.Forms.TextBox textTravelTime;
         private System.Windows.Forms.Button buttonOK;
+        private System.Windows.Forms.DateTimePicker dateTimePicker1;
     }
 }

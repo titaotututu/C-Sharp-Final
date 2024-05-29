@@ -20,11 +20,15 @@ namespace TravelApp.controller
 {
     public partial class AddTodo : UserControl
     {
+        public event EventHandler TodoAdded;
         long TravelId;
-        public AddTodo(long travelid)
+        DateTime TravelTime;
+        public AddTodo(long travelid, DateTime travelTime)
         {
             this.TravelId = travelid;
+            this.TravelTime = travelTime;
             InitializeComponent();
+            
         }
 
         private async void buttonOk_Click(object sender, EventArgs e)
@@ -39,7 +43,12 @@ namespace TravelApp.controller
             try
             {
                 todo.TravelId = this.TravelId;
-                todo.Time = DateTime.Parse(textBoxTime.Text);
+                todo.Time = dateTimePicker1.Value;// 限定时间要小于等于TravelTime
+                if(todo.Time<TravelTime)
+                {
+                    MessageBox.Show("待办时间不能早于旅行开始时间！", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                    return; // 退出方法，防止继续执行
+                }
                 todo.Place = textBoxPlace.Text;
                 todo.Description=textBoxThing.Text;
                 todo.IsCompleted = false;
@@ -48,6 +57,7 @@ namespace TravelApp.controller
                 if (result.IsSuccessStatusCode)
                 {
                     MessageBox.Show("创建成功！", "成功", MessageBoxButtons.OK, MessageBoxIcon.Information);
+                    TodoAdded?.Invoke(this, EventArgs.Empty); // 触发事件
                 }
                 else
                 {

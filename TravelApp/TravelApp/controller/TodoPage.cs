@@ -17,6 +17,8 @@ namespace TravelApp.controller
 {
     public partial class TodoPage : UserControl
     {
+        public event EventHandler TodoDeleted;
+
         TodoItem todo = new TodoItem();
 
         public TodoPage(TodoItem todo_)
@@ -37,6 +39,7 @@ namespace TravelApp.controller
                 {
                     MessageBox.Show("Todo item deleted successfully.", "Success", MessageBoxButtons.OK, MessageBoxIcon.Information);
                     // 在此处添加删除成功后的逻辑，例如刷新界面或重新加载数据
+                    TodoDeleted?.Invoke(this, EventArgs.Empty); // 触发事件
                 }
                 else
                 {

@@ -21,8 +21,9 @@ namespace TravelApp.controller
         public OldTravel(long uid)
         {
             InitializeComponent();
-            InitInfo();
             Uid = uid;
+            InitInfo();
+            
 
         }
 
@@ -50,6 +51,8 @@ namespace TravelApp.controller
                         // 添加到panel中
 
                         HistoryPage his = new HistoryPage(travel);
+                        // 订阅 TravelDeleted 事件
+                        his.TravelDeleted += His_TravelDeleted;
                         panelHistoryTravel.Controls.Add(his);
                     }
                 }
@@ -62,6 +65,13 @@ namespace TravelApp.controller
 
         private void button1_Click(object sender, EventArgs e)
         {
+            InitInfo();
+        }
+
+        private void His_TravelDeleted(object sender, EventArgs e)
+        {
+            // 重新初始化信息
+            panelHistoryTravel.Controls.Clear();
             InitInfo();
         }
     }

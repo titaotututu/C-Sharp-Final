@@ -39,31 +39,27 @@ namespace TravelApp.controller
             // 
             // labelTime
             // 
-            this.labelTime.Location = new System.Drawing.Point(34, 8);
-            this.labelTime.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.labelTime.Location = new System.Drawing.Point(51, 13);
             this.labelTime.Name = "labelTime";
-            this.labelTime.Size = new System.Drawing.Size(115, 23);
+            this.labelTime.Size = new System.Drawing.Size(218, 37);
             this.labelTime.TabIndex = 1;
             this.labelTime.Text = "时间";
-            this.labelTime.Text=todo.Time.ToShortDateString();
-
+            this.labelTime.Text = todo.Time.ToString("yyyy:MM:dd HH:mm:ss");
             // 
             // labelPlace
             // 
-            this.labelPlace.Location = new System.Drawing.Point(195, 8);
-            this.labelPlace.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.labelPlace.Location = new System.Drawing.Point(329, 13);
             this.labelPlace.Name = "labelPlace";
-            this.labelPlace.Size = new System.Drawing.Size(97, 24);
+            this.labelPlace.Size = new System.Drawing.Size(146, 38);
             this.labelPlace.TabIndex = 2;
             this.labelPlace.Text = "地点";
             this.labelPlace.Text = todo.Place;
             // 
             // labelDescription
             // 
-            this.labelDescription.Location = new System.Drawing.Point(34, 56);
-            this.labelDescription.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.labelDescription.Location = new System.Drawing.Point(51, 90);
             this.labelDescription.Name = "labelDescription";
-            this.labelDescription.Size = new System.Drawing.Size(158, 29);
+            this.labelDescription.Size = new System.Drawing.Size(237, 46);
             this.labelDescription.TabIndex = 3;
             this.labelDescription.Text = "描述";
             this.labelDescription.Text=todo.Description;
@@ -71,21 +67,18 @@ namespace TravelApp.controller
             // checkBox1
             // 
             this.checkBox1.AutoSize = true;
-            this.checkBox1.Location = new System.Drawing.Point(2, 8);
-            this.checkBox1.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.checkBox1.Location = new System.Drawing.Point(3, 13);
             this.checkBox1.Name = "checkBox1";
-            this.checkBox1.Size = new System.Drawing.Size(18, 17);
+            this.checkBox1.Size = new System.Drawing.Size(28, 27);
             this.checkBox1.TabIndex = 4;
             this.checkBox1.UseVisualStyleBackColor = true;
-            this.checkBox1.Checked=todo.IsCompleted;
             this.checkBox1.CheckedChanged += new System.EventHandler(this.checkBox1_CheckedChanged);
             // 
             // buttonDelete
             // 
-            this.buttonDelete.Location = new System.Drawing.Point(295, 41);
-            this.buttonDelete.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.buttonDelete.Location = new System.Drawing.Point(442, 66);
             this.buttonDelete.Name = "buttonDelete";
-            this.buttonDelete.Size = new System.Drawing.Size(59, 24);
+            this.buttonDelete.Size = new System.Drawing.Size(88, 38);
             this.buttonDelete.TabIndex = 5;
             this.buttonDelete.Text = "删除";
             this.buttonDelete.UseVisualStyleBackColor = true;
@@ -93,16 +86,15 @@ namespace TravelApp.controller
             // 
             // TodoPage
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 15F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(12F, 24F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.Controls.Add(this.buttonDelete);
             this.Controls.Add(this.checkBox1);
             this.Controls.Add(this.labelDescription);
             this.Controls.Add(this.labelPlace);
             this.Controls.Add(this.labelTime);
-            this.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.Name = "TodoPage";
-            this.Size = new System.Drawing.Size(376, 101);
+            this.Size = new System.Drawing.Size(564, 162);
             this.ResumeLayout(false);
             this.PerformLayout();
 

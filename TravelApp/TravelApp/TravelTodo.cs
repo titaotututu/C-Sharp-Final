@@ -20,9 +20,11 @@ namespace TravelApp
     {
         long TravelId;
         string TravelTitle;
-        public TravelTodo(long travelid,string traveltitle)
+        DateTime TravelTime;
+        public TravelTodo(long travelid,string traveltitle,DateTime traveltime)
         {   this.TravelTitle=traveltitle;
             this.TravelId=travelid;
+            this.TravelTime=traveltime;
             InitializeComponent();
             getTask();
             
@@ -47,7 +49,7 @@ namespace TravelApp
                     {
                         // 添加到panel中
                         TodoPage todoPage = new TodoPage(todo);
-                        
+                        todoPage.TodoDeleted += TodoPage_TodoDeleted; // 订阅事件
                         panelTodo.Controls.Add(todoPage);
                     }
                 }
@@ -67,13 +69,25 @@ namespace TravelApp
         private void buttonAddTodo_Click(object sender, EventArgs e)
         {
             // addtodo
-            AddTodo addtodo = new AddTodo(TravelId);
+            AddTodo addtodo = new AddTodo(TravelId,TravelTime);
+            addtodo.TodoAdded += AddTodo_TodoAdded; // 订阅事件
             panelTodo.Controls.Clear();
             panelTodo.Controls.Add(addtodo);
 
         }
+        private void AddTodo_TodoAdded(object sender, EventArgs e)
+        {
+            panelTodo.Controls.Clear();
+            getTask();
+            
+        }
 
         private void buttonShow_Click(object sender, EventArgs e)
+        {
+            panelTodo.Controls.Clear();
+            getTask();
+        }
+        private void TodoPage_TodoDeleted(object sender, EventArgs e)
         {
             panelTodo.Controls.Clear();
             getTask();

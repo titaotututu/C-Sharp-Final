@@ -14,6 +14,7 @@ namespace TravelApp.controller
 {
     public partial class HistoryPage : UserControl
     {
+        public event EventHandler TravelDeleted;// 删除事件
         Travel travel = new Travel();
         public HistoryPage(Travel travel_)
         {
@@ -33,6 +34,8 @@ namespace TravelApp.controller
                 {
                     MessageBox.Show("Travel deleted successfully.", "Success", MessageBoxButtons.OK, MessageBoxIcon.Information);
                     // 在此处添加删除成功后的逻辑，例如刷新界面或重新加载数据
+                    // 触发 TravelDeleted 事件
+                    TravelDeleted?.Invoke(this, EventArgs.Empty);
                 }
                 else
                 {
@@ -49,7 +52,7 @@ namespace TravelApp.controller
 
         private void labelTitle_Click(object sender, EventArgs e)
         {
-            TravelTodo travelTodoForm = new TravelTodo(travel.TravelId, travel.TravelTitle);
+            TravelTodo travelTodoForm = new TravelTodo(travel.TravelId, travel.TravelTitle,travel.TravelTime);
             travelTodoForm.Show();
         }
     }

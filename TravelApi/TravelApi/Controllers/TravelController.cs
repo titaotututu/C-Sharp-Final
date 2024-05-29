@@ -26,7 +26,7 @@ namespace TravelApi.Controllers
         // 已测试，成功
         // 示例：api http://localhost:5199/api/Travel 
         // 请求体：json { "TravelTitle": "Summer Vacation","TravelCity": "Beach City","TodoItems": [],"TravelTime": "2024-07-01","UserId": 1234 }
-        // 成功的话会返回text：成功创建旅行。 失败（比如说用户不存在会报错具体信息
+        // 成功的话会返回travelid：成功创建旅行。 失败（比如说用户不存在会报错具体信息
         public ActionResult<Travel> AddTravel(Travel travel)
         {
             try
@@ -42,7 +42,7 @@ namespace TravelApi.Controllers
                     travel.TravelId = query.First().TravelId + 1;
                 }
                 _travelService.Add(travel);
-                return Ok("成功创建旅行。");
+                return Ok(new { message = "成功创建旅行。", travelId = travel.TravelId });
             }
             catch (Exception e)
             {

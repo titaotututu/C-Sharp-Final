@@ -31,10 +31,10 @@
             this.label1 = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
             this.label3 = new System.Windows.Forms.Label();
-            this.textBoxTime = new System.Windows.Forms.TextBox();
             this.textBoxPlace = new System.Windows.Forms.TextBox();
             this.textBoxThing = new System.Windows.Forms.TextBox();
             this.buttonOk = new System.Windows.Forms.Button();
+            this.dateTimePicker1 = new System.Windows.Forms.DateTimePicker();
             this.SuspendLayout();
             // 
             // label1
@@ -70,13 +70,6 @@
             this.label3.TabIndex = 2;
             this.label3.Text = "待办内容";
             // 
-            // textBoxTime
-            // 
-            this.textBoxTime.Location = new System.Drawing.Point(264, 122);
-            this.textBoxTime.Name = "textBoxTime";
-            this.textBoxTime.Size = new System.Drawing.Size(406, 35);
-            this.textBoxTime.TabIndex = 3;
-            // 
             // textBoxPlace
             // 
             this.textBoxPlace.Location = new System.Drawing.Point(264, 237);
@@ -101,15 +94,24 @@
             this.buttonOk.UseVisualStyleBackColor = true;
             this.buttonOk.Click += new System.EventHandler(this.buttonOk_Click);
             // 
+            // dateTimePicker1
+            // 
+            this.dateTimePicker1.CustomFormat = "yyyy-MM-dd HH:mm:ss";
+            this.dateTimePicker1.Format = System.Windows.Forms.DateTimePickerFormat.Custom;
+            this.dateTimePicker1.Location = new System.Drawing.Point(264, 123);
+            this.dateTimePicker1.Name = "dateTimePicker1";
+            this.dateTimePicker1.Size = new System.Drawing.Size(406, 35);
+            this.dateTimePicker1.TabIndex = 7;
+            // 
             // AddTodo
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(12F, 24F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.Honeydew;
+            this.Controls.Add(this.dateTimePicker1);
             this.Controls.Add(this.buttonOk);
             this.Controls.Add(this.textBoxThing);
             this.Controls.Add(this.textBoxPlace);
-            this.Controls.Add(this.textBoxTime);
             this.Controls.Add(this.label3);
             this.Controls.Add(this.label2);
             this.Controls.Add(this.label1);
@@ -125,9 +127,9 @@
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.Label label3;
-        private System.Windows.Forms.TextBox textBoxTime;
         private System.Windows.Forms.TextBox textBoxPlace;
         private System.Windows.Forms.TextBox textBoxThing;
         private System.Windows.Forms.Button buttonOk;
+        private System.Windows.Forms.DateTimePicker dateTimePicker1;
     }
 }

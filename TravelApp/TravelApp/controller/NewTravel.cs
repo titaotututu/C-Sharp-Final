@@ -29,7 +29,8 @@ namespace TravelApp.controller
         {
             string title = textTravelTitle.Text; // Assuming textBoxTitle is the TextBox for travel title
             string city = textTravelCity.Text; // Assuming textBoxCity is the TextBox for travel city
-            string time = textTravelTime.Text; // Assuming textBoxTime is the TextBox for travel time
+           // string time = textTravelTime.Text; // Assuming textBoxTime is the TextBox for travel time
+           DateTime time=dateTimePicker1.Value;
             long uid = Uid; // Assuming uid is hardcoded or retrieved from somewhere
 
             // Call AddTravel method with the extracted values
@@ -37,7 +38,7 @@ namespace TravelApp.controller
             
         }
 
-        private async void AddTravel(string title,string city,string time,long uid)
+        private async void AddTravel(string title,string city,DateTime time,long uid)
         {
 
 
@@ -53,21 +54,27 @@ namespace TravelApp.controller
                 travel.UserId = uid;
                 travel.TravelCity = city;
                 travel.TodoItems = new List<TodoItem>();
-                DateTime time_ = DateTime.Parse(time);
-                travel.TravelTime = time_;
+                
+                travel.TravelTime = time;
                 string jsonData = JsonConvert.SerializeObject(travel);
                 Console.WriteLine(jsonData);
                 HttpResponseMessage result = await client.Post(url, jsonData);
                 if (result.IsSuccessStatusCode)
                 {
+                    string responseData = await result.Content.ReadAsStringAsync();
+                    dynamic responseObject = JsonConvert.DeserializeObject(responseData);
 
+                    // 获取返回的 travelId
+                    travel.TravelId = responseObject.travelId;
                     MessageBox.Show("Travel added successfully!", "Success", MessageBoxButtons.OK, MessageBoxIcon.Information);
                     // 跳转到待办界面
                     // 这里get到的id是0.因为id是在加入数据库的时候自己生成的、、
                     // 解决：在这边模拟生成id的方法进行生成。（好麻烦）
                     // 有个小bug。不同用户的冲突（）
-                    travel.TravelId = await  GenerateTravelId(uid);
-                    TravelTodo travelTodoForm = new TravelTodo(travel.TravelId, travel.TravelTitle);
+                    // 就是数据库会正常生成，但是我这里拿不到这个id
+                    // 修改了api 解决该问题
+                   // travel.TravelId = await  GenerateTravelId(uid);
+                    TravelTodo travelTodoForm = new TravelTodo(travel.TravelId, travel.TravelTitle,travel.TravelTime);
                     travelTodoForm.Show();
                 }
                 else
@@ -82,6 +89,7 @@ namespace TravelApp.controller
             }
         }
 
+        // 不需要该方法了
         private async Task<long> GenerateTravelId(long uid)
         {
             string date = DateTime.Now.ToString("yyyyMMdd");
