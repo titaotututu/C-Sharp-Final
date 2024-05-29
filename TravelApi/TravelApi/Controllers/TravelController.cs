@@ -117,5 +117,31 @@ namespace TravelApi.Controllers
             }
             return NoContent();
         }
+
+
+        [HttpGet("{travelId}")]
+        // 已测试，成功
+        // 示例：api http://localhost:5199/api/Travel/202405240000
+        // 没有请求体
+        // 如果找到对应travel会返回travel对象，如果找不到则返回"Not found"
+        public ActionResult<Travel> GetTravelById(long travelId)
+        {
+            try
+            {
+                var travel = _travelService.GetTravelById(travelId);
+                if (travel != null)
+                {
+                    return Ok(travel);
+                }
+                else
+                {
+                    return NotFound("Not found");
+                }
+            }
+            catch (Exception e)
+            {
+                return BadRequest(e.Message);
+            }
+        }
     }
 }

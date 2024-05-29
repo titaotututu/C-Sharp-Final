@@ -41,7 +41,12 @@ namespace TravelApp.controller
             Client client = new Client();
 
             try
-            {
+            {// Check if any of the input fields are empty
+                if (string.IsNullOrWhiteSpace(textBoxPlace.Text) || string.IsNullOrWhiteSpace(textBoxThing.Text))
+                {
+                    MessageBox.Show("请填写所有字段！", "错误", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                    return;
+                }
                 todo.TravelId = this.TravelId;
                 todo.Time = dateTimePicker1.Value;// 限定时间要小于等于TravelTime
                 if(todo.Time<TravelTime)

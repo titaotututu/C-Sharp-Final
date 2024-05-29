@@ -26,12 +26,18 @@ namespace TravelApp.controller
         }
 
         private void buttonOK_Click(object sender, EventArgs e)
-        {
+        {// Check if any of the input fields are empty
+            if (string.IsNullOrWhiteSpace(textTravelTitle.Text) || string.IsNullOrWhiteSpace(textTravelCity.Text))
+            {
+                MessageBox.Show("请填写所有字段！", "错误", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                return;
+            }
             string title = textTravelTitle.Text; // Assuming textBoxTitle is the TextBox for travel title
             string city = textTravelCity.Text; // Assuming textBoxCity is the TextBox for travel city
            // string time = textTravelTime.Text; // Assuming textBoxTime is the TextBox for travel time
            DateTime time=dateTimePicker1.Value;
             long uid = Uid; // Assuming uid is hardcoded or retrieved from somewhere
+            // 应该要再增加一个判断city字段是不是合法的城市。便于点亮地图。
 
             // Call AddTravel method with the extracted values
             AddTravel(title, city, time,uid);

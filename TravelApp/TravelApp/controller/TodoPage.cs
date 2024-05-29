@@ -55,7 +55,7 @@ namespace TravelApp.controller
         }
 
         private async void checkBox1_CheckedChanged(object sender, EventArgs e)
-        {
+        {   
             TodoItem newtodo =new TodoItem();
             newtodo.TravelId=todo.TravelId;
             newtodo.ItemId=todo.ItemId;
@@ -72,7 +72,7 @@ namespace TravelApp.controller
                 if (result.IsSuccessStatusCode)
                 {
                     MessageBox.Show("Change successfully.", "Success", MessageBoxButtons.OK, MessageBoxIcon.Information);
-                    // 在此处添加删除成功后的逻辑，例如刷新界面或重新加载数据
+
                 }
                 else
                 {
@@ -84,6 +84,48 @@ namespace TravelApp.controller
             catch (Exception ex)
             {
                 MessageBox.Show(ex.Message, "警告", MessageBoxButtons.OK, MessageBoxIcon.Exclamation);
+            }
+            if (checkBox1.Checked == true)
+            {
+                // 补充一个把travel对应的city传到点亮地图那里（这样写的话每次都会传到那里，不只是第一次打卡会
+                // 可以在点亮那边操作？如果接收到底city重复的话不通知什么的
+                Travel nowtravel = await GetTravelById(todo.TravelId);
+                string travelcity = nowtravel.TravelCity;
+                Console.Write(travelcity);
+            }
+            
+            
+        }
+
+
+        // 根据travelid查travel
+        private async Task<Travel> GetTravelById(long travelId)
+        {
+            string url = "http://localhost:5199/api/Travel/" + travelId;
+
+            Client client = new Client();
+            try
+            {
+                HttpResponseMessage response = await client.Get(url);
+                if (response.IsSuccessStatusCode)
+                {
+                    string responseData = await response.Content.ReadAsStringAsync();
+                    Travel travel = JsonConvert.DeserializeObject<Travel>(responseData);
+                    return travel;
+                }
+                else
+                {
+                    // If the response is not successful, handle the error here
+                    string errorMessage = await response.Content.ReadAsStringAsync();
+                    MessageBox.Show($"Failed to fetch travel information. Error: {errorMessage}", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                    return null;
+                }
+            }
+            catch (Exception ex)
+            {
+                // If an exception occurs during the process, handle it here
+                MessageBox.Show($"An error occurred while fetching travel information. Error: {ex.Message}", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                return null;
             }
         }
     }

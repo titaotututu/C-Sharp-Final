@@ -44,7 +44,8 @@ namespace TravelApp.controller
             this.labelTime.Size = new System.Drawing.Size(218, 37);
             this.labelTime.TabIndex = 1;
             this.labelTime.Text = "时间";
-            this.labelTime.Text = todo.Time.ToString("yyyy:MM:dd HH:mm:ss");
+            this.labelTime.Text = todo.Time.ToString("yyyy/MM/dd HH:mm:ss");// 这里值是对的但是没显示出来？
+            Console.Write(labelTime.Text);
             // 
             // labelPlace
             // 
