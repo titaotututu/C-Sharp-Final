@@ -1,16 +1,7 @@
 {
   "Version": 1,
   "WorkspaceRootPath": "C:\\Users\\asus\\Desktop\\\u597D\u597D\u4F20git\\C-Sharp-Final\\TravelApp\\",
-  "Documents": [
-    {
-      "AbsoluteMoniker": "D:0:0:{455A8ACC-D685-4677-8F81-018BD921DD70}|TravelApp\\TravelApp.csproj|c:\\users\\asus\\desktop\\\u597D\u597D\u4F20git\\c-sharp-final\\travelapp\\travelapp\\controller\\todopage.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{455A8ACC-D685-4677-8F81-018BD921DD70}|TravelApp\\TravelApp.csproj|solutionrelative:travelapp\\controller\\todopage.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{455A8ACC-D685-4677-8F81-018BD921DD70}|TravelApp\\TravelApp.csproj|C:\\Users\\asus\\Desktop\\\u597D\u597D\u4F20git\\C-Sharp-Final\\TravelApp\\travelapp\\controller\\todopage.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
-      "RelativeMoniker": "D:0:0:{455A8ACC-D685-4677-8F81-018BD921DD70}|TravelApp\\TravelApp.csproj|solutionrelative:travelapp\\controller\\todopage.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
-    }
-  ],
+  "Documents": [],
   "DocumentGroupContainers": [
     {
       "Orientation": 0,
@@ -18,7 +9,7 @@
       "DocumentGroups": [
         {
           "DockedWidth": 101,
-          "SelectedChildIndex": 3,
+          "SelectedChildIndex": -1,
           "Children": [
             {
               "$type": "Bookmark",
@@ -31,30 +22,6 @@
             {
               "$type": "Bookmark",
               "Name": "ST:0:0:{eefa5220-e298-11d0-8f78-00a0c9110057}"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 0,
-              "Title": "TodoPage.cs",
-              "DocumentMoniker": "C:\\Users\\asus\\Desktop\\\u597D\u597D\u4F20git\\C-Sharp-Final\\TravelApp\\TravelApp\\controller\\TodoPage.cs",
-              "RelativeDocumentMoniker": "TravelApp\\controller\\TodoPage.cs",
-              "ToolTip": "C:\\Users\\asus\\Desktop\\\u597D\u597D\u4F20git\\C-Sharp-Final\\TravelApp\\TravelApp\\controller\\TodoPage.cs",
-              "RelativeToolTip": "TravelApp\\controller\\TodoPage.cs",
-              "ViewState": "AQIAAFAAAAAAAAAAAAAjwF0AAAAlAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-05-29T07:59:53.077Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 1,
-              "Title": "TodoPage.cs [\u8BBE\u8BA1]",
-              "DocumentMoniker": "C:\\Users\\asus\\Desktop\\\u597D\u597D\u4F20git\\C-Sharp-Final\\TravelApp\\TravelApp\\controller\\TodoPage.cs",
-              "RelativeDocumentMoniker": "TravelApp\\controller\\TodoPage.cs",
-              "ToolTip": "C:\\Users\\asus\\Desktop\\\u597D\u597D\u4F20git\\C-Sharp-Final\\TravelApp\\TravelApp\\controller\\TodoPage.cs [\u8BBE\u8BA1]",
-              "RelativeToolTip": "TravelApp\\controller\\TodoPage.cs [\u8BBE\u8BA1]",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-05-29T07:59:49.64Z"
             }
           ]
         }

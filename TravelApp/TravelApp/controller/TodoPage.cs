@@ -87,11 +87,13 @@ namespace TravelApp.controller
             }
             if (checkBox1.Checked == true)
             {
-                // 补充一个把travel对应的city传到点亮地图那里（这样写的话每次都会传到那里，不只是第一次打卡会
-                // 可以在点亮那边操作？如果接收到底city重复的话不通知什么的
+                // 补充一个把travel对应的city传到点亮地图那里
+               
                 Travel nowtravel = await GetTravelById(todo.TravelId);
                 string travelcity = nowtravel.TravelCity;
                 Console.Write(travelcity);
+
+
             }
             
             

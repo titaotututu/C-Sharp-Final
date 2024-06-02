@@ -12,6 +12,9 @@ using System.Runtime.InteropServices;       //添加类对COM可见-ComVisibleAt
 using System.IO;
 using System.Threading;
 using System.Collections;
+using Newtonsoft.Json;
+using System.Net.Http;
+using TravelApp.models;
 
 
 namespace TravelApp
@@ -19,9 +22,11 @@ namespace TravelApp
     [System.Runtime.InteropServices.ComVisible(true)]
     public partial class Lighting : Form
     {
-        public Lighting()
+        public long Uid {  get; set; }
+        public Lighting(long uid)
         {
             InitializeComponent();
+            Uid = uid;
         }
         private void Lighting_Load(object sender, EventArgs e)
         {
@@ -31,6 +36,8 @@ namespace TravelApp
 
             // 设置WebBrowser控件的DocumentCompleted事件
             webBrowser_light.DocumentCompleted += webBrowser_light_DocumentCompleted;
+            // 初始化信息
+            InitInfo();
         }
 
         private void button_light_Click(object sender, EventArgs e)
@@ -59,6 +66,46 @@ namespace TravelApp
             webBrowser_light.ObjectForScripting = this;
         }
 
-        
+        // 修改为读取uid对应的travel的city，有就点亮
+        private async void InitInfo()
+        {
+            long id = Uid;
+            string url = "http://localhost:5199/api/Travel/get?uid=" + id;
+            HttpClient client = new HttpClient();
+            try
+            {
+                // 发送 GET 请求获取行程信息
+                HttpResponseMessage result = await client.GetAsync(url);
+                if (result.IsSuccessStatusCode)
+                {
+                    string jsonContent = await result.Content.ReadAsStringAsync();
+                    List<Travel> travels = JsonConvert.DeserializeObject<List<Travel>>(jsonContent);
+
+                    // 提取城市名称
+                    HashSet<string> cityNames = new HashSet<string>();
+                    foreach (Travel travel in travels)
+                    {
+                        cityNames.Add(travel.TravelCity);
+                    }
+
+                    // 将所有城市转化为“城市1，城市2，城市3”的格式
+                    string cities = string.Join(",", cityNames);
+
+                    // 设置TextBox的值
+                    textBox_city.Text = cities;
+
+                    // 调用button_light_Click方法
+                    button_light_Click(null, null);
+                }
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show(ex.Message, "警告", MessageBoxButtons.OK, MessageBoxIcon.Exclamation);
+            }
+        }
+
+
+
+
     }
 }
