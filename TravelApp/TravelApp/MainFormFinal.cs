@@ -73,7 +73,7 @@ namespace TravelApp
         //打开导航子窗体
         private void openNavigationPage()
         {
-            CloseOtherForms();//先关闭除主窗体以外的其他窗体，即关闭所有子窗体
+            //CloseOtherForms();//先关闭除主窗体以外的其他窗体，即关闭所有子窗体
             Navigation navi = new Navigation();//实例化frmHome子窗体
             navi.Dock = System.Windows.Forms.DockStyle.Fill;//设置Dock为Fill使子窗体占满splitContainer1.Panel2
             navi.TopLevel = false;//设置为非顶级控件，否则无法添加
@@ -84,7 +84,7 @@ namespace TravelApp
         //点亮城市主窗体
         private void openLightingPage()
         {
-            CloseOtherForms();//先关闭除主窗体以外的其他窗体，即关闭所有子窗体
+            //CloseOtherForms();//先关闭除主窗体以外的其他窗体，即关闭所有子窗体
             Lighting light = new Lighting();//实例化frmHome子窗体
             light.Dock = System.Windows.Forms.DockStyle.Fill;//设置Dock为Fill使子窗体占满splitContainer1.Panel2
             light.TopLevel = false;//设置为非顶级控件，否则无法添加
@@ -94,7 +94,7 @@ namespace TravelApp
         }
         private void openElsePage()
         {
-            CloseOtherForms();//先关闭除主窗体以外的其他窗体，即关闭所有子窗体
+           // CloseOtherForms();//先关闭除主窗体以外的其他窗体，即关闭所有子窗体
             Else el = new Else();//实例化frmHome子窗体
             el.Dock = System.Windows.Forms.DockStyle.Fill;//设置Dock为Fill使子窗体占满splitContainer1.Panel2
             el.TopLevel = false;//设置为非顶级控件，否则无法添加
