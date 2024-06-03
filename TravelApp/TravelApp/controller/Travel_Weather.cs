@@ -1,10 +1,12 @@
-﻿using System;
+﻿using Newtonsoft.Json;
+using System;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
 using System.Drawing;
 using System.IO;
 using System.Linq;
+using System.Net;
 using System.Reflection;
 using System.Text;
 using System.Threading.Tasks;
@@ -321,19 +323,42 @@ namespace Weather_space
             //lblStatus.Text = "数据加载中";
             // 绑定菜单
             BindMenu();
-            // 在后台任务中加载省市区数据
+
+            // 在后台任务中加载省市区数据并获取当前位置
             Task.Factory.StartNew(() =>
             {
                 BindProvince(); // 绑定省份
                 BindCity(); // 绑定城市
                 BindDistrict(); // 绑定地区
-                this.BeginInvokeToForm(() => {
-                    // 如果有已保存的区域，则设置默认选择并执行搜索
-                    if (areas != null && areas.Areas != null && areas.Areas.Length > 0)
+
+                // 获取本机IP地址
+                string ipAddress = GetLocalIPAddress();
+                // 获取地理位置
+                var location = GetLocationByIP(ipAddress);
+
+                this.BeginInvokeToForm(() =>
+                {
+                    if (location != default)
                     {
-                        comboBoxProvince.SelectedItem = areas.Areas[0].Province;
-                        comboBoxCity.SelectedItem = areas.Areas[0].City;
-                        comboBoxDistrict.SelectedItem = areas.Areas[0].District;
+                        // 确保数据源已正确绑定
+                        var provinces = comboBoxProvince.ComboBox.DataSource as PlaceModel[];
+                        var cities = comboBoxCity.ComboBox.DataSource as PlaceModel[];
+                        var districts = comboBoxDistrict.ComboBox.DataSource as PlaceModel[];
+
+                        // 设置默认选择项
+                        comboBoxProvince.ComboBox.SelectedValue = location.Province;
+                        BindCity(); // 绑定城市数据
+                        comboBoxCity.ComboBox.SelectedValue = location.City;
+                        BindDistrict(); // 绑定地区数据
+                        comboBoxDistrict.ComboBox.SelectedValue = location.District;
+                    }
+                    else if (areas != null && areas.Areas != null && areas.Areas.Length > 0)
+                    {
+                        comboBoxProvince.ComboBox.SelectedValue = areas.Areas[0].Province.ID;
+                        BindCity(); // 绑定城市数据
+                        comboBoxCity.ComboBox.SelectedValue = areas.Areas[0].City.ID;
+                        BindDistrict(); // 绑定地区数据
+                        comboBoxDistrict.ComboBox.SelectedValue = areas.Areas[0].District.ID;
                     }
                     buttonSearch.PerformClick(); // 执行搜索
                 });
@@ -345,6 +370,31 @@ namespace Weather_space
                     //this.InvokeToForm(() => lblStatus.Text = "地区加载错误，请确保联网正确");
                 }
             });
+        }
+
+        private string GetLocalIPAddress()
+        {
+            using (WebClient client = new WebClient())
+            {
+                // 调用外部服务获取本机IP地址
+                return client.DownloadString("https://api.ipify.org");
+            }
+        }
+
+        private (string Province, string City, string District) GetLocationByIP(string ipAddress)
+        {
+            using (WebClient client = new WebClient())
+            {
+                // 调用外部服务根据IP地址获取地理位置
+                string response = client.DownloadString($"https://ipapi.co/{ipAddress}/json/");
+                dynamic jsonResponse = JsonConvert.DeserializeObject(response);
+
+                if (jsonResponse != null)
+                {
+                    return (jsonResponse.region, jsonResponse.city, jsonResponse.district);
+                }
+                return (null, null, null);
+            }
         }
     }
 }

@@ -127,7 +127,7 @@ namespace Weather_space
             weatherDay2.BorderStyle = BorderStyle.Fixed3D;
             weatherDay2.Day = null;
             weatherDay2.Info = null;
-            weatherDay2.Location = new Point(237, 45);
+            weatherDay2.Location = new Point(204, 45);
             weatherDay2.Name = "weatherDay2";
             weatherDay2.Size = new Size(202, 457);
             weatherDay2.TabIndex = 2;
@@ -140,7 +140,7 @@ namespace Weather_space
             weatherDay3.BorderStyle = BorderStyle.Fixed3D;
             weatherDay3.Day = null;
             weatherDay3.Info = null;
-            weatherDay3.Location = new Point(470, 45);
+            weatherDay3.Location = new Point(404, 45);
             weatherDay3.Name = "weatherDay3";
             weatherDay3.Size = new Size(202, 457);
             weatherDay3.TabIndex = 3;
@@ -153,7 +153,7 @@ namespace Weather_space
             weatherDay4.BorderStyle = BorderStyle.Fixed3D;
             weatherDay4.Day = null;
             weatherDay4.Info = null;
-            weatherDay4.Location = new Point(703, 45);
+            weatherDay4.Location = new Point(604, 45);
             weatherDay4.Name = "weatherDay4";
             weatherDay4.Size = new Size(202, 457);
             weatherDay4.TabIndex = 4;
@@ -166,7 +166,7 @@ namespace Weather_space
             weatherDay5.BorderStyle = BorderStyle.Fixed3D;
             weatherDay5.Day = null;
             weatherDay5.Info = null;
-            weatherDay5.Location = new Point(936, 44);
+            weatherDay5.Location = new Point(804, 44);
             weatherDay5.Name = "weatherDay5";
             weatherDay5.Size = new Size(203, 457);
             weatherDay5.TabIndex = 5;
@@ -179,7 +179,7 @@ namespace Weather_space
             weatherDay6.BorderStyle = BorderStyle.Fixed3D;
             weatherDay6.Day = null;
             weatherDay6.Info = null;
-            weatherDay6.Location = new Point(1169, 44);
+            weatherDay6.Location = new Point(1004, 44);
             weatherDay6.Name = "weatherDay6";
             weatherDay6.Size = new Size(203, 457);
             weatherDay6.TabIndex = 6;
@@ -192,7 +192,7 @@ namespace Weather_space
             weatherDay7.BorderStyle = BorderStyle.Fixed3D;
             weatherDay7.Day = null;
             weatherDay7.Info = null;
-            weatherDay7.Location = new Point(1402, 45);
+            weatherDay7.Location = new Point(1204, 45);
             weatherDay7.Name = "weatherDay7";
             weatherDay7.Size = new Size(202, 457);
             weatherDay7.TabIndex = 7;
@@ -213,7 +213,7 @@ namespace Weather_space
             this.Controls.Add(this.weatherDay1);
             this.Controls.Add(this.toolStrip1);
             this.Name = "Travel_Weather";
-            this.Size = new System.Drawing.Size(1381, 728);
+            this.Size = new System.Drawing.Size(1400, 728);
             this.Load += new System.EventHandler(this.Travel_Weather_Load);
             this.toolStrip1.ResumeLayout(false);
             this.toolStrip1.PerformLayout();
