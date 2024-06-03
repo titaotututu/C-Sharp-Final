@@ -13,22 +13,15 @@ namespace TravelApp.controller
 {
     public partial class JournalCell : UserControl
     {
-        private readonly long JournalId;
-        private readonly ChangePanel ChangePanel;
+        public long JournalId;
         public Refresh Refresh;
+        public ChangePanel ChangePanel;
         public JournalCell(long journalId, ChangePanel changePanel, Refresh refresh)
         {
             InitializeComponent();
-            JournalId = journalId;
-            ChangePanel = changePanel;
-            Refresh = refresh;
-        }
-
-        private void JournalCell_Click(object sender, EventArgs e)
-        {
-            long id = this.JournalId;
-            JournalDetail journalDetail = new JournalDetail(id, this.ChangePanel);
-            this.ChangePanel(journalDetail);
+            this.JournalId = journalId;
+            this.ChangePanel = changePanel;
+            this.Refresh = refresh;
         }
 
         private async void pbDelete_Click(object sender, EventArgs e)
@@ -53,6 +46,12 @@ namespace TravelApp.controller
                     MessageBox.Show(ex.Message + "\n删除失败", "警告", MessageBoxButtons.OK, MessageBoxIcon.Error);
                 }
             }
+        }
+        private void JournalCell_Click(object sender, EventArgs e)
+        {
+            long id = this.JournalId;
+            JournalDetail journalDetail = new JournalDetail(id, ChangePanel);
+            this.ChangePanel(journalDetail);
         }
     }
 }

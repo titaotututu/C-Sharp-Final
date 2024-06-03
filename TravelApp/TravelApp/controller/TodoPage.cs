@@ -17,14 +17,17 @@ namespace TravelApp.controller
 {
     public partial class TodoPage : UserControl
     {
+        public ChangePanel ChangePanel;
         public event EventHandler TodoDeleted;
 
         TodoItem todo = new TodoItem();
 
-        public TodoPage(TodoItem todo_)
+        public TodoPage(TodoItem todo_, ChangePanel changePanel)
         {
             todo = todo_;
             InitializeComponent();
+            this.ChangePanel = changePanel;
+            checkBox1.Enabled = false;
         }
 
         private async void buttonDelete_Click(object sender, EventArgs e)
@@ -53,52 +56,6 @@ namespace TravelApp.controller
                 MessageBox.Show(ex.Message, "警告", MessageBoxButtons.OK, MessageBoxIcon.Exclamation);
             }
         }
-
-        private async void checkBox1_CheckedChanged(object sender, EventArgs e)
-        {   
-            TodoItem newtodo =new TodoItem();
-            newtodo.TravelId=todo.TravelId;
-            newtodo.ItemId=todo.ItemId;
-            newtodo.Time=todo.Time;
-            newtodo.Place=todo.Place;
-            newtodo.Description=todo.Description;
-            newtodo.IsCompleted=checkBox1.Checked;
-            string url = "http://localhost:5199/api/TodoItem/update?itemid=" + newtodo.ItemId;
-            Client client = new Client();
-            try
-            {
-                string jsonData = JsonConvert.SerializeObject(newtodo);
-                HttpResponseMessage result = await client.Put(url,jsonData);
-                if (result.IsSuccessStatusCode)
-                {
-                    MessageBox.Show("Change successfully.", "Success", MessageBoxButtons.OK, MessageBoxIcon.Information);
-
-                }
-                else
-                {
-                    string errorMessage = await result.Content.ReadAsStringAsync();
-                    MessageBox.Show($"Failed to change todo item. Error: {errorMessage}", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
-                }
-
-            }
-            catch (Exception ex)
-            {
-                MessageBox.Show(ex.Message, "警告", MessageBoxButtons.OK, MessageBoxIcon.Exclamation);
-            }
-            if (checkBox1.Checked == true)
-            {
-                // 补充一个把travel对应的city传到点亮地图那里
-               
-                Travel nowtravel = await GetTravelById(todo.TravelId);
-                string travelcity = nowtravel.TravelCity;
-                Console.Write(travelcity);
-
-
-            }
-            
-            
-        }
-
 
         // 根据travelid查travel
         private async Task<Travel> GetTravelById(long travelId)
@@ -129,6 +86,89 @@ namespace TravelApp.controller
                 MessageBox.Show($"An error occurred while fetching travel information. Error: {ex.Message}", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
                 return null;
             }
+        }
+
+        private async void buttonLight_Click(object sender, EventArgs e)
+        {
+            TodoItem newtodo = new TodoItem();
+            newtodo.TravelId = todo.TravelId;
+            newtodo.ItemId = todo.ItemId;
+            newtodo.Time = todo.Time;
+            newtodo.Place = todo.Place;
+            newtodo.Description = todo.Description;
+            newtodo.IsCompleted = true;
+            checkBox1.Checked = true;
+
+            string url = "http://localhost:5199/api/TodoItem/update?itemid=" + newtodo.ItemId;
+            Client client = new Client();
+            try
+            {
+                string jsonData = JsonConvert.SerializeObject(newtodo);
+                HttpResponseMessage result = await client.Put(url, jsonData);
+                if (result.IsSuccessStatusCode)
+                {
+                    MessageBox.Show("待办已完成.", "Success", MessageBoxButtons.OK, MessageBoxIcon.Information);
+
+                }
+                else
+                {
+                    string errorMessage = await result.Content.ReadAsStringAsync();
+                    MessageBox.Show($"Failed to change todo item. Error: {errorMessage}", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                }
+
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show(ex.Message, "警告", MessageBoxButtons.OK, MessageBoxIcon.Exclamation);
+            }
+
+            // 把travel对应的city传到点亮地图那里
+            Travel nowtravel = await GetTravelById(todo.TravelId);
+            string travelcity = nowtravel.TravelCity;
+            Console.Write(travelcity);
+
+            string journalUrl = "http://localhost:5199/api/Journal";
+
+            Journal journal = new Journal();
+
+            //初始化
+            journal.JournalId = 0;
+            journal.Time = DateTime.Now;
+            journal.Title = "0";
+            journal.Weather = "0";
+            journal.Emotion = "0";
+            journal.Description = "0";
+            journal.Picture = "";
+            journal.UserId = nowtravel.UserId;
+
+            Client client_ = new Client();
+            try
+            {
+                string data = JsonConvert.SerializeObject(journal);
+                Console.WriteLine("Sending data: " + data); // 打印出发送的数据
+
+                HttpResponseMessage result = await client_.Post(journalUrl, data);
+                if (result.IsSuccessStatusCode)
+                {
+                    string jsonContent = await result.Content.ReadAsStringAsync();
+                    journal = JsonConvert.DeserializeObject<Journal>(jsonContent);
+                }
+                else
+                {
+                    string responseContent = await result.Content.ReadAsStringAsync();
+                    MessageBox.Show("无法创建日志对象: " + result.ReasonPhrase, "错误", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                    return;
+                }
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show(ex.Message, "错误", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                return;
+            }
+
+            //跳转至编辑日志界面
+            JournalDetail journalDetail = new JournalDetail(journal, this.ChangePanel);
+            this.ChangePanel(journalDetail);
         }
     }
 }

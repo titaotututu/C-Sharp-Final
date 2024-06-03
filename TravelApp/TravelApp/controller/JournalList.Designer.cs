@@ -31,22 +31,25 @@
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(JournalList));
             this.labelIcon = new System.Windows.Forms.Label();
             this.flpHead = new System.Windows.Forms.FlowLayoutPanel();
+            this.pictureBoxIcon = new System.Windows.Forms.PictureBox();
             this.label3 = new System.Windows.Forms.Label();
             this.flpJournalList = new System.Windows.Forms.FlowLayoutPanel();
-            this.pictureBoxIcon = new System.Windows.Forms.PictureBox();
+            this.pbAdd = new System.Windows.Forms.PictureBox();
+            this.panelControl = new System.Windows.Forms.Panel();
             this.flpHead.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBoxIcon)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pbAdd)).BeginInit();
             this.SuspendLayout();
             // 
             // labelIcon
             // 
             this.labelIcon.AutoSize = true;
-            this.labelIcon.Font = new System.Drawing.Font("幼圆", 16F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
+            this.labelIcon.Font = new System.Drawing.Font("幼圆", 15F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
             this.labelIcon.ForeColor = System.Drawing.Color.SeaGreen;
             this.labelIcon.Location = new System.Drawing.Point(101, 35);
             this.labelIcon.Margin = new System.Windows.Forms.Padding(10, 35, 3, 0);
             this.labelIcon.Name = "labelIcon";
-            this.labelIcon.Size = new System.Drawing.Size(147, 33);
+            this.labelIcon.Size = new System.Drawing.Size(137, 30);
             this.labelIcon.TabIndex = 1;
             this.labelIcon.Text = "旅行日志";
             // 
@@ -56,8 +59,19 @@
             this.flpHead.Controls.Add(this.labelIcon);
             this.flpHead.Location = new System.Drawing.Point(3, 3);
             this.flpHead.Name = "flpHead";
-            this.flpHead.Size = new System.Drawing.Size(769, 88);
+            this.flpHead.Size = new System.Drawing.Size(819, 88);
             this.flpHead.TabIndex = 2;
+            // 
+            // pictureBoxIcon
+            // 
+            this.pictureBoxIcon.Image = ((System.Drawing.Image)(resources.GetObject("pictureBoxIcon.Image")));
+            this.pictureBoxIcon.Location = new System.Drawing.Point(30, 20);
+            this.pictureBoxIcon.Margin = new System.Windows.Forms.Padding(30, 20, 3, 3);
+            this.pictureBoxIcon.Name = "pictureBoxIcon";
+            this.pictureBoxIcon.Size = new System.Drawing.Size(58, 57);
+            this.pictureBoxIcon.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.pictureBoxIcon.TabIndex = 0;
+            this.pictureBoxIcon.TabStop = false;
             // 
             // label3
             // 
@@ -72,19 +86,29 @@
             // 
             this.flpJournalList.Location = new System.Drawing.Point(21, 116);
             this.flpJournalList.Name = "flpJournalList";
-            this.flpJournalList.Size = new System.Drawing.Size(927, 532);
+            this.flpJournalList.Size = new System.Drawing.Size(912, 413);
             this.flpJournalList.TabIndex = 13;
             // 
-            // pictureBoxIcon
+            // pbAdd
             // 
-            this.pictureBoxIcon.Image = ((System.Drawing.Image)(resources.GetObject("pictureBoxIcon.Image")));
-            this.pictureBoxIcon.Location = new System.Drawing.Point(30, 20);
-            this.pictureBoxIcon.Margin = new System.Windows.Forms.Padding(30, 20, 3, 3);
-            this.pictureBoxIcon.Name = "pictureBoxIcon";
-            this.pictureBoxIcon.Size = new System.Drawing.Size(58, 63);
-            this.pictureBoxIcon.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-            this.pictureBoxIcon.TabIndex = 0;
-            this.pictureBoxIcon.TabStop = false;
+            this.pbAdd.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.pbAdd.Image = ((System.Drawing.Image)(resources.GetObject("pbAdd.Image")));
+            this.pbAdd.Location = new System.Drawing.Point(865, 23);
+            this.pbAdd.Margin = new System.Windows.Forms.Padding(30, 20, 3, 3);
+            this.pbAdd.Name = "pbAdd";
+            this.pbAdd.Size = new System.Drawing.Size(58, 60);
+            this.pbAdd.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.pbAdd.TabIndex = 14;
+            this.pbAdd.TabStop = false;
+            this.pbAdd.Click += new System.EventHandler(this.pbAdd_Click);
+            // 
+            // panelControl
+            // 
+            this.panelControl.Location = new System.Drawing.Point(2, 3);
+            this.panelControl.Margin = new System.Windows.Forms.Padding(2);
+            this.panelControl.Name = "panelControl";
+            this.panelControl.Size = new System.Drawing.Size(949, 544);
+            this.panelControl.TabIndex = 15;
             // 
             // JournalList
             // 
@@ -93,12 +117,15 @@
             this.BackColor = System.Drawing.Color.White;
             this.Controls.Add(this.flpJournalList);
             this.Controls.Add(this.label3);
+            this.Controls.Add(this.pbAdd);
             this.Controls.Add(this.flpHead);
+            this.Controls.Add(this.panelControl);
             this.Name = "JournalList";
-            this.Size = new System.Drawing.Size(962, 677);
+            this.Size = new System.Drawing.Size(953, 550);
             this.flpHead.ResumeLayout(false);
             this.flpHead.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBoxIcon)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pbAdd)).EndInit();
             this.ResumeLayout(false);
 
         }
@@ -110,5 +137,7 @@
         private System.Windows.Forms.FlowLayoutPanel flpHead;
         private System.Windows.Forms.Label label3;
         private System.Windows.Forms.FlowLayoutPanel flpJournalList;
+        private System.Windows.Forms.PictureBox pbAdd;
+        private System.Windows.Forms.Panel panelControl;
     }
 }

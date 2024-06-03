@@ -12,9 +12,9 @@ namespace TravelApp.controller
 {
     public partial class PictureBox : UserControl
     {
-        private readonly string FileName;
-        private readonly long JournalId;
-        private Refresh Refresh;
+        public string FileName;
+        public long JournalId;
+        public Refresh Refresh;
         //待补充
         private readonly string baseUrl = "????";
         public PictureBox(long journalId, string fileName, Refresh refresh)

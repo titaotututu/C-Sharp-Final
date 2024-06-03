@@ -55,7 +55,7 @@
             // label3
             // 
             this.label3.BackColor = System.Drawing.Color.DarkGray;
-            this.label3.Location = new System.Drawing.Point(-3, 95);
+            this.label3.Location = new System.Drawing.Point(80, 98);
             this.label3.Name = "label3";
             this.label3.Size = new System.Drawing.Size(780, 2);
             this.label3.TabIndex = 14;
@@ -75,7 +75,7 @@
             // pbDelete
             // 
             this.pbDelete.Image = ((System.Drawing.Image)(resources.GetObject("pbDelete.Image")));
-            this.pbDelete.Location = new System.Drawing.Point(703, 20);
+            this.pbDelete.Location = new System.Drawing.Point(825, 20);
             this.pbDelete.Margin = new System.Windows.Forms.Padding(30, 20, 3, 3);
             this.pbDelete.Name = "pbDelete";
             this.pbDelete.Size = new System.Drawing.Size(56, 59);
@@ -89,7 +89,7 @@
             this.label1.AutoSize = true;
             this.label1.Font = new System.Drawing.Font("幼圆", 10.5F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
             this.label1.ForeColor = System.Drawing.SystemColors.ControlDarkDark;
-            this.label1.Location = new System.Drawing.Point(428, 20);
+            this.label1.Location = new System.Drawing.Point(448, 20);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(79, 21);
             this.label1.TabIndex = 17;
@@ -100,7 +100,7 @@
             this.label2.AutoSize = true;
             this.label2.Font = new System.Drawing.Font("幼圆", 10.5F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
             this.label2.ForeColor = System.Drawing.SystemColors.ControlDarkDark;
-            this.label2.Location = new System.Drawing.Point(428, 58);
+            this.label2.Location = new System.Drawing.Point(448, 58);
             this.label2.Name = "label2";
             this.label2.Size = new System.Drawing.Size(79, 21);
             this.label2.TabIndex = 18;
@@ -111,7 +111,7 @@
             this.lblWeather.AutoSize = true;
             this.lblWeather.Font = new System.Drawing.Font("幼圆", 10.5F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
             this.lblWeather.ForeColor = System.Drawing.SystemColors.ControlDarkDark;
-            this.lblWeather.Location = new System.Drawing.Point(491, 20);
+            this.lblWeather.Location = new System.Drawing.Point(533, 20);
             this.lblWeather.Name = "lblWeather";
             this.lblWeather.Size = new System.Drawing.Size(80, 21);
             this.lblWeather.TabIndex = 19;
@@ -122,7 +122,7 @@
             this.lblTime.AutoSize = true;
             this.lblTime.Font = new System.Drawing.Font("幼圆", 10.5F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
             this.lblTime.ForeColor = System.Drawing.SystemColors.ControlDarkDark;
-            this.lblTime.Location = new System.Drawing.Point(491, 58);
+            this.lblTime.Location = new System.Drawing.Point(533, 58);
             this.lblTime.Name = "lblTime";
             this.lblTime.Size = new System.Drawing.Size(80, 21);
             this.lblTime.TabIndex = 20;
@@ -142,7 +142,7 @@
             this.Controls.Add(this.label3);
             this.Controls.Add(this.pictureBoxGoose);
             this.Name = "JournalCell";
-            this.Size = new System.Drawing.Size(772, 100);
+            this.Size = new System.Drawing.Size(913, 100);
             this.Click += new System.EventHandler(this.JournalCell_Click);
             ((System.ComponentModel.ISupportInitialize)(this.pictureBoxGoose)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pbDelete)).EndInit();

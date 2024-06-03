@@ -8,7 +8,7 @@ namespace TravelApp
 {
     class Client
     {
-        private HttpClient CreateClient()
+        public HttpClient CreateClient()
         {
             var handler = new HttpClientHandler();
             handler.ServerCertificateCustomValidationCallback = delegate { return true; };

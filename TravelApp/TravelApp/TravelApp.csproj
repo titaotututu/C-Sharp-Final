@@ -400,5 +400,8 @@
   <ItemGroup>
     <None Include="Resources\开发者信息.png" />
   </ItemGroup>
+  <ItemGroup>
+    <Folder Include="forms\" />
+  </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

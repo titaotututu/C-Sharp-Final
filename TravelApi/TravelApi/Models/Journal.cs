@@ -19,9 +19,6 @@ namespace TravelApi.Models
         [Required]
         public long UserId { get; set; }
         [ForeignKey("UserId")]
-        public User? User { get; set; }
-        public long TravelId { get; set; }
-        [ForeignKey("TravelId")]
-        public Travel? Travel { get; set; }
+        public User ?User { get; set; }
     }
 }

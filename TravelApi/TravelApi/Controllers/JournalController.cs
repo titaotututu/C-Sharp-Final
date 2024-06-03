@@ -1,6 +1,9 @@
 ﻿using Microsoft.AspNetCore.Mvc;
 using TravelApi.Services;
 using TravelApi.Models;
+using System;
+using System.Collections.Generic;
+using System.Linq;
 using System.Diagnostics;
 
 namespace TravelApi.Controllers
@@ -10,10 +13,13 @@ namespace TravelApi.Controllers
     public class JournalController : ControllerBase
     {
         private readonly IJournalService _JournalService;
-
-        public JournalController(IJournalService journalService)
+        private readonly ITravelService _travelService;
+        private readonly ITodoItemService _todoItemService;
+        public JournalController(IJournalService journalService, ITravelService travelService, ITodoItemService todoItemService)
         {
             this._JournalService = journalService;
+            this._travelService = travelService;
+            this._todoItemService = todoItemService;
         }
        
         [HttpPost]
@@ -26,24 +32,30 @@ namespace TravelApi.Controllers
             try
             {
                 string date = DateTime.Now.ToString("yyyyMMdd");
-                var query = _JournalService.GetJournalByDate(date);
+                IQueryable<Journal> query = _JournalService.GetJournalByDate(date);
                 if (query.Count() == 0)
                 {
                     journal.JournalId = System.Convert.ToInt64(date + "0000");
                 }
                 else
                 {
-                    journal.JournalId = query.First().JournalId + 1;
+                    journal.JournalId = query.ToList().First().JournalId + 1;
                 }
                 _JournalService.Add(journal);
                 return journal;
             }
             catch (Exception e)
             {
-                return BadRequest(e.InnerException.Message);
+                string errorMessage = e.Message;
+                if (e.InnerException != null)
+                {
+                    errorMessage += " Inner Exception: " + e.InnerException.Message;
+                }
+                return BadRequest(errorMessage);
             }
         }
 
+        //根据日记ID获取日志
         [HttpGet("get")]
         // 已测试，成功
         // 示例：api http://localhost:5199/api/Journal/get?journalid=202405240000 无请求体
@@ -58,6 +70,21 @@ namespace TravelApi.Controllers
             else
             {
                 return NotFound();
+            }
+        }
+
+        //根据用户获取日志
+        [HttpGet("getByUser")]
+        public ActionResult<List<Journal>> GetJournalByUser(long userId)
+        {
+            IQueryable<Journal> query = _JournalService.GetJournalByUserId(userId);
+            if (query.Count() == 0)
+            {
+                return new List<Journal>(); // 返回一个空列表
+            }
+            else
+            {
+                return query.ToList();
             }
         }
 

@@ -1,4 +1,5 @@
-﻿using System;
+﻿using Newtonsoft.Json;
+using System;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
@@ -7,6 +8,7 @@ using System.Drawing.Drawing2D;
 using System.IO;
 using System.Linq;
 using System.Net.Http;
+using System.Security.Policy;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
@@ -17,44 +19,69 @@ namespace TravelApp.controller
 {
     public partial class JournalDetail : UserControl
     {
-        private readonly long JournalId;
-        private readonly ChangePanel ChangePanel;
-        private readonly string baseUrl = "https://localhost:5199/api/Journal";
-        private Refresh Refresh;
+        public long JournalId;
+        public string baseUrl = "http://localhost:5199/api/Journal";
+        public ChangePanel ChangePanel;
+        public Refresh Refresh;
+        public JournalDetail(Journal journal, ChangePanel changePanel)
+        {
+            InitializeComponent();
+            this.JournalId = journal.JournalId;
+            this.ChangePanel = changePanel;
+
+            journal.Time = DateTime.Now;
+            lblTime.Text = journal.Time.ToString();
+            tbTitle.Text = "请输入标题...";
+            tbWeather.Text = "未知";
+            tbEmotion.Text = "无";
+            rtbDescription.Text = "请输入描述......";
+            btnEdit.Enabled = false;
+            btnEdit.Text = "编辑中";
+        }
         public JournalDetail(long journalId, ChangePanel changePanel)
         {
             InitializeComponent();
-            JournalId = journalId;
-            ChangePanel = changePanel;
-            Refresh = ImgRefresh;
+            this.JournalId = journalId;
+            this.ChangePanel = changePanel;
+            this.Refresh = ImgRefresh;
+            Init();
         }
         private async void Init()
         {
             Journal journal = await GetJournal();
+
+            tbTitle.Text = journal.Title;
+            rtbDescription.Text = journal.Description;
+            tbEmotion.Text = journal.Emotion;
+            tbWeather.Text = journal.Weather;
+            lblTime.Text = journal.Time.ToString();
+            LoadImg(journal.Picture);
+
             tbTitle.Enabled = false;
             tbWeather.Enabled = false;
             tbEmotion.Enabled = false;
             pbAdd.Enabled = false;
             btnSave.Enabled = false;
             rtbDescription.Enabled = false;
-            tbTitle.Text = journal.Title;
-            rtbDescription.Text = journal.Description;
-
-            LoadImg(journal.Picture);
         }
-        private async Task<Journal> GetJournal()
+        public async Task<Journal> GetJournal()
         {
-            //根据id获取diary
+            //根据id获取journal
             string url = this.baseUrl + "/get?journalId=" + this.JournalId;
-            XmlSerializer xmlSerializer = new XmlSerializer(typeof(Journal));
+
             Client client = new Client();
-            Journal journal = null;
+            Journal journal = new Journal();
             try
             {
                 HttpResponseMessage result = await client.Get(url);
                 if (result.IsSuccessStatusCode)
                 {
-                    journal = (Journal)xmlSerializer.Deserialize(await result.Content.ReadAsStreamAsync());
+                    string jsonContent = await result.Content.ReadAsStringAsync();
+                    journal = JsonConvert.DeserializeObject<Journal>(jsonContent);
+                }
+                else
+                {
+                    MessageBox.Show("无法获取日志对象: " + result.ReasonPhrase, "错误", MessageBoxButtons.OK, MessageBoxIcon.Error);
                 }
             }
             catch (Exception ex)
@@ -63,6 +90,34 @@ namespace TravelApp.controller
             }
             return journal;
         }
+
+        public async Task<bool> PutJournal(Journal journal)
+        {
+            string url = this.baseUrl + "/update?journalId=" + journal.JournalId;
+
+            Client client = new Client();
+
+            try
+            {
+                string data = JsonConvert.SerializeObject(journal);
+                Console.WriteLine("PUT URL: " + url);
+                Console.WriteLine("PUT Data: " + data);
+
+                HttpResponseMessage result = await client.Put(url, data);
+                Console.WriteLine("Response Status Code: " + result.StatusCode);
+
+                if (result.IsSuccessStatusCode)
+                {
+                    return true;
+                }
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show(ex.Message, "错误", MessageBoxButtons.OK, MessageBoxIcon.Error);
+            }
+            return false;
+        }
+
         private async void LoadImg(string photo)
         {
             flpImage.Controls.Clear();
@@ -71,7 +126,7 @@ namespace TravelApp.controller
                 string[] imgNames = photo.Trim().Split(' ');
 
                 //未知 要修改
-                string imgUrl = "???";
+                string imgUrl = "http://localhost:5199/api/File/download?fileName=";
 
                 PictureBox pb;
                 Image image;
@@ -132,7 +187,10 @@ namespace TravelApp.controller
         {
             Journal journal = await GetJournal();
             JournalList journalList = new JournalList(journal.UserId, this.ChangePanel);
-            this.ChangePanel(journalList);
+
+            panelControl.Controls.Clear();
+            panelControl.BringToFront();
+            panelControl.Controls.Add(journalList);
         }
 
         private void btnEdit_Click(object sender, EventArgs e)
@@ -155,10 +213,28 @@ namespace TravelApp.controller
             btnSave.Enabled = false;
             pbAdd.Enabled = false;
             rtbDescription.Enabled = false;
+            
             //将修改传到远端
             Journal journal = await GetJournal();
+            if (journal == null)
+            {
+                MessageBox.Show("无法获取日志对象", "错误", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                return;
+            }
+
             journal.Title = tbTitle.Text;
             journal.Description = rtbDescription.Text;
+            journal.Emotion = tbEmotion.Text;
+            journal.Weather = tbWeather.Text;
+         
+            if (await PutJournal(journal))
+            {
+                MessageBox.Show("保存成功", "提示", MessageBoxButtons.OK, MessageBoxIcon.Information);
+            }
+            else
+            {
+                MessageBox.Show("保存失败", "错误", MessageBoxButtons.OK, MessageBoxIcon.Error);
+            }
             
             //将编辑激活
             btnEdit.Enabled = true;

@@ -180,3 +180,6 @@ D:\learngit\Csharp-work\C-Sharp-Final\TravelApp\TravelApp\obj\Debug\TravelApp.co
 D:\learngit\Csharp-work\C-Sharp-Final\TravelApp\TravelApp\obj\Debug\TravelApp.controller.PictureBox.resources
 D:\learngit\Csharp-work\C-Sharp-Final\TravelApp\TravelApp\obj\Debug\TravelApp.Login.resources
 D:\learngit\Csharp-work\C-Sharp-Final\TravelApp\TravelApp\obj\Debug\TravelApp.Register.resources
+D:\Git\tmp\C-Sharp-Final\TravelApp\TravelApp\obj\Debug\TravelApp.controller.Personalinfo.resources
+D:\Git\tmp\C-Sharp-Final\TravelApp\TravelApp\obj\Debug\TravelApp.Login.resources
+D:\Git\tmp\C-Sharp-Final\TravelApp\TravelApp\obj\Debug\TravelApp.Register.resources

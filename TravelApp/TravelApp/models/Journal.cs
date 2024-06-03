@@ -7,7 +7,7 @@ using System.Threading.Tasks;
 
 namespace TravelApp.models
 {
-    internal class Journal
+    public class Journal
     {
         public long JournalId { get; set; }
         public DateTime Time { get; set; }
@@ -17,6 +17,5 @@ namespace TravelApp.models
         public string Description { get; set; }
         public string Picture { get; set; }
         public long UserId { get; set; }
-        public long TravelId { get; set; }
     }
 }

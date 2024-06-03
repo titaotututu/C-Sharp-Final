@@ -1,8 +1,10 @@
-﻿using System;
+﻿using Newtonsoft.Json;
+using System;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
 using System.Drawing;
+using System.IO;
 using System.Linq;
 using System.Net.Http;
 using System.Text;
@@ -16,27 +18,29 @@ namespace TravelApp.controller
     public delegate void Refresh();
     public partial class JournalList : UserControl
     {
-        private readonly long UserId;
-        private readonly ChangePanel ChangePanel;
+        public long UserId;
+        public ChangePanel ChangePanel;
         public JournalList(long userId, ChangePanel changePanel)
         {
             InitializeComponent();
-            UserId = userId;
-            ChangePanel = changePanel;
+            this.UserId = userId;
+            this.ChangePanel = changePanel;
             Init();
         }
-        private async void Init()
+        public async void Init()
         {
-            long id = this.UserId;
-            string url = "https://localhost:7119/api/User/" + id;
-           // XmlSerializer xmlSerializer = new XmlSerializer(typeof(List<Journal>));
+            long uid = this.UserId;
+            string url = "http://localhost:5199/api/Journal/getByUser?userId=" + uid;
+
             Client client = new Client();
             try
             {
                 HttpResponseMessage result = await client.Get(url);
                 if (result.IsSuccessStatusCode)
                 {
-                    List<Journal> journals = new List<Journal>();//(List<Journal>)xmlSerializer.Deserialize(await result.Content.ReadAsStreamAsync());
+                    string jsonContent = await result.Content.ReadAsStringAsync();
+                    List<Journal> journals = JsonConvert.DeserializeObject<List<Journal>>(jsonContent);
+
                     flpJournalList.Controls.Clear();
 
                     foreach (Journal journal in journals)
@@ -50,7 +54,7 @@ namespace TravelApp.controller
                     }
                     //添加底部标志
                     Label lblBottom = new Label();
-                    lblBottom.Text = "没有更多内容";
+                    lblBottom.Text = "无更多内容";
                     lblBottom.Anchor = AnchorStyles.None;
                     flpJournalList.Controls.Add(lblBottom);
                 }
@@ -59,6 +63,62 @@ namespace TravelApp.controller
             {
                 MessageBox.Show(ex.Message, "错误", MessageBoxButtons.OK, MessageBoxIcon.Error);
             }
+        }
+
+        private async void pbAdd_Click(object sender, EventArgs e)
+        {
+            /*//跳转至编辑日志界面
+            Journal journal = new Journal();
+            journal.UserId = this.UserId;
+            JournalDetail journalDetail = new JournalDetail(journal);
+            panelControl.Controls.Clear();
+            panelControl.BringToFront();
+            panelControl.Controls.Add(journalDetail);
+            */
+            string url = "http://localhost:5199/api/Journal";
+
+            Journal journal = new Journal();
+
+            //初始化
+            journal.JournalId = 0;
+            journal.Time = DateTime.Now;
+            journal.Title = "0";
+            journal.Weather = "0";
+            journal.Emotion = "0";
+            journal.Description = "0";
+            journal.Picture = "";
+            journal.UserId = this.UserId;
+
+            Client client = new Client();
+            try
+            {
+                string data = JsonConvert.SerializeObject(journal);
+                Console.WriteLine("Sending data: " + data); // 打印出发送的数据
+
+                HttpResponseMessage result = await client.Post(url, data);
+                if (result.IsSuccessStatusCode)
+                {
+                    string jsonContent = await result.Content.ReadAsStringAsync();
+                    journal = JsonConvert.DeserializeObject<Journal>(jsonContent);
+                }
+                else
+                {
+                    string responseContent = await result.Content.ReadAsStringAsync();
+                    MessageBox.Show("无法创建日志对象: " + result.ReasonPhrase, "错误", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                    return;
+                }
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show(ex.Message, "错误", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                return;
+            }
+
+            //跳转至编辑日志界面
+            JournalDetail journalDetail = new JournalDetail(journal, this.ChangePanel);
+            panelControl.Controls.Clear();
+            panelControl.BringToFront();
+            panelControl.Controls.Add(journalDetail);
         }
     }
 }

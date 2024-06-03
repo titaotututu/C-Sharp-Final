@@ -18,7 +18,7 @@ namespace TravelApp
 {
     public partial class TravelTodo : Form
     {
-        
+        public ChangePanel ChangePanel;
         long TravelId;
         string TravelTitle;
         DateTime TravelTime;
@@ -49,7 +49,7 @@ namespace TravelApp
                     foreach (TodoItem todo in todoItems)
                     {
                         // 添加到panel中
-                        TodoPage todoPage = new TodoPage(todo);
+                        TodoPage todoPage = new TodoPage(todo, this.ChangePanel);
                         todoPage.TodoDeleted += TodoPage_TodoDeleted; // 订阅事件
                         panelTodo.Controls.Add(todoPage);
                     }
