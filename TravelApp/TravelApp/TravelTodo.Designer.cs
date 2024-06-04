@@ -31,8 +31,8 @@
             this.labelTravelTitle = new System.Windows.Forms.Label();
             this.buttonAddTodo = new System.Windows.Forms.Button();
             this.buttonShow = new System.Windows.Forms.Button();
-            this.panelTodo = new System.Windows.Forms.Panel();
             this.label1 = new System.Windows.Forms.Label();
+            this.panelTodo = new System.Windows.Forms.Panel();
             this.SuspendLayout();
             // 
             // labelTravelTitle
@@ -68,15 +68,6 @@
             this.buttonShow.UseVisualStyleBackColor = true;
             this.buttonShow.Click += new System.EventHandler(this.buttonShow_Click);
             // 
-            // panelTodo
-            // 
-            this.panelTodo.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
-            this.panelTodo.Location = new System.Drawing.Point(11, 78);
-            this.panelTodo.Margin = new System.Windows.Forms.Padding(2);
-            this.panelTodo.Name = "panelTodo";
-            this.panelTodo.Size = new System.Drawing.Size(949, 544);
-            this.panelTodo.TabIndex = 4;
-            // 
             // label1
             // 
             this.label1.Font = new System.Drawing.Font("宋体", 13.875F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
@@ -86,6 +77,15 @@
             this.label1.Size = new System.Drawing.Size(101, 41);
             this.label1.TabIndex = 5;
             this.label1.Text = "旅程：";
+            // 
+            // panelTodo
+            // 
+            this.panelTodo.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
+            this.panelTodo.Location = new System.Drawing.Point(6, 78);
+            this.panelTodo.Margin = new System.Windows.Forms.Padding(2);
+            this.panelTodo.Name = "panelTodo";
+            this.panelTodo.Size = new System.Drawing.Size(954, 544);
+            this.panelTodo.TabIndex = 4;
             // 
             // TravelTodo
             // 
@@ -110,7 +110,7 @@
         private System.Windows.Forms.Label labelTravelTitle;
         private System.Windows.Forms.Button buttonAddTodo;
         private System.Windows.Forms.Button buttonShow;
-        private System.Windows.Forms.Panel panelTodo;
         private System.Windows.Forms.Label label1;
+        private System.Windows.Forms.Panel panelTodo;
     }
 }

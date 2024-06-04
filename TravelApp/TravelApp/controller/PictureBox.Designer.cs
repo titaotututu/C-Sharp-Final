@@ -37,9 +37,9 @@
             // 
             // pbClose
             // 
-            this.pbClose.BackColor = System.Drawing.SystemColors.Control;
+            this.pbClose.BackColor = System.Drawing.Color.Transparent;
             this.pbClose.Image = ((System.Drawing.Image)(resources.GetObject("pbClose.Image")));
-            this.pbClose.Location = new System.Drawing.Point(225, 0);
+            this.pbClose.Location = new System.Drawing.Point(250, 0);
             this.pbClose.Margin = new System.Windows.Forms.Padding(20, 20, 3, 3);
             this.pbClose.Name = "pbClose";
             this.pbClose.Size = new System.Drawing.Size(28, 31);
@@ -50,9 +50,10 @@
             // 
             // picBox
             // 
+            this.picBox.Dock = System.Windows.Forms.DockStyle.Fill;
             this.picBox.Location = new System.Drawing.Point(0, 0);
             this.picBox.Name = "picBox";
-            this.picBox.Size = new System.Drawing.Size(253, 161);
+            this.picBox.Size = new System.Drawing.Size(281, 161);
             this.picBox.TabIndex = 24;
             this.picBox.TabStop = false;
             // 
@@ -63,7 +64,7 @@
             this.Controls.Add(this.pbClose);
             this.Controls.Add(this.picBox);
             this.Name = "PictureBox";
-            this.Size = new System.Drawing.Size(253, 162);
+            this.Size = new System.Drawing.Size(281, 161);
             ((System.ComponentModel.ISupportInitialize)(this.pbClose)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.picBox)).EndInit();
             this.ResumeLayout(false);

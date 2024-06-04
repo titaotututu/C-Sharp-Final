@@ -62,6 +62,7 @@ namespace TravelApp.controller
             rtbDescription.Text = "请输入描述......";
             btnEdit.Enabled = false;
             btnEdit.Text = "编辑中";
+            pbBack.Enabled = false;
         }
         public async void Init()
         {
@@ -74,13 +75,14 @@ namespace TravelApp.controller
             lblTime.Text = journal.Time.ToString();
             LoadImg(journal.Picture);
 
+            pbBack.Enabled = true;
             tbTitle.Enabled = false;
             tbWeather.Enabled = false;
             tbEmotion.Enabled = false;
             pbAdd.Enabled = false;
             btnSave.Enabled = false;
             rtbDescription.Enabled = false;
-            flpImage.Enabled = false;
+            //flpImage.Enabled = false;
         }
         public async Task<Journal> GetJournal()
         {
@@ -156,7 +158,7 @@ namespace TravelApp.controller
                     image = await fileClient.Download(url);
                     if (image != null)
                     {
-                        pb.picBox.Image = ResizeImage(image, new Size(400, 400));
+                        pb.picBox.Image = ResizeImage(image, new Size(280, 160));
                         pb.Anchor = AnchorStyles.None;
                         flpImage.Controls.Add(pb);
                     }
@@ -220,6 +222,7 @@ namespace TravelApp.controller
 
         private void btnEdit_Click(object sender, EventArgs e)
         {
+            pbBack.Enabled = false;
             btnEdit.Enabled = false;
             btnEdit.Text = "编辑中";
             tbTitle.Enabled = true;
@@ -228,18 +231,19 @@ namespace TravelApp.controller
             btnSave.Enabled = true;
             pbAdd.Enabled = true;
             rtbDescription.Enabled = true;
-            flpImage.Enabled = true;
+            //flpImage.Enabled = true;
         }
 
         private async void btnSave_Click(object sender, EventArgs e)
         {
+            pbBack.Enabled = true;
             tbTitle.Enabled = false;
             tbWeather.Enabled = false;
             tbEmotion.Enabled = false;
             btnSave.Enabled = false;
             pbAdd.Enabled = false;
             rtbDescription.Enabled = false;
-            flpImage.Enabled = false;
+            //flpImage.Enabled = false;
 
             //将修改传到远端
             Journal journal = await GetJournal();
@@ -292,6 +296,21 @@ namespace TravelApp.controller
             catch (Exception ex)
             {
                 MessageBox.Show(ex.Message + "上传失败", "提示", MessageBoxButtons.OK, MessageBoxIcon.Exclamation);
+               
+                // 在控制台输出异常详细信息（或记录到日志文件）  
+                Console.WriteLine("异常类型: " + ex.GetType().Name);
+                Console.WriteLine("异常消息: " + ex.Message);
+                Console.WriteLine("异常堆栈跟踪: ");
+                Console.WriteLine(ex.StackTrace);
+
+                // 如果异常有内部异常，也打印出来  
+                if (ex.InnerException != null)
+                {
+                    Console.WriteLine("内部异常类型: " + ex.InnerException.GetType().Name);
+                    Console.WriteLine("内部异常消息: " + ex.InnerException.Message);
+                    Console.WriteLine("内部异常堆栈跟踪: ");
+                    Console.WriteLine(ex.InnerException.StackTrace);
+                }
             }
         }
     }

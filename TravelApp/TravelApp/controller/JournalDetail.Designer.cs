@@ -37,6 +37,7 @@
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.tbTitle = new System.Windows.Forms.TextBox();
             this.pbAdd = new System.Windows.Forms.PictureBox();
+            this.label1 = new System.Windows.Forms.Label();
             this.flpImage = new System.Windows.Forms.FlowLayoutPanel();
             this.rtbDescription = new System.Windows.Forms.RichTextBox();
             this.flowLayoutPanel2 = new System.Windows.Forms.FlowLayoutPanel();
@@ -47,7 +48,6 @@
             this.label4 = new System.Windows.Forms.Label();
             this.tbEmotion = new System.Windows.Forms.TextBox();
             this.panelControl = new System.Windows.Forms.Panel();
-            this.label1 = new System.Windows.Forms.Label();
             ((System.ComponentModel.ISupportInitialize)(this.pbBack)).BeginInit();
             this.flowLayoutPanel1.SuspendLayout();
             this.flpTitle.SuspendLayout();
@@ -84,7 +84,8 @@
             // btnEdit
             // 
             this.btnEdit.BackColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.btnEdit.Font = new System.Drawing.Font("幼圆", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
+            this.btnEdit.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnEdit.Font = new System.Drawing.Font("微软雅黑", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
             this.btnEdit.ForeColor = System.Drawing.Color.Black;
             this.btnEdit.Location = new System.Drawing.Point(702, 20);
             this.btnEdit.Margin = new System.Windows.Forms.Padding(620, 20, 3, 3);
@@ -98,7 +99,8 @@
             // btnSave
             // 
             this.btnSave.BackColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.btnSave.Font = new System.Drawing.Font("幼圆", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
+            this.btnSave.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnSave.Font = new System.Drawing.Font("微软雅黑", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
             this.btnSave.ForeColor = System.Drawing.Color.Black;
             this.btnSave.Location = new System.Drawing.Point(823, 20);
             this.btnSave.Margin = new System.Windows.Forms.Padding(30, 20, 3, 3);
@@ -111,6 +113,7 @@
             // 
             // flpTitle
             // 
+            this.flpTitle.BackColor = System.Drawing.Color.White;
             this.flpTitle.Controls.Add(this.pictureBox1);
             this.flpTitle.Controls.Add(this.tbTitle);
             this.flpTitle.Controls.Add(this.pbAdd);
@@ -134,7 +137,7 @@
             // 
             // tbTitle
             // 
-            this.tbTitle.BackColor = System.Drawing.SystemColors.Control;
+            this.tbTitle.BackColor = System.Drawing.Color.White;
             this.tbTitle.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.tbTitle.Font = new System.Drawing.Font("幼圆", 14F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
             this.tbTitle.Location = new System.Drawing.Point(111, 30);
@@ -157,11 +160,25 @@
             this.pbAdd.TabStop = false;
             this.pbAdd.Click += new System.EventHandler(this.pbAdd_Click);
             // 
+            // label1
+            // 
+            this.label1.AutoSize = true;
+            this.label1.Font = new System.Drawing.Font("幼圆", 10.5F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
+            this.label1.ForeColor = System.Drawing.SystemColors.ControlDarkDark;
+            this.label1.Location = new System.Drawing.Point(824, 35);
+            this.label1.Margin = new System.Windows.Forms.Padding(0, 35, 3, 0);
+            this.label1.Name = "label1";
+            this.label1.Size = new System.Drawing.Size(102, 21);
+            this.label1.TabIndex = 23;
+            this.label1.Text = "添加图片";
+            // 
             // flpImage
             // 
+            this.flpImage.AutoScroll = true;
+            this.flpImage.BackColor = System.Drawing.Color.White;
             this.flpImage.Location = new System.Drawing.Point(29, 195);
             this.flpImage.Name = "flpImage";
-            this.flpImage.Size = new System.Drawing.Size(887, 159);
+            this.flpImage.Size = new System.Drawing.Size(887, 160);
             this.flpImage.TabIndex = 21;
             // 
             // rtbDescription
@@ -176,6 +193,7 @@
             // 
             // flowLayoutPanel2
             // 
+            this.flowLayoutPanel2.BackColor = System.Drawing.Color.White;
             this.flowLayoutPanel2.Controls.Add(this.label2);
             this.flowLayoutPanel2.Controls.Add(this.lblTime);
             this.flowLayoutPanel2.Controls.Add(this.label3);
@@ -225,7 +243,7 @@
             // 
             // tbWeather
             // 
-            this.tbWeather.BackColor = System.Drawing.SystemColors.Control;
+            this.tbWeather.BackColor = System.Drawing.Color.White;
             this.tbWeather.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.tbWeather.Font = new System.Drawing.Font("幼圆", 10.5F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
             this.tbWeather.ForeColor = System.Drawing.SystemColors.ControlDarkDark;
@@ -250,7 +268,7 @@
             // 
             // tbEmotion
             // 
-            this.tbEmotion.BackColor = System.Drawing.SystemColors.Control;
+            this.tbEmotion.BackColor = System.Drawing.Color.White;
             this.tbEmotion.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.tbEmotion.Font = new System.Drawing.Font("幼圆", 10.5F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
             this.tbEmotion.ForeColor = System.Drawing.SystemColors.ControlDarkDark;
@@ -263,6 +281,7 @@
             // 
             // panelControl
             // 
+            this.panelControl.BackColor = System.Drawing.Color.White;
             this.panelControl.Controls.Add(this.flowLayoutPanel2);
             this.panelControl.Dock = System.Windows.Forms.DockStyle.Fill;
             this.panelControl.Location = new System.Drawing.Point(0, 0);
@@ -270,18 +289,6 @@
             this.panelControl.Name = "panelControl";
             this.panelControl.Size = new System.Drawing.Size(950, 541);
             this.panelControl.TabIndex = 23;
-            // 
-            // label1
-            // 
-            this.label1.AutoSize = true;
-            this.label1.Font = new System.Drawing.Font("幼圆", 10.5F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
-            this.label1.ForeColor = System.Drawing.SystemColors.ControlDarkDark;
-            this.label1.Location = new System.Drawing.Point(824, 35);
-            this.label1.Margin = new System.Windows.Forms.Padding(0, 35, 3, 0);
-            this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(102, 21);
-            this.label1.TabIndex = 23;
-            this.label1.Text = "添加图片";
             // 
             // JournalDetail
             // 

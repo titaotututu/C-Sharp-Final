@@ -52,11 +52,11 @@ namespace TravelApp
         {
             using (HttpClient client = CreateClient())
             {
-                string url = $"api/File/upload?journalId={journalId}"; // 构建绝对URI
+                string url = "http://localhost:5199/api/File/upload?journalId=" + journalId;
                 string boundary = "----" + DateTime.Now.Ticks.ToString("x");
                 MultipartFormDataContent content = new MultipartFormDataContent(boundary);
                 content.Headers.ContentType = MediaTypeHeaderValue.Parse(string.Format("multipart/form-data; boundary={0}", boundary));
-                if (string.IsNullOrEmpty(filePath) || !File.Exists(filePath))
+                if (string.IsNullOrEmpty(filePath) && !File.Exists(filePath))
                 {
                     throw new Exception("文件不存在");
                 }
@@ -73,11 +73,14 @@ namespace TravelApp
                     }
                     else
                     {
+                        string responseContent = await result.Content.ReadAsStringAsync();
+                        Console.WriteLine($"状态码：{result.StatusCode}，响应内容：{responseContent}");
                         throw new Exception(result.StatusCode.ToString());
                     }
                 }
                 catch (Exception ex)
                 {
+                    System.Diagnostics.Debug.WriteLine("异常信息：" + ex.ToString());
                     throw new Exception(ex.Message);
                 }
                 finally
