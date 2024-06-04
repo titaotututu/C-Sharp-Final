@@ -40,24 +40,29 @@
             this.label1.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
             this.label1.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.label1.Font = new System.Drawing.Font("宋体", 13.875F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
-            this.label1.Location = new System.Drawing.Point(26, 18);
+            this.label1.ForeColor = System.Drawing.Color.White;
+            this.label1.Location = new System.Drawing.Point(61, 19);
+            this.label1.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(171, 39);
+            this.label1.Size = new System.Drawing.Size(130, 30);
             this.label1.TabIndex = 0;
             this.label1.Text = "历史行程";
             // 
             // panelHistoryTravel
             // 
-            this.panelHistoryTravel.Location = new System.Drawing.Point(0, 100);
+            this.panelHistoryTravel.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.panelHistoryTravel.Location = new System.Drawing.Point(20, 71);
+            this.panelHistoryTravel.Margin = new System.Windows.Forms.Padding(2);
             this.panelHistoryTravel.Name = "panelHistoryTravel";
-            this.panelHistoryTravel.Size = new System.Drawing.Size(586, 697);
+            this.panelHistoryTravel.Size = new System.Drawing.Size(583, 432);
             this.panelHistoryTravel.TabIndex = 1;
             // 
             // button1
             // 
-            this.button1.Location = new System.Drawing.Point(279, 22);
+            this.button1.Location = new System.Drawing.Point(479, 20);
+            this.button1.Margin = new System.Windows.Forms.Padding(2);
             this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(130, 39);
+            this.button1.Size = new System.Drawing.Size(98, 29);
             this.button1.TabIndex = 2;
             this.button1.Text = "刷新";
             this.button1.UseVisualStyleBackColor = true;
@@ -65,14 +70,15 @@
             // 
             // OldTravel
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(12F, 24F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(9F, 18F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.MintCream;
             this.Controls.Add(this.button1);
             this.Controls.Add(this.panelHistoryTravel);
             this.Controls.Add(this.label1);
+            this.Margin = new System.Windows.Forms.Padding(2);
             this.Name = "OldTravel";
-            this.Size = new System.Drawing.Size(764, 901);
+            this.Size = new System.Drawing.Size(626, 523);
             this.ResumeLayout(false);
             this.PerformLayout();
 

@@ -39,6 +39,7 @@
             this.flpHead.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBoxIcon)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pbAdd)).BeginInit();
+            this.panelControl.SuspendLayout();
             this.SuspendLayout();
             // 
             // labelIcon
@@ -84,10 +85,13 @@
             // 
             // flpJournalList
             // 
-            this.flpJournalList.Location = new System.Drawing.Point(21, 116);
+            this.flpJournalList.AutoScroll = true;
+            this.flpJournalList.FlowDirection = System.Windows.Forms.FlowDirection.TopDown;
+            this.flpJournalList.Location = new System.Drawing.Point(3, 107);
             this.flpJournalList.Name = "flpJournalList";
-            this.flpJournalList.Size = new System.Drawing.Size(912, 413);
+            this.flpJournalList.Size = new System.Drawing.Size(943, 434);
             this.flpJournalList.TabIndex = 13;
+            this.flpJournalList.WrapContents = false;
             // 
             // pbAdd
             // 
@@ -104,10 +108,12 @@
             // 
             // panelControl
             // 
-            this.panelControl.Location = new System.Drawing.Point(2, 3);
+            this.panelControl.Controls.Add(this.flpJournalList);
+            this.panelControl.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.panelControl.Location = new System.Drawing.Point(0, 0);
             this.panelControl.Margin = new System.Windows.Forms.Padding(2);
             this.panelControl.Name = "panelControl";
-            this.panelControl.Size = new System.Drawing.Size(949, 544);
+            this.panelControl.Size = new System.Drawing.Size(953, 550);
             this.panelControl.TabIndex = 15;
             // 
             // JournalList
@@ -115,7 +121,6 @@
             this.AutoScaleDimensions = new System.Drawing.SizeF(9F, 18F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.White;
-            this.Controls.Add(this.flpJournalList);
             this.Controls.Add(this.label3);
             this.Controls.Add(this.pbAdd);
             this.Controls.Add(this.flpHead);
@@ -126,6 +131,7 @@
             this.flpHead.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBoxIcon)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pbAdd)).EndInit();
+            this.panelControl.ResumeLayout(false);
             this.ResumeLayout(false);
 
         }

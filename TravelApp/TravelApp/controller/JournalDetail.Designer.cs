@@ -47,6 +47,7 @@
             this.label4 = new System.Windows.Forms.Label();
             this.tbEmotion = new System.Windows.Forms.TextBox();
             this.panelControl = new System.Windows.Forms.Panel();
+            this.label1 = new System.Windows.Forms.Label();
             ((System.ComponentModel.ISupportInitialize)(this.pbBack)).BeginInit();
             this.flowLayoutPanel1.SuspendLayout();
             this.flpTitle.SuspendLayout();
@@ -113,6 +114,7 @@
             this.flpTitle.Controls.Add(this.pictureBox1);
             this.flpTitle.Controls.Add(this.tbTitle);
             this.flpTitle.Controls.Add(this.pbAdd);
+            this.flpTitle.Controls.Add(this.label1);
             this.flpTitle.Location = new System.Drawing.Point(0, 75);
             this.flpTitle.Name = "flpTitle";
             this.flpTitle.Size = new System.Drawing.Size(946, 76);
@@ -120,7 +122,7 @@
             // 
             // pictureBox1
             // 
-            this.pictureBox1.BackColor = System.Drawing.SystemColors.Control;
+            this.pictureBox1.BackColor = System.Drawing.Color.Transparent;
             this.pictureBox1.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox1.Image")));
             this.pictureBox1.Location = new System.Drawing.Point(40, 20);
             this.pictureBox1.Margin = new System.Windows.Forms.Padding(40, 20, 3, 3);
@@ -138,16 +140,16 @@
             this.tbTitle.Location = new System.Drawing.Point(111, 30);
             this.tbTitle.Margin = new System.Windows.Forms.Padding(20, 30, 3, 3);
             this.tbTitle.Name = "tbTitle";
-            this.tbTitle.Size = new System.Drawing.Size(490, 31);
+            this.tbTitle.Size = new System.Drawing.Size(330, 31);
             this.tbTitle.TabIndex = 0;
             this.tbTitle.Text = "快乐旅游";
             // 
             // pbAdd
             // 
-            this.pbAdd.BackColor = System.Drawing.SystemColors.Control;
+            this.pbAdd.BackColor = System.Drawing.Color.Transparent;
             this.pbAdd.Image = ((System.Drawing.Image)(resources.GetObject("pbAdd.Image")));
-            this.pbAdd.Location = new System.Drawing.Point(824, 20);
-            this.pbAdd.Margin = new System.Windows.Forms.Padding(220, 20, 3, 3);
+            this.pbAdd.Location = new System.Drawing.Point(774, 20);
+            this.pbAdd.Margin = new System.Windows.Forms.Padding(330, 20, 3, 3);
             this.pbAdd.Name = "pbAdd";
             this.pbAdd.Size = new System.Drawing.Size(47, 46);
             this.pbAdd.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
@@ -159,18 +161,18 @@
             // 
             this.flpImage.Location = new System.Drawing.Point(29, 195);
             this.flpImage.Name = "flpImage";
-            this.flpImage.Size = new System.Drawing.Size(887, 114);
+            this.flpImage.Size = new System.Drawing.Size(887, 159);
             this.flpImage.TabIndex = 21;
             // 
             // rtbDescription
             // 
-            this.rtbDescription.Font = new System.Drawing.Font("幼圆", 10.5F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
-            this.rtbDescription.Location = new System.Drawing.Point(3, 315);
+            this.rtbDescription.Font = new System.Drawing.Font("微软雅黑", 10.5F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
+            this.rtbDescription.Location = new System.Drawing.Point(3, 360);
             this.rtbDescription.Name = "rtbDescription";
             this.rtbDescription.ScrollBars = System.Windows.Forms.RichTextBoxScrollBars.ForcedVertical;
-            this.rtbDescription.Size = new System.Drawing.Size(943, 223);
+            this.rtbDescription.Size = new System.Drawing.Size(943, 178);
             this.rtbDescription.TabIndex = 22;
-            this.rtbDescription.Text = "";
+            this.rtbDescription.Text = "hhhhh";
             // 
             // flowLayoutPanel2
             // 
@@ -262,11 +264,24 @@
             // panelControl
             // 
             this.panelControl.Controls.Add(this.flowLayoutPanel2);
+            this.panelControl.Dock = System.Windows.Forms.DockStyle.Fill;
             this.panelControl.Location = new System.Drawing.Point(0, 0);
             this.panelControl.Margin = new System.Windows.Forms.Padding(2);
             this.panelControl.Name = "panelControl";
-            this.panelControl.Size = new System.Drawing.Size(949, 544);
+            this.panelControl.Size = new System.Drawing.Size(950, 541);
             this.panelControl.TabIndex = 23;
+            // 
+            // label1
+            // 
+            this.label1.AutoSize = true;
+            this.label1.Font = new System.Drawing.Font("幼圆", 10.5F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
+            this.label1.ForeColor = System.Drawing.SystemColors.ControlDarkDark;
+            this.label1.Location = new System.Drawing.Point(824, 35);
+            this.label1.Margin = new System.Windows.Forms.Padding(0, 35, 3, 0);
+            this.label1.Name = "label1";
+            this.label1.Size = new System.Drawing.Size(102, 21);
+            this.label1.TabIndex = 23;
+            this.label1.Text = "添加图片";
             // 
             // JournalDetail
             // 
@@ -312,5 +327,6 @@
         private System.Windows.Forms.Label label4;
         private System.Windows.Forms.TextBox tbEmotion;
         private System.Windows.Forms.Panel panelControl;
+        private System.Windows.Forms.Label label1;
     }
 }

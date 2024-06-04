@@ -23,12 +23,37 @@ namespace TravelApp.controller
         public string baseUrl = "http://localhost:5199/api/Journal";
         public ChangePanel ChangePanel;
         public Refresh Refresh;
+        public bool IsFromToDo;
+        public Travel travel;
+
+        public event EventHandler BackToTravelTodoRequested;
+
         public JournalDetail(Journal journal, ChangePanel changePanel)
         {
             InitializeComponent();
-            this.JournalId = journal.JournalId;
+            IsFromToDo = false;
             this.ChangePanel = changePanel;
-
+            Init0(journal);
+        }
+        public JournalDetail(Journal journal, Travel travel)
+        {
+            InitializeComponent();
+            this.travel = travel;
+            IsFromToDo = true;
+            Init0(journal);
+        }
+        public JournalDetail(long journalId, ChangePanel changePanel)
+        {
+            InitializeComponent();
+            IsFromToDo = false;
+            this.JournalId = journalId;
+            this.ChangePanel = changePanel;
+            this.Refresh = ImgRefresh;
+            Init();
+        }
+        public void Init0(Journal journal)
+        {
+            this.JournalId = journal.JournalId;
             journal.Time = DateTime.Now;
             lblTime.Text = journal.Time.ToString();
             tbTitle.Text = "请输入标题...";
@@ -38,15 +63,7 @@ namespace TravelApp.controller
             btnEdit.Enabled = false;
             btnEdit.Text = "编辑中";
         }
-        public JournalDetail(long journalId, ChangePanel changePanel)
-        {
-            InitializeComponent();
-            this.JournalId = journalId;
-            this.ChangePanel = changePanel;
-            this.Refresh = ImgRefresh;
-            Init();
-        }
-        private async void Init()
+        public async void Init()
         {
             Journal journal = await GetJournal();
 
@@ -63,6 +80,7 @@ namespace TravelApp.controller
             pbAdd.Enabled = false;
             btnSave.Enabled = false;
             rtbDescription.Enabled = false;
+            flpImage.Enabled = false;
         }
         public async Task<Journal> GetJournal()
         {
@@ -138,7 +156,7 @@ namespace TravelApp.controller
                     image = await fileClient.Download(url);
                     if (image != null)
                     {
-                        pb.picBox.Image = ResizeImage(image, new Size(200, 200));
+                        pb.picBox.Image = ResizeImage(image, new Size(400, 400));
                         pb.Anchor = AnchorStyles.None;
                         flpImage.Controls.Add(pb);
                     }
@@ -186,11 +204,18 @@ namespace TravelApp.controller
         private async void pbBack_Click(object sender, EventArgs e)
         {
             Journal journal = await GetJournal();
-            JournalList journalList = new JournalList(journal.UserId, this.ChangePanel);
+            if(IsFromToDo)
+            {
+                BackToTravelTodoRequested?.Invoke(this, EventArgs.Empty);
+            }
+            else
+            {
+                JournalList journalList = new JournalList(journal.UserId, this.ChangePanel);
 
-            panelControl.Controls.Clear();
-            panelControl.BringToFront();
-            panelControl.Controls.Add(journalList);
+                panelControl.Controls.Clear();
+                panelControl.BringToFront();
+                panelControl.Controls.Add(journalList);
+            }    
         }
 
         private void btnEdit_Click(object sender, EventArgs e)
@@ -203,6 +228,7 @@ namespace TravelApp.controller
             btnSave.Enabled = true;
             pbAdd.Enabled = true;
             rtbDescription.Enabled = true;
+            flpImage.Enabled = true;
         }
 
         private async void btnSave_Click(object sender, EventArgs e)
@@ -213,7 +239,8 @@ namespace TravelApp.controller
             btnSave.Enabled = false;
             pbAdd.Enabled = false;
             rtbDescription.Enabled = false;
-            
+            flpImage.Enabled = false;
+
             //将修改传到远端
             Journal journal = await GetJournal();
             if (journal == null)

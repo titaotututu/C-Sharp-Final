@@ -294,6 +294,7 @@
             // 
             // panelControl
             // 
+            this.panelControl.BackColor = System.Drawing.SystemColors.Control;
             this.panelControl.Location = new System.Drawing.Point(229, 1);
             this.panelControl.Margin = new System.Windows.Forms.Padding(2);
             this.panelControl.Name = "panelControl";

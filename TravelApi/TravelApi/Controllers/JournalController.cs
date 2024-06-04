@@ -31,17 +31,20 @@ namespace TravelApi.Controllers
         {
             try
             {
-                string date = DateTime.Now.ToString("yyyyMMdd");
-                IQueryable<Journal> query = _JournalService.GetJournalByDate(date);
-                if (query.Count() == 0)
+                lock (_JournalService) // 使用锁定机制，确保线程安全
                 {
-                    journal.JournalId = System.Convert.ToInt64(date + "0000");
+                    string date = DateTime.Now.ToString("yyyyMMdd");
+                    IQueryable<Journal> query = _JournalService.GetJournalByDate(date);
+                    if (query.Count() == 0)
+                    {
+                        journal.JournalId = System.Convert.ToInt64(date + "0000");
+                    }
+                    else
+                    {
+                        journal.JournalId = query.OrderByDescending(j => j.JournalId).First().JournalId + 1;
+                    }
+                    _JournalService.Add(journal);
                 }
-                else
-                {
-                    journal.JournalId = query.ToList().First().JournalId + 1;
-                }
-                _JournalService.Add(journal);
                 return journal;
             }
             catch (Exception e)

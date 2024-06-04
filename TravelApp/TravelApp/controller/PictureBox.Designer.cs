@@ -39,10 +39,10 @@
             // 
             this.pbClose.BackColor = System.Drawing.SystemColors.Control;
             this.pbClose.Image = ((System.Drawing.Image)(resources.GetObject("pbClose.Image")));
-            this.pbClose.Location = new System.Drawing.Point(211, 0);
+            this.pbClose.Location = new System.Drawing.Point(225, 0);
             this.pbClose.Margin = new System.Windows.Forms.Padding(20, 20, 3, 3);
             this.pbClose.Name = "pbClose";
-            this.pbClose.Size = new System.Drawing.Size(42, 42);
+            this.pbClose.Size = new System.Drawing.Size(28, 31);
             this.pbClose.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.pbClose.TabIndex = 23;
             this.pbClose.TabStop = false;
@@ -50,9 +50,9 @@
             // 
             // picBox
             // 
-            this.picBox.Location = new System.Drawing.Point(0, 48);
+            this.picBox.Location = new System.Drawing.Point(0, 0);
             this.picBox.Name = "picBox";
-            this.picBox.Size = new System.Drawing.Size(253, 209);
+            this.picBox.Size = new System.Drawing.Size(253, 161);
             this.picBox.TabIndex = 24;
             this.picBox.TabStop = false;
             // 
@@ -60,10 +60,10 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(9F, 18F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.Controls.Add(this.picBox);
             this.Controls.Add(this.pbClose);
+            this.Controls.Add(this.picBox);
             this.Name = "PictureBox";
-            this.Size = new System.Drawing.Size(253, 257);
+            this.Size = new System.Drawing.Size(253, 162);
             ((System.ComponentModel.ISupportInitialize)(this.pbClose)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.picBox)).EndInit();
             this.ResumeLayout(false);

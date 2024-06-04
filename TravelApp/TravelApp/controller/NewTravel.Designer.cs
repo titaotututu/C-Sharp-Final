@@ -45,9 +45,11 @@
             this.label1.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
             this.label1.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.label1.Font = new System.Drawing.Font("宋体", 13.875F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
-            this.label1.Location = new System.Drawing.Point(287, 30);
+            this.label1.ForeColor = System.Drawing.Color.White;
+            this.label1.Location = new System.Drawing.Point(243, 42);
+            this.label1.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(209, 39);
+            this.label1.Size = new System.Drawing.Size(159, 30);
             this.label1.TabIndex = 1;
             this.label1.Text = "开启新旅程";
             // 
@@ -55,9 +57,10 @@
             // 
             this.label2.AutoSize = true;
             this.label2.Font = new System.Drawing.Font("宋体", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
-            this.label2.Location = new System.Drawing.Point(32, 136);
+            this.label2.Location = new System.Drawing.Point(58, 139);
+            this.label2.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(279, 33);
+            this.label2.Size = new System.Drawing.Size(210, 24);
             this.label2.TabIndex = 2;
             this.label2.Text = "添加你的旅行标题";
             // 
@@ -65,9 +68,10 @@
             // 
             this.label3.AutoSize = true;
             this.label3.Font = new System.Drawing.Font("宋体", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
-            this.label3.Location = new System.Drawing.Point(32, 234);
+            this.label3.Location = new System.Drawing.Point(58, 211);
+            this.label3.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(279, 33);
+            this.label3.Size = new System.Drawing.Size(210, 24);
             this.label3.TabIndex = 3;
             this.label3.Text = "添加你的旅行城市";
             // 
@@ -75,31 +79,35 @@
             // 
             this.label4.AutoSize = true;
             this.label4.Font = new System.Drawing.Font("宋体", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
-            this.label4.Location = new System.Drawing.Point(32, 334);
+            this.label4.Location = new System.Drawing.Point(58, 287);
+            this.label4.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(279, 33);
+            this.label4.Size = new System.Drawing.Size(210, 24);
             this.label4.TabIndex = 4;
             this.label4.Text = "添加你的启程时间";
             // 
             // textTravelTitle
             // 
-            this.textTravelTitle.Location = new System.Drawing.Point(375, 136);
+            this.textTravelTitle.Location = new System.Drawing.Point(300, 139);
+            this.textTravelTitle.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.textTravelTitle.Name = "textTravelTitle";
-            this.textTravelTitle.Size = new System.Drawing.Size(287, 35);
+            this.textTravelTitle.Size = new System.Drawing.Size(284, 28);
             this.textTravelTitle.TabIndex = 5;
             // 
             // textTravelCity
             // 
-            this.textTravelCity.Location = new System.Drawing.Point(375, 232);
+            this.textTravelCity.Location = new System.Drawing.Point(300, 211);
+            this.textTravelCity.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.textTravelCity.Name = "textTravelCity";
-            this.textTravelCity.Size = new System.Drawing.Size(287, 35);
+            this.textTravelCity.Size = new System.Drawing.Size(284, 28);
             this.textTravelCity.TabIndex = 6;
             // 
             // buttonOK
             // 
-            this.buttonOK.Location = new System.Drawing.Point(298, 413);
+            this.buttonOK.Location = new System.Drawing.Point(246, 412);
+            this.buttonOK.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.buttonOK.Name = "buttonOK";
-            this.buttonOK.Size = new System.Drawing.Size(208, 52);
+            this.buttonOK.Size = new System.Drawing.Size(156, 39);
             this.buttonOK.TabIndex = 8;
             this.buttonOK.Text = "确认创建";
             this.buttonOK.UseVisualStyleBackColor = true;
@@ -107,14 +115,15 @@
             // 
             // dateTimePicker1
             // 
-            this.dateTimePicker1.Location = new System.Drawing.Point(375, 334);
+            this.dateTimePicker1.Location = new System.Drawing.Point(300, 287);
+            this.dateTimePicker1.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.dateTimePicker1.Name = "dateTimePicker1";
-            this.dateTimePicker1.Size = new System.Drawing.Size(287, 35);
+            this.dateTimePicker1.Size = new System.Drawing.Size(284, 28);
             this.dateTimePicker1.TabIndex = 9;
             // 
             // NewTravel
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(12F, 24F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(9F, 18F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.MintCream;
             this.Controls.Add(this.dateTimePicker1);
@@ -125,8 +134,9 @@
             this.Controls.Add(this.label3);
             this.Controls.Add(this.label2);
             this.Controls.Add(this.label1);
+            this.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.Name = "NewTravel";
-            this.Size = new System.Drawing.Size(802, 508);
+            this.Size = new System.Drawing.Size(629, 525);
             this.ResumeLayout(false);
             this.PerformLayout();
 

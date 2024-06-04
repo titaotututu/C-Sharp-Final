@@ -18,7 +18,6 @@ namespace TravelApp
 {
     public partial class TravelTodo : Form
     {
-        public ChangePanel ChangePanel;
         long TravelId;
         string TravelTitle;
         DateTime TravelTime;
@@ -30,7 +29,6 @@ namespace TravelApp
             getTask();
             
         }
-
 
         public async void getTask()
         {
@@ -49,8 +47,9 @@ namespace TravelApp
                     foreach (TodoItem todo in todoItems)
                     {
                         // 添加到panel中
-                        TodoPage todoPage = new TodoPage(todo, this.ChangePanel);
+                        TodoPage todoPage = new TodoPage(todo);
                         todoPage.TodoDeleted += TodoPage_TodoDeleted; // 订阅事件
+                        todoPage.JournalDetailRequested += SwitchToJournalDetail; // 订阅切换事件
                         panelTodo.Controls.Add(todoPage);
                     }
                 }
@@ -89,6 +88,20 @@ namespace TravelApp
             getTask();
         }
         private void TodoPage_TodoDeleted(object sender, EventArgs e)
+        {
+            panelTodo.Controls.Clear();
+            getTask();
+        }
+
+        public void SwitchToJournalDetail(Journal journal, Travel travel)
+        {
+            panelTodo.Controls.Clear();
+            JournalDetail journalDetail = new JournalDetail(journal, travel);
+            journalDetail.Dock = DockStyle.Fill;
+            journalDetail.BackToTravelTodoRequested += BackFromJournalDetail;
+            panelTodo.Controls.Add(journalDetail);
+        }
+        private void BackFromJournalDetail(object sender, EventArgs e)
         {
             panelTodo.Controls.Clear();
             getTask();

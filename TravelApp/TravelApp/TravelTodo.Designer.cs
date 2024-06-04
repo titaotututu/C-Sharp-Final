@@ -29,33 +29,28 @@
         private void InitializeComponent()
         {
             this.labelTravelTitle = new System.Windows.Forms.Label();
-            this.panelTodo = new System.Windows.Forms.FlowLayoutPanel();
             this.buttonAddTodo = new System.Windows.Forms.Button();
             this.buttonShow = new System.Windows.Forms.Button();
+            this.panelTodo = new System.Windows.Forms.Panel();
+            this.label1 = new System.Windows.Forms.Label();
             this.SuspendLayout();
             // 
             // labelTravelTitle
             // 
             this.labelTravelTitle.Font = new System.Drawing.Font("宋体", 13.875F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
-            this.labelTravelTitle.Location = new System.Drawing.Point(30, 35);
+            this.labelTravelTitle.Location = new System.Drawing.Point(125, 25);
+            this.labelTravelTitle.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.labelTravelTitle.Name = "labelTravelTitle";
-            this.labelTravelTitle.Size = new System.Drawing.Size(295, 55);
+            this.labelTravelTitle.Size = new System.Drawing.Size(467, 41);
             this.labelTravelTitle.TabIndex = 0;
             this.labelTravelTitle.Text = "旅行名称";
-            this.labelTravelTitle.Text=TravelTitle;
-            // 
-            // panelTodo
-            // 
-            this.panelTodo.Location = new System.Drawing.Point(28, 144);
-            this.panelTodo.Name = "panelTodo";
-            this.panelTodo.Size = new System.Drawing.Size(1126, 541);
-            this.panelTodo.TabIndex = 1;
             // 
             // buttonAddTodo
             // 
-            this.buttonAddTodo.Location = new System.Drawing.Point(997, 31);
+            this.buttonAddTodo.Location = new System.Drawing.Point(827, 23);
+            this.buttonAddTodo.Margin = new System.Windows.Forms.Padding(2);
             this.buttonAddTodo.Name = "buttonAddTodo";
-            this.buttonAddTodo.Size = new System.Drawing.Size(157, 55);
+            this.buttonAddTodo.Size = new System.Drawing.Size(118, 41);
             this.buttonAddTodo.TabIndex = 2;
             this.buttonAddTodo.Text = "新增待办";
             this.buttonAddTodo.UseVisualStyleBackColor = true;
@@ -63,24 +58,46 @@
             // 
             // buttonShow
             // 
-            this.buttonShow.Location = new System.Drawing.Point(796, 31);
+            this.buttonShow.Location = new System.Drawing.Point(679, 23);
+            this.buttonShow.Margin = new System.Windows.Forms.Padding(2);
             this.buttonShow.Name = "buttonShow";
-            this.buttonShow.Size = new System.Drawing.Size(157, 55);
+            this.buttonShow.Size = new System.Drawing.Size(118, 41);
             this.buttonShow.TabIndex = 3;
             this.buttonShow.Text = "显示待办";
             this.buttonShow.UseVisualStyleBackColor = true;
             this.buttonShow.Click += new System.EventHandler(this.buttonShow_Click);
             // 
+            // panelTodo
+            // 
+            this.panelTodo.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
+            this.panelTodo.Location = new System.Drawing.Point(11, 78);
+            this.panelTodo.Margin = new System.Windows.Forms.Padding(2);
+            this.panelTodo.Name = "panelTodo";
+            this.panelTodo.Size = new System.Drawing.Size(949, 544);
+            this.panelTodo.TabIndex = 4;
+            // 
+            // label1
+            // 
+            this.label1.Font = new System.Drawing.Font("宋体", 13.875F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
+            this.label1.Location = new System.Drawing.Point(20, 25);
+            this.label1.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.label1.Name = "label1";
+            this.label1.Size = new System.Drawing.Size(101, 41);
+            this.label1.TabIndex = 5;
+            this.label1.Text = "旅程：";
+            // 
             // TravelTodo
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(12F, 24F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(9F, 18F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.Honeydew;
-            this.ClientSize = new System.Drawing.Size(1180, 697);
+            this.ClientSize = new System.Drawing.Size(969, 631);
+            this.Controls.Add(this.label1);
+            this.Controls.Add(this.panelTodo);
             this.Controls.Add(this.buttonShow);
             this.Controls.Add(this.buttonAddTodo);
-            this.Controls.Add(this.panelTodo);
             this.Controls.Add(this.labelTravelTitle);
+            this.Margin = new System.Windows.Forms.Padding(2);
             this.Name = "TravelTodo";
             this.Text = "TravelTodo";
             this.ResumeLayout(false);
@@ -90,8 +107,9 @@
         #endregion
 
         private System.Windows.Forms.Label labelTravelTitle;
-        private System.Windows.Forms.FlowLayoutPanel panelTodo;
         private System.Windows.Forms.Button buttonAddTodo;
         private System.Windows.Forms.Button buttonShow;
+        private System.Windows.Forms.Panel panelTodo;
+        private System.Windows.Forms.Label label1;
     }
 }

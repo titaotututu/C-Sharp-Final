@@ -35,6 +35,7 @@
             this.textBoxThing = new System.Windows.Forms.TextBox();
             this.buttonOk = new System.Windows.Forms.Button();
             this.dateTimePicker1 = new System.Windows.Forms.DateTimePicker();
+            this.label4 = new System.Windows.Forms.Label();
             this.SuspendLayout();
             // 
             // label1
@@ -42,9 +43,10 @@
             this.label1.AutoSize = true;
             this.label1.Font = new System.Drawing.Font("宋体", 13.875F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
             this.label1.ForeColor = System.Drawing.SystemColors.ControlText;
-            this.label1.Location = new System.Drawing.Point(50, 122);
+            this.label1.Location = new System.Drawing.Point(230, 119);
+            this.label1.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(93, 37);
+            this.label1.Size = new System.Drawing.Size(70, 28);
             this.label1.TabIndex = 0;
             this.label1.Text = "时间";
             // 
@@ -53,9 +55,10 @@
             this.label2.AutoSize = true;
             this.label2.Font = new System.Drawing.Font("宋体", 13.875F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
             this.label2.ForeColor = System.Drawing.SystemColors.ControlText;
-            this.label2.Location = new System.Drawing.Point(50, 229);
+            this.label2.Location = new System.Drawing.Point(230, 205);
+            this.label2.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(93, 37);
+            this.label2.Size = new System.Drawing.Size(70, 28);
             this.label2.TabIndex = 1;
             this.label2.Text = "地点";
             // 
@@ -64,31 +67,35 @@
             this.label3.AutoSize = true;
             this.label3.Font = new System.Drawing.Font("宋体", 13.875F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
             this.label3.ForeColor = System.Drawing.SystemColors.ControlText;
-            this.label3.Location = new System.Drawing.Point(50, 346);
+            this.label3.Location = new System.Drawing.Point(230, 287);
+            this.label3.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(169, 37);
+            this.label3.Size = new System.Drawing.Size(128, 28);
             this.label3.TabIndex = 2;
             this.label3.Text = "待办内容";
             // 
             // textBoxPlace
             // 
-            this.textBoxPlace.Location = new System.Drawing.Point(264, 237);
+            this.textBoxPlace.Location = new System.Drawing.Point(390, 205);
+            this.textBoxPlace.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.textBoxPlace.Name = "textBoxPlace";
-            this.textBoxPlace.Size = new System.Drawing.Size(406, 35);
+            this.textBoxPlace.Size = new System.Drawing.Size(306, 28);
             this.textBoxPlace.TabIndex = 4;
             // 
             // textBoxThing
             // 
-            this.textBoxThing.Location = new System.Drawing.Point(264, 346);
+            this.textBoxThing.Location = new System.Drawing.Point(390, 287);
+            this.textBoxThing.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.textBoxThing.Name = "textBoxThing";
-            this.textBoxThing.Size = new System.Drawing.Size(406, 35);
+            this.textBoxThing.Size = new System.Drawing.Size(306, 28);
             this.textBoxThing.TabIndex = 5;
             // 
             // buttonOk
             // 
-            this.buttonOk.Location = new System.Drawing.Point(303, 433);
+            this.buttonOk.Location = new System.Drawing.Point(378, 426);
+            this.buttonOk.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.buttonOk.Name = "buttonOk";
-            this.buttonOk.Size = new System.Drawing.Size(265, 64);
+            this.buttonOk.Size = new System.Drawing.Size(199, 48);
             this.buttonOk.TabIndex = 6;
             this.buttonOk.Text = "确认添加";
             this.buttonOk.UseVisualStyleBackColor = true;
@@ -98,16 +105,33 @@
             // 
             this.dateTimePicker1.CustomFormat = "yyyy-MM-dd HH:mm:ss";
             this.dateTimePicker1.Format = System.Windows.Forms.DateTimePickerFormat.Custom;
-            this.dateTimePicker1.Location = new System.Drawing.Point(264, 123);
+            this.dateTimePicker1.Location = new System.Drawing.Point(390, 119);
+            this.dateTimePicker1.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.dateTimePicker1.Name = "dateTimePicker1";
-            this.dateTimePicker1.Size = new System.Drawing.Size(406, 35);
+            this.dateTimePicker1.Size = new System.Drawing.Size(306, 28);
             this.dateTimePicker1.TabIndex = 7;
+            // 
+            // label4
+            // 
+            this.label4.AutoSize = true;
+            this.label4.BackColor = System.Drawing.Color.SeaGreen;
+            this.label4.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
+            this.label4.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.label4.Font = new System.Drawing.Font("宋体", 13.875F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
+            this.label4.ForeColor = System.Drawing.Color.White;
+            this.label4.Location = new System.Drawing.Point(43, 26);
+            this.label4.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.label4.Name = "label4";
+            this.label4.Size = new System.Drawing.Size(130, 30);
+            this.label4.TabIndex = 8;
+            this.label4.Text = "添加待办";
             // 
             // AddTodo
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(12F, 24F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(9F, 18F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.Honeydew;
+            this.Controls.Add(this.label4);
             this.Controls.Add(this.dateTimePicker1);
             this.Controls.Add(this.buttonOk);
             this.Controls.Add(this.textBoxThing);
@@ -115,8 +139,9 @@
             this.Controls.Add(this.label3);
             this.Controls.Add(this.label2);
             this.Controls.Add(this.label1);
+            this.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.Name = "AddTodo";
-            this.Size = new System.Drawing.Size(802, 530);
+            this.Size = new System.Drawing.Size(950, 543);
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -131,5 +156,6 @@
         private System.Windows.Forms.TextBox textBoxThing;
         private System.Windows.Forms.Button buttonOk;
         private System.Windows.Forms.DateTimePicker dateTimePicker1;
+        private System.Windows.Forms.Label label4;
     }
 }

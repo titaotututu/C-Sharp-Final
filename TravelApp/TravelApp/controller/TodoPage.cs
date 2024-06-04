@@ -17,16 +17,15 @@ namespace TravelApp.controller
 {
     public partial class TodoPage : UserControl
     {
-        public ChangePanel ChangePanel;
         public event EventHandler TodoDeleted;
+        public event Action<Journal, Travel> JournalDetailRequested;
 
         TodoItem todo = new TodoItem();
 
-        public TodoPage(TodoItem todo_, ChangePanel changePanel)
+        public TodoPage(TodoItem todo_)
         {
             todo = todo_;
             InitializeComponent();
-            this.ChangePanel = changePanel;
             checkBox1.Enabled = false;
         }
 
@@ -107,7 +106,7 @@ namespace TravelApp.controller
                 HttpResponseMessage result = await client.Put(url, jsonData);
                 if (result.IsSuccessStatusCode)
                 {
-                    MessageBox.Show("待办已完成.", "Success", MessageBoxButtons.OK, MessageBoxIcon.Information);
+                    MessageBox.Show("待办已完成！\n开始编写日志吧！", "Success", MessageBoxButtons.OK, MessageBoxIcon.Information);
 
                 }
                 else
@@ -134,10 +133,10 @@ namespace TravelApp.controller
             //初始化
             journal.JournalId = 0;
             journal.Time = DateTime.Now;
-            journal.Title = "0";
-            journal.Weather = "0";
-            journal.Emotion = "0";
-            journal.Description = "0";
+            journal.Title = "";
+            journal.Weather = "";
+            journal.Emotion = "";
+            journal.Description = "";
             journal.Picture = "";
             journal.UserId = nowtravel.UserId;
 
@@ -166,9 +165,8 @@ namespace TravelApp.controller
                 return;
             }
 
-            //跳转至编辑日志界面
-            JournalDetail journalDetail = new JournalDetail(journal, this.ChangePanel);
-            this.ChangePanel(journalDetail);
+            //跳转至TravelToDo界面
+            JournalDetailRequested?.Invoke(journal, nowtravel);
         }
     }
 }

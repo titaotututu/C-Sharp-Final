@@ -67,14 +67,6 @@ namespace TravelApp.controller
 
         private async void pbAdd_Click(object sender, EventArgs e)
         {
-            /*//跳转至编辑日志界面
-            Journal journal = new Journal();
-            journal.UserId = this.UserId;
-            JournalDetail journalDetail = new JournalDetail(journal);
-            panelControl.Controls.Clear();
-            panelControl.BringToFront();
-            panelControl.Controls.Add(journalDetail);
-            */
             string url = "http://localhost:5199/api/Journal";
 
             Journal journal = new Journal();
@@ -82,10 +74,10 @@ namespace TravelApp.controller
             //初始化
             journal.JournalId = 0;
             journal.Time = DateTime.Now;
-            journal.Title = "0";
-            journal.Weather = "0";
-            journal.Emotion = "0";
-            journal.Description = "0";
+            journal.Title = "";
+            journal.Weather = "";
+            journal.Emotion = "";
+            journal.Description = "";
             journal.Picture = "";
             journal.UserId = this.UserId;
 

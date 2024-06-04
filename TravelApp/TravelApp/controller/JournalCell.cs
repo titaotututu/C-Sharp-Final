@@ -53,5 +53,35 @@ namespace TravelApp.controller
             JournalDetail journalDetail = new JournalDetail(id, ChangePanel);
             this.ChangePanel(journalDetail);
         }
+
+        private void pictureBoxGoose_Click(object sender, EventArgs e)
+        {
+            JournalCell_Click(sender, e);
+        }
+
+        private void lblTitle_Click(object sender, EventArgs e)
+        {
+            JournalCell_Click(sender, e);
+        }
+
+        private void label1_Click(object sender, EventArgs e)
+        {
+            JournalCell_Click(sender, e);
+        }
+
+        private void lblWeather_Click(object sender, EventArgs e)
+        {
+            JournalCell_Click(sender, e);
+        }
+
+        private void label2_Click(object sender, EventArgs e)
+        {
+            JournalCell_Click(sender, e);
+        }
+
+        private void lblTime_Click(object sender, EventArgs e)
+        {
+            JournalCell_Click(sender, e);
+        }
     }
 }

@@ -17,8 +17,10 @@ namespace TravelApp
         {
             var handler = new HttpClientHandler();
             handler.ServerCertificateCustomValidationCallback = delegate { return true; };
-            HttpClient client = new HttpClient(handler);
-
+            HttpClient client = new HttpClient(handler)
+            {
+                BaseAddress = new Uri("http://localhost:5199/") // 设置BaseAddress
+            };
             return client;
         }
 
@@ -50,12 +52,11 @@ namespace TravelApp
         {
             using (HttpClient client = CreateClient())
             {
-                //待修改
-                string url = "????" + journalId;
+                string url = $"api/File/upload?journalId={journalId}"; // 构建绝对URI
                 string boundary = "----" + DateTime.Now.Ticks.ToString("x");
                 MultipartFormDataContent content = new MultipartFormDataContent(boundary);
                 content.Headers.ContentType = MediaTypeHeaderValue.Parse(string.Format("multipart/form-data; boundary={0}", boundary));
-                if (string.IsNullOrEmpty(filePath) && !File.Exists(filePath))
+                if (string.IsNullOrEmpty(filePath) || !File.Exists(filePath))
                 {
                     throw new Exception("文件不存在");
                 }

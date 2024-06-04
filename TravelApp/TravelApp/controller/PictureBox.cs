@@ -16,7 +16,7 @@ namespace TravelApp.controller
         public long JournalId;
         public Refresh Refresh;
         //待补充
-        private readonly string baseUrl = "????";
+        private readonly string baseUrl = "http://localhost:5199/api/File/delete?journalId={0}&fileName={1}";
         public PictureBox(long journalId, string fileName, Refresh refresh)
         {
             InitializeComponent();
@@ -27,10 +27,17 @@ namespace TravelApp.controller
 
         private void pbClose_Click(object sender, EventArgs e)
         {
-            string url = string.Format(baseUrl, this.JournalId, this.FileName);
-            FileClient fileClient = new FileClient();
-            fileClient.Delete(url);
-            this.Refresh();
+            try
+            {
+                string url = string.Format(baseUrl, this.JournalId, this.FileName);
+                FileClient fileClient = new FileClient();
+                fileClient.Delete(url);
+                this.Refresh();
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show($"An error occurred: {ex.Message}", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
+            }
         }
     }
 }
