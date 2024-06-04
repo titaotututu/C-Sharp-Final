@@ -46,8 +46,7 @@
               "RelativeToolTip": "TravelApi\\Models\\Travel.cs",
               "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-06-04T10:35:16.077Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-06-04T10:35:16.077Z"
             },
             {
               "$type": "Document",
@@ -72,8 +71,7 @@
               "RelativeToolTip": "TravelApi\\Controllers\\UserController.cs",
               "ViewState": "AQIAACQAAAAAAAAAAAAIwCYAAAAJAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-06-04T10:31:55.873Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-06-04T10:31:55.873Z"
             }
           ]
         }

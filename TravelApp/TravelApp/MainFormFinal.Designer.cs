@@ -85,7 +85,7 @@
             // 
             this.pictureBox8.Image = global::TravelApp.Properties.Resources.精灵;
             this.pictureBox8.Location = new System.Drawing.Point(33, 21);
-            this.pictureBox8.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.pictureBox8.Margin = new System.Windows.Forms.Padding(4);
             this.pictureBox8.Name = "pictureBox8";
             this.pictureBox8.Size = new System.Drawing.Size(123, 104);
             this.pictureBox8.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
@@ -96,7 +96,7 @@
             // 
             this.pictureBox7.Image = global::TravelApp.Properties.Resources.其他;
             this.pictureBox7.Location = new System.Drawing.Point(201, 616);
-            this.pictureBox7.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.pictureBox7.Margin = new System.Windows.Forms.Padding(4);
             this.pictureBox7.Name = "pictureBox7";
             this.pictureBox7.Size = new System.Drawing.Size(56, 56);
             this.pictureBox7.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
@@ -107,7 +107,7 @@
             // 
             this.pictureBox6.Image = global::TravelApp.Properties.Resources.日志;
             this.pictureBox6.Location = new System.Drawing.Point(201, 536);
-            this.pictureBox6.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.pictureBox6.Margin = new System.Windows.Forms.Padding(4);
             this.pictureBox6.Name = "pictureBox6";
             this.pictureBox6.Size = new System.Drawing.Size(60, 63);
             this.pictureBox6.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
@@ -118,7 +118,7 @@
             // 
             this.pictureBox5.Image = global::TravelApp.Properties.Resources.点亮;
             this.pictureBox5.Location = new System.Drawing.Point(201, 464);
-            this.pictureBox5.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.pictureBox5.Margin = new System.Windows.Forms.Padding(4);
             this.pictureBox5.Name = "pictureBox5";
             this.pictureBox5.Size = new System.Drawing.Size(60, 64);
             this.pictureBox5.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
@@ -129,7 +129,7 @@
             // 
             this.pictureBox4.Image = global::TravelApp.Properties.Resources.天气;
             this.pictureBox4.Location = new System.Drawing.Point(201, 399);
-            this.pictureBox4.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.pictureBox4.Margin = new System.Windows.Forms.Padding(4);
             this.pictureBox4.Name = "pictureBox4";
             this.pictureBox4.Size = new System.Drawing.Size(60, 57);
             this.pictureBox4.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
@@ -140,7 +140,7 @@
             // 
             this.pictureBox3.Image = global::TravelApp.Properties.Resources.导航地址;
             this.pictureBox3.Location = new System.Drawing.Point(201, 328);
-            this.pictureBox3.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.pictureBox3.Margin = new System.Windows.Forms.Padding(4);
             this.pictureBox3.Name = "pictureBox3";
             this.pictureBox3.Size = new System.Drawing.Size(61, 55);
             this.pictureBox3.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
@@ -151,7 +151,7 @@
             // 
             this.pictureBox2.Image = global::TravelApp.Properties.Resources.历史行程;
             this.pictureBox2.Location = new System.Drawing.Point(201, 247);
-            this.pictureBox2.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.pictureBox2.Margin = new System.Windows.Forms.Padding(4);
             this.pictureBox2.Name = "pictureBox2";
             this.pictureBox2.Size = new System.Drawing.Size(61, 65);
             this.pictureBox2.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
@@ -162,7 +162,7 @@
             // 
             this.pictureBox1.Image = global::TravelApp.Properties.Resources.个人信息;
             this.pictureBox1.Location = new System.Drawing.Point(201, 173);
-            this.pictureBox1.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.pictureBox1.Margin = new System.Windows.Forms.Padding(4);
             this.pictureBox1.Name = "pictureBox1";
             this.pictureBox1.Size = new System.Drawing.Size(61, 65);
             this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
@@ -296,7 +296,7 @@
             this.panelControl.BackColor = System.Drawing.Color.DarkSeaGreen;
             this.panelControl.Location = new System.Drawing.Point(305, 1);
             this.panelControl.Name = "panelControl";
-            this.panelControl.Size = new System.Drawing.Size(1480, 725);
+            this.panelControl.Size = new System.Drawing.Size(1449, 725);
             this.panelControl.TabIndex = 1;
             // 
             // MainFormFinal
@@ -304,7 +304,7 @@
             this.AutoScaleDimensions = new System.Drawing.SizeF(12F, 24F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(188)))), ((int)(((byte)(204)))), ((int)(((byte)(172)))));
-            this.ClientSize = new System.Drawing.Size(1776, 725);
+            this.ClientSize = new System.Drawing.Size(1565, 725);
             this.Controls.Add(this.panelControl);
             this.Controls.Add(this.panel1);
             this.Name = "MainFormFinal";
