@@ -44,51 +44,50 @@ namespace TravelApp.controller
             // labelTime
             // 
             this.labelTime.Font = new System.Drawing.Font("宋体", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
-            this.labelTime.Location = new System.Drawing.Point(82, 19);
-            this.labelTime.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.labelTime.Location = new System.Drawing.Point(109, 25);
             this.labelTime.Name = "labelTime";
-            this.labelTime.Size = new System.Drawing.Size(164, 28);
+            this.labelTime.Size = new System.Drawing.Size(219, 37);
             this.labelTime.TabIndex = 1;
             this.labelTime.Text = "时间";
+            this.labelTime.Text=todo.Time.ToString();
             // 
             // labelPlace
             // 
             this.labelPlace.Font = new System.Drawing.Font("宋体", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
-            this.labelPlace.Location = new System.Drawing.Point(401, 19);
-            this.labelPlace.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.labelPlace.Location = new System.Drawing.Point(535, 25);
             this.labelPlace.Name = "labelPlace";
-            this.labelPlace.Size = new System.Drawing.Size(110, 28);
+            this.labelPlace.Size = new System.Drawing.Size(147, 37);
             this.labelPlace.TabIndex = 2;
             this.labelPlace.Text = "地点";
+            this.labelPlace.Text=todo.Place.ToString();
             // 
             // labelDescription
             // 
             this.labelDescription.Font = new System.Drawing.Font("宋体", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
-            this.labelDescription.Location = new System.Drawing.Point(169, 72);
-            this.labelDescription.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.labelDescription.Location = new System.Drawing.Point(225, 96);
             this.labelDescription.Name = "labelDescription";
-            this.labelDescription.Size = new System.Drawing.Size(178, 34);
+            this.labelDescription.Size = new System.Drawing.Size(237, 45);
             this.labelDescription.TabIndex = 3;
             this.labelDescription.Text = "描述";
+            this.labelDescription.Text=todo.Description.ToString();
             // 
             // checkBox1
             // 
             this.checkBox1.AutoSize = true;
             this.checkBox1.Font = new System.Drawing.Font("宋体", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
-            this.checkBox1.Location = new System.Drawing.Point(27, 44);
-            this.checkBox1.Margin = new System.Windows.Forms.Padding(2);
+            this.checkBox1.Location = new System.Drawing.Point(36, 59);
             this.checkBox1.Name = "checkBox1";
-            this.checkBox1.Size = new System.Drawing.Size(22, 21);
+            this.checkBox1.Size = new System.Drawing.Size(28, 27);
             this.checkBox1.TabIndex = 4;
             this.checkBox1.UseVisualStyleBackColor = true;
+            this.checkBox1.Visible = false;
             // 
             // buttonDelete
             // 
             this.buttonDelete.Font = new System.Drawing.Font("宋体", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
-            this.buttonDelete.Location = new System.Drawing.Point(842, 19);
-            this.buttonDelete.Margin = new System.Windows.Forms.Padding(2);
+            this.buttonDelete.Location = new System.Drawing.Point(1123, 25);
             this.buttonDelete.Name = "buttonDelete";
-            this.buttonDelete.Size = new System.Drawing.Size(89, 34);
+            this.buttonDelete.Size = new System.Drawing.Size(119, 45);
             this.buttonDelete.TabIndex = 5;
             this.buttonDelete.Text = "删除";
             this.buttonDelete.UseVisualStyleBackColor = true;
@@ -98,9 +97,10 @@ namespace TravelApp.controller
             // 
             this.label1.AutoSize = true;
             this.label1.Font = new System.Drawing.Font("宋体", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
-            this.label1.Location = new System.Drawing.Point(314, 19);
+            this.label1.Location = new System.Drawing.Point(419, 25);
+            this.label1.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(82, 24);
+            this.label1.Size = new System.Drawing.Size(111, 33);
             this.label1.TabIndex = 6;
             this.label1.Text = "地点：";
             // 
@@ -108,19 +108,19 @@ namespace TravelApp.controller
             // 
             this.label2.AutoSize = true;
             this.label2.Font = new System.Drawing.Font("宋体", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
-            this.label2.Location = new System.Drawing.Point(82, 72);
+            this.label2.Location = new System.Drawing.Point(109, 96);
+            this.label2.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(82, 24);
+            this.label2.Size = new System.Drawing.Size(111, 33);
             this.label2.TabIndex = 7;
             this.label2.Text = "描述：";
             // 
             // buttonLight
             // 
             this.buttonLight.Font = new System.Drawing.Font("宋体", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
-            this.buttonLight.Location = new System.Drawing.Point(842, 67);
-            this.buttonLight.Margin = new System.Windows.Forms.Padding(2);
+            this.buttonLight.Location = new System.Drawing.Point(1123, 89);
             this.buttonLight.Name = "buttonLight";
-            this.buttonLight.Size = new System.Drawing.Size(89, 34);
+            this.buttonLight.Size = new System.Drawing.Size(119, 45);
             this.buttonLight.TabIndex = 8;
             this.buttonLight.Text = "打卡";
             this.buttonLight.UseVisualStyleBackColor = true;
@@ -129,15 +129,16 @@ namespace TravelApp.controller
             // label3
             // 
             this.label3.BackColor = System.Drawing.Color.DarkGray;
-            this.label3.Location = new System.Drawing.Point(-12, 112);
+            this.label3.Location = new System.Drawing.Point(-16, 149);
+            this.label3.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(1000, 2);
+            this.label3.Size = new System.Drawing.Size(1333, 3);
             this.label3.TabIndex = 12;
             this.label3.Text = "label3";
             // 
             // TodoPage
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(9F, 18F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(12F, 24F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.Controls.Add(this.label3);
             this.Controls.Add(this.buttonLight);
@@ -148,9 +149,8 @@ namespace TravelApp.controller
             this.Controls.Add(this.labelDescription);
             this.Controls.Add(this.labelPlace);
             this.Controls.Add(this.labelTime);
-            this.Margin = new System.Windows.Forms.Padding(2);
             this.Name = "TodoPage";
-            this.Size = new System.Drawing.Size(949, 114);
+            this.Size = new System.Drawing.Size(1265, 152);
             this.ResumeLayout(false);
             this.PerformLayout();
 

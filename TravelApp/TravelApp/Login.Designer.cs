@@ -38,23 +38,26 @@
             // 
             // textBox1
             // 
-            this.textBox1.Location = new System.Drawing.Point(353, 160);
+            this.textBox1.Location = new System.Drawing.Point(530, 256);
+            this.textBox1.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.textBox1.Name = "textBox1";
-            this.textBox1.Size = new System.Drawing.Size(215, 25);
+            this.textBox1.Size = new System.Drawing.Size(320, 35);
             this.textBox1.TabIndex = 2;
             // 
             // textBox2
             // 
-            this.textBox2.Location = new System.Drawing.Point(353, 264);
+            this.textBox2.Location = new System.Drawing.Point(530, 422);
+            this.textBox2.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.textBox2.Name = "textBox2";
-            this.textBox2.Size = new System.Drawing.Size(215, 25);
+            this.textBox2.Size = new System.Drawing.Size(320, 35);
             this.textBox2.TabIndex = 3;
             // 
             // button3
             // 
-            this.button3.Location = new System.Drawing.Point(332, 362);
+            this.button3.Location = new System.Drawing.Point(498, 579);
+            this.button3.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.button3.Name = "button3";
-            this.button3.Size = new System.Drawing.Size(121, 69);
+            this.button3.Size = new System.Drawing.Size(182, 110);
             this.button3.TabIndex = 4;
             this.button3.Text = "登录";
             this.button3.UseVisualStyleBackColor = true;
@@ -62,9 +65,10 @@
             // 
             // button4
             // 
-            this.button4.Location = new System.Drawing.Point(701, 438);
+            this.button4.Location = new System.Drawing.Point(1052, 701);
+            this.button4.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.button4.Name = "button4";
-            this.button4.Size = new System.Drawing.Size(75, 23);
+            this.button4.Size = new System.Drawing.Size(112, 37);
             this.button4.TabIndex = 5;
             this.button4.Text = "注册";
             this.button4.UseVisualStyleBackColor = true;
@@ -73,32 +77,36 @@
             // label1
             // 
             this.label1.AutoSize = true;
-            this.label1.Location = new System.Drawing.Point(228, 170);
+            this.label1.Location = new System.Drawing.Point(342, 272);
+            this.label1.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(53, 15);
+            this.label1.Size = new System.Drawing.Size(82, 24);
             this.label1.TabIndex = 6;
             this.label1.Text = "用户ID";
             // 
             // label2
             // 
             this.label2.AutoSize = true;
-            this.label2.Location = new System.Drawing.Point(228, 274);
+            this.label2.Location = new System.Drawing.Point(342, 438);
+            this.label2.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(37, 15);
+            this.label2.Size = new System.Drawing.Size(58, 24);
             this.label2.TabIndex = 7;
             this.label2.Text = "密码";
             // 
             // Login
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 15F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(12F, 24F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(813, 505);
+            this.BackColor = System.Drawing.Color.DarkSeaGreen;
+            this.ClientSize = new System.Drawing.Size(1220, 808);
             this.Controls.Add(this.label2);
             this.Controls.Add(this.label1);
             this.Controls.Add(this.button4);
             this.Controls.Add(this.button3);
             this.Controls.Add(this.textBox2);
             this.Controls.Add(this.textBox1);
+            this.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.Name = "Login";
             this.Text = "Login";
             this.ResumeLayout(false);

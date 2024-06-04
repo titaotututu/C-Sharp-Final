@@ -14,8 +14,8 @@ namespace TravelApi.Models
         public long UserId { get; set; }
         public string UserName { get; set; }
         public long password { get; set; }
-        public List<Journal> Journals { get; set; }
-        public List<Travel> Travels { get; set; }
+        public List<Journal>? Journals { get; set; }
+        public List<Travel>? Travels { get; set; }
     }
 
 

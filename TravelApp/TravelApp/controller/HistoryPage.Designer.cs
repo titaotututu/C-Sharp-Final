@@ -46,6 +46,7 @@
             this.labelTitle.TabIndex = 2;
             this.labelTitle.Text = "标题";
             this.labelTitle.Click += new System.EventHandler(this.labelTitle_Click);
+            this.labelTitle.Text = travel.TravelTitle;
             // 
             // labelTime
             // 
@@ -53,9 +54,10 @@
             this.labelTime.Location = new System.Drawing.Point(188, 60);
             this.labelTime.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.labelTime.Name = "labelTime";
-            this.labelTime.Size = new System.Drawing.Size(110, 28);
+            this.labelTime.Size = new System.Drawing.Size(140, 28);
             this.labelTime.TabIndex = 3;
             this.labelTime.Text = "时间";
+            this.labelTime.Text = travel.TravelTime.ToLongDateString();
             // 
             // labelPlace
             // 
@@ -66,6 +68,7 @@
             this.labelPlace.Size = new System.Drawing.Size(110, 28);
             this.labelPlace.TabIndex = 4;
             this.labelPlace.Text = "城市";
+            this.labelPlace.Text = travel.TravelCity;
             // 
             // buttonDelete
             // 
