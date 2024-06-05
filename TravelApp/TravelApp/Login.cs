@@ -29,7 +29,8 @@ namespace TravelApp
         {
             string userID = textBox1.Text;
             string password = textBox2.Text;
-            string passwordMD5 = MD5Encrypt(password);
+            
+            long passwordEncrypt=SimpleEncryptionHelper.EncryptLong(long.Parse(password));
 
             if (userID.Length == 0 || userID == "单行输入")
             {
@@ -46,7 +47,7 @@ namespace TravelApp
                     try
                     {
                        // string url = baseUrl + "/login?Uid=" + userID + "&password=" + passwordMD5;
-                        string url = baseUrl + "/?id=" + userID + "&pwd=" + password;
+                        string url = baseUrl + "/?id=" + userID + "&pwd=" + passwordEncrypt;
                         Client client = new Client();
                         HttpResponseMessage result = await client.Get(url);
                         if (result.IsSuccessStatusCode)
@@ -88,19 +89,19 @@ namespace TravelApp
             }
         }
 
-        public static string MD5Encrypt(string strText)
+        public static class SimpleEncryptionHelper
         {
-            MD5 md5 = new MD5CryptoServiceProvider();
-            byte[] targetData = md5.ComputeHash(Encoding.UTF8.GetBytes(strText));
+            private static readonly long key = 0x2A3B4C5D6E7F8090; // Replace with your key
 
-            string byte2String = null;
-
-            for (int i = 0; i < targetData.Length; i++)
+            public static long EncryptLong(long value)
             {
-                byte2String += targetData[i].ToString("x2");
+                return value ^ key;
             }
 
-            return byte2String.ToUpper();
+            public static long DecryptLong(long encryptedValue)
+            {
+                return encryptedValue ^ key;
+            }
         }
     }
 }

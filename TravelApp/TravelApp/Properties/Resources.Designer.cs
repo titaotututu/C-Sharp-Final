@@ -243,6 +243,16 @@ namespace TravelApp.Properties {
         /// <summary>
         ///   查找 System.Drawing.Bitmap 类型的本地化资源。
         /// </summary>
+        internal static System.Drawing.Bitmap 微信图片_20240605163032 {
+            get {
+                object obj = ResourceManager.GetObject("微信图片_20240605163032", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   查找 System.Drawing.Bitmap 类型的本地化资源。
+        /// </summary>
         internal static System.Drawing.Bitmap 打卡_成功打卡 {
             get {
                 object obj = ResourceManager.GetObject("打卡_成功打卡", resourceCulture);
@@ -306,6 +316,16 @@ namespace TravelApp.Properties {
         internal static System.Drawing.Bitmap 点亮 {
             get {
                 object obj = ResourceManager.GetObject("点亮", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   查找 System.Drawing.Bitmap 类型的本地化资源。
+        /// </summary>
+        internal static System.Drawing.Bitmap 甜美云 {
+            get {
+                object obj = ResourceManager.GetObject("甜美云", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }

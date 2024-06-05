@@ -54,7 +54,7 @@ namespace TravelApp
                     user.UserName = reg_name.Text;
                     // 先不用加密
                    // user.Password = long.Parse(MD5Encrypt(reg_pwd.Text));
-                   user.password=long.Parse(reg_pwd.Text);
+                   user.password=SimpleEncryptionHelper.EncryptLong(long.Parse(reg_pwd.Text));// 加密
                     // 获取当前时间的Tick数
                     long ticks = DateTime.Now.Ticks;
                     // 取最后5位作为随机数
@@ -100,19 +100,19 @@ namespace TravelApp
             }
         }
 
-        public static string MD5Encrypt(string strText)
+        public static class SimpleEncryptionHelper
         {
-            MD5 md5 = new MD5CryptoServiceProvider();
-            byte[] targetData = md5.ComputeHash(Encoding.UTF8.GetBytes(strText));
+            private static readonly long key = 0x2A3B4C5D6E7F8090; // Replace with your key
 
-            string byte2String = null;
-
-            for (int i = 0; i < targetData.Length; i++)
+            public static long EncryptLong(long value)
             {
-                byte2String += targetData[i].ToString("x2");
+                return value ^ key;
             }
 
-            return byte2String.ToUpper();
+            public static long DecryptLong(long encryptedValue)
+            {
+                return encryptedValue ^ key;
+            }
         }
     }
 }

@@ -31,83 +31,87 @@ namespace Weather_space
         /// </summary>
         private void InitializeComponent()
         {
-            tableLayoutPanel1 = new TableLayoutPanel();
-            labelWind = new Label();
-            labelTemp = new Label();
-            labelInfo = new Label();
-            labelDay = new Label();
-            pictureBoxWeather = new PictureBox();
-            tableLayoutPanel1.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)pictureBoxWeather).BeginInit();
-            SuspendLayout();
+            this.tableLayoutPanel1 = new System.Windows.Forms.TableLayoutPanel();
+            this.labelWind = new System.Windows.Forms.Label();
+            this.labelTemp = new System.Windows.Forms.Label();
+            this.labelInfo = new System.Windows.Forms.Label();
+            this.labelDay = new System.Windows.Forms.Label();
+            this.pictureBoxWeather = new System.Windows.Forms.PictureBox();
+            this.tableLayoutPanel1.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBoxWeather)).BeginInit();
+            this.SuspendLayout();
             // 
             // tableLayoutPanel1
             // 
-            tableLayoutPanel1.ColumnCount = 1;
-            tableLayoutPanel1.ColumnStyles.Add(new ColumnStyle(SizeType.Percent, 100F));
-            tableLayoutPanel1.Controls.Add(labelWind, 0, 3);
-            tableLayoutPanel1.Controls.Add(labelTemp, 0, 2);
-            tableLayoutPanel1.Controls.Add(labelInfo, 0, 1);
-            tableLayoutPanel1.Controls.Add(labelDay, 0, 0);
-            tableLayoutPanel1.Location = new Point(3, 0);
-            tableLayoutPanel1.Name = "tableLayoutPanel1";
-            tableLayoutPanel1.RowCount = 4;
-            tableLayoutPanel1.RowStyles.Add(new RowStyle(SizeType.Percent, 41.860466F));
-            tableLayoutPanel1.RowStyles.Add(new RowStyle(SizeType.Percent, 58.139534F));
-            tableLayoutPanel1.RowStyles.Add(new RowStyle(SizeType.Absolute, 77F));
-            tableLayoutPanel1.RowStyles.Add(new RowStyle(SizeType.Absolute, 82F));
-            tableLayoutPanel1.Size = new Size(220, 297);
-            tableLayoutPanel1.TabIndex = 0;
+            this.tableLayoutPanel1.ColumnCount = 1;
+            this.tableLayoutPanel1.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 100F));
+            this.tableLayoutPanel1.Controls.Add(this.labelWind, 0, 3);
+            this.tableLayoutPanel1.Controls.Add(this.labelTemp, 0, 2);
+            this.tableLayoutPanel1.Controls.Add(this.labelInfo, 0, 1);
+            this.tableLayoutPanel1.Controls.Add(this.labelDay, 0, 0);
+            this.tableLayoutPanel1.Location = new System.Drawing.Point(3, 0);
+            this.tableLayoutPanel1.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.tableLayoutPanel1.Name = "tableLayoutPanel1";
+            this.tableLayoutPanel1.RowCount = 4;
+            this.tableLayoutPanel1.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 41.86047F));
+            this.tableLayoutPanel1.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 58.13953F));
+            this.tableLayoutPanel1.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 60F));
+            this.tableLayoutPanel1.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 63F));
+            this.tableLayoutPanel1.Size = new System.Drawing.Size(173, 230);
+            this.tableLayoutPanel1.TabIndex = 0;
             // 
             // labelWind
             // 
-            labelWind.Location = new Point(3, 214);
-            labelWind.Name = "labelWind";
-            labelWind.Size = new Size(214, 77);
-            labelWind.TabIndex = 3;
+            this.labelWind.Location = new System.Drawing.Point(3, 166);
+            this.labelWind.Name = "labelWind";
+            this.labelWind.Size = new System.Drawing.Size(165, 60);
+            this.labelWind.TabIndex = 3;
             // 
             // labelTemp
             // 
-            labelTemp.Location = new Point(3, 137);
-            labelTemp.Name = "labelTemp";
-            labelTemp.Size = new Size(214, 77);
-            labelTemp.TabIndex = 2;
+            this.labelTemp.Location = new System.Drawing.Point(3, 106);
+            this.labelTemp.Name = "labelTemp";
+            this.labelTemp.Size = new System.Drawing.Size(165, 60);
+            this.labelTemp.TabIndex = 2;
             // 
             // labelInfo
             // 
-            labelInfo.Location = new Point(3, 57);
-            labelInfo.Name = "labelInfo";
-            labelInfo.Size = new Size(214, 80);
-            labelInfo.TabIndex = 1;
+            this.labelInfo.Location = new System.Drawing.Point(3, 44);
+            this.labelInfo.Name = "labelInfo";
+            this.labelInfo.Size = new System.Drawing.Size(167, 62);
+            this.labelInfo.TabIndex = 1;
             // 
             // labelDay
             // 
-            labelDay.BackColor = SystemColors.ControlDark;
-            labelDay.Location = new Point(3, 0);
-            labelDay.Name = "labelDay";
-            labelDay.Size = new Size(214, 41);
-            labelDay.TabIndex = 0;
+            this.labelDay.BackColor = System.Drawing.SystemColors.ControlDark;
+            this.labelDay.Location = new System.Drawing.Point(3, 0);
+            this.labelDay.Name = "labelDay";
+            this.labelDay.Size = new System.Drawing.Size(167, 32);
+            this.labelDay.TabIndex = 0;
             // 
             // pictureBoxWeather
             // 
-            pictureBoxWeather.Location = new Point(0, 294);
-            pictureBoxWeather.Name = "pictureBoxWeather";
-            pictureBoxWeather.Size = new Size(223, 216);
-            pictureBoxWeather.TabIndex = 1;
-            pictureBoxWeather.TabStop = false;
+            this.pictureBoxWeather.Location = new System.Drawing.Point(0, 228);
+            this.pictureBoxWeather.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.pictureBoxWeather.Name = "pictureBoxWeather";
+            this.pictureBoxWeather.Size = new System.Drawing.Size(173, 167);
+            this.pictureBoxWeather.TabIndex = 1;
+            this.pictureBoxWeather.TabStop = false;
             // 
             // WeatherDay
             // 
-            AutoScaleDimensions = new SizeF(14F, 31F);
-            AutoScaleMode = AutoScaleMode.Font;
-            BorderStyle = BorderStyle.Fixed3D;
-            Controls.Add(pictureBoxWeather);
-            Controls.Add(tableLayoutPanel1);
-            Name = "WeatherDay";
-            Size = new Size(219, 507);
-            tableLayoutPanel1.ResumeLayout(false);
-            ((System.ComponentModel.ISupportInitialize)pictureBoxWeather).EndInit();
-            ResumeLayout(false);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(12F, 24F);
+            this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+            this.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
+            this.Controls.Add(this.pictureBoxWeather);
+            this.Controls.Add(this.tableLayoutPanel1);
+            this.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.Name = "WeatherDay";
+            this.Size = new System.Drawing.Size(174, 393);
+            this.tableLayoutPanel1.ResumeLayout(false);
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBoxWeather)).EndInit();
+            this.ResumeLayout(false);
+
         }
 
         #endregion

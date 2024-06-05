@@ -299,6 +299,9 @@
     <EmbeddedResource Include="controller\Travel_Weather.resx">
       <DependentUpon>Travel_Weather.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="controller\WeatherDay.resx">
+      <DependentUpon>WeatherDay.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Else.resx">
       <DependentUpon>Else.cs</DependentUpon>
     </EmbeddedResource>
@@ -438,6 +441,12 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="pictures\test4.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\甜美云.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\微信图片_20240605163032.jpg" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

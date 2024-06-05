@@ -24,6 +24,10 @@ namespace Weather_space
         public Travel_Weather(ChangePanel changePanel)
         {
             InitializeComponent();
+            comboBoxProvince.SelectedIndexChanged += ComboBoxProvince_SelectedIndexChanged;
+            comboBoxCity.SelectedIndexChanged += comboBoxCity_SelectedIndexChanged;
+            buttonSearch.Click += buttonSearch_Click;
+            buttonAbout.Click += buttonAbout_Click;
             this.changePanel = changePanel;
         }
         // 在UI线程上调用操作

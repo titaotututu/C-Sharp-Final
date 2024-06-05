@@ -55,7 +55,8 @@ namespace TravelApp.controller
                     new_id.Text = user.UserId.ToString();
                     new_name.Text = user.UserName;
                     //cbGender.Text = user.Sex;
-                    new_pwd.Text = Convert.ToString(user.password);
+                    long pwd = SimpleEncryptionHelper.DecryptLong(user.password);
+                    new_pwd.Text = Convert.ToString(pwd);
                 }
             }
             catch (Exception e)
@@ -72,6 +73,7 @@ namespace TravelApp.controller
             string newUsername=new_name.Text;
             string Userpwd=new_pwd.Text;
             long newUserpwd = long.Parse(Userpwd);
+            newUserpwd=SimpleEncryptionHelper.EncryptLong(newUserpwd);
             string url = baseUrl + "/" + user.UserId;
             //
             //XmlSerializer xmlSerializer = new XmlSerializer(typeof(User));
@@ -93,7 +95,7 @@ namespace TravelApp.controller
                     //
                     user.UserName = new_name.Text;
                     //user.Sex = cbGender.Text;
-                    user.password = long.Parse(new_pwd.Text);
+                    user.password = SimpleEncryptionHelper.DecryptLong(long.Parse(new_pwd.Text));
                     MessageBox.Show("修改成功!", "Success", MessageBoxButtons.OK, MessageBoxIcon.Information);
                     //
                     //using (StringWriter sw = new StringWriter())
@@ -108,6 +110,21 @@ namespace TravelApp.controller
             catch (Exception ex)
             {
                 MessageBox.Show(ex.Message, "警告", MessageBoxButtons.OK, MessageBoxIcon.Exclamation);
+            }
+        }
+
+        public static class SimpleEncryptionHelper
+        {
+            private static readonly long key = 0x2A3B4C5D6E7F8090; // Replace with your key
+
+            public static long EncryptLong(long value)
+            {
+                return value ^ key;
+            }
+
+            public static long DecryptLong(long encryptedValue)
+            {
+                return encryptedValue ^ key;
             }
         }
     }
