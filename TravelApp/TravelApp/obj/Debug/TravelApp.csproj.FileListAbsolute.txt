@@ -79,7 +79,6 @@ D:\learngit\Csharp-work\C-Sharp-Final\TravelApp\TravelApp\obj\Debug\TravelApp.co
 D:\learngit\Csharp-work\C-Sharp-Final\TravelApp\TravelApp\obj\Debug\TravelApp.controller.OldTravel.resources
 D:\learngit\Csharp-work\C-Sharp-Final\TravelApp\TravelApp\obj\Debug\TravelApp.controller.TodoPage.resources
 D:\learngit\Csharp-work\C-Sharp-Final\TravelApp\TravelApp\obj\Debug\Weather_space.Travel_Weather.resources
-D:\learngit\Csharp-work\C-Sharp-Final\TravelApp\TravelApp\obj\Debug\TravelApp.MainForm.resources
 D:\learngit\Csharp-work\C-Sharp-Final\TravelApp\TravelApp\obj\Debug\TravelApp.TravelTodo.resources
 D:\learngit\Csharp-work\C-Sharp-Final\TravelApp\TravelApp\obj\Debug\TravelApp.csproj.Up2Date
 D:\learngit\Csharp-work\C-Sharp-Final\TravelApp\TravelApp\obj\Debug\TravelApp.MainFormFinal.resources

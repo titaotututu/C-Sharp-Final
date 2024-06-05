@@ -51,158 +51,167 @@ namespace Weather_space
             // 
             // toolStrip1
             // 
-            toolStrip1.ImageScalingSize = new Size(32, 32);
-            toolStrip1.Items.AddRange(new ToolStripItem[] { comboBoxProvince, comboBoxCity, comboBoxDistrict, buttonSearch, buttonCustom, buttonAbout });
-            toolStrip1.Location = new Point(0, 0);
-            toolStrip1.Name = "toolStrip1";
-            toolStrip1.Size = new Size(1629, 41);
-            toolStrip1.TabIndex = 0;
-            toolStrip1.Text = "toolStrip1";
+            this.toolStrip1.ImageScalingSize = new System.Drawing.Size(32, 32);
+            this.toolStrip1.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
+            this.comboBoxProvince,
+            this.comboBoxCity,
+            this.comboBoxDistrict,
+            this.buttonSearch,
+            this.buttonCustom,
+            this.buttonAbout});
+            this.toolStrip1.Location = new System.Drawing.Point(0, 0);
+            this.toolStrip1.Name = "toolStrip1";
+            this.toolStrip1.Size = new System.Drawing.Size(1050, 33);
+            this.toolStrip1.TabIndex = 0;
+            this.toolStrip1.Text = "toolStrip1";
             // 
             // comboBoxProvince
             // 
-            comboBoxProvince.DropDownStyle = ComboBoxStyle.DropDownList;
-            comboBoxProvince.Name = "comboBoxProvince";
-            comboBoxProvince.Size = new Size(121, 41);
-            comboBoxProvince.SelectedIndexChanged += ComboBoxProvince_SelectedIndexChanged;
+            this.comboBoxProvince.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            this.comboBoxProvince.Name = "comboBoxProvince";
+            this.comboBoxProvince.Size = new System.Drawing.Size(92, 33);
             // 
             // comboBoxCity
             // 
-            comboBoxCity.DropDownStyle = ComboBoxStyle.DropDownList;
-            comboBoxCity.Name = "comboBoxCity";
-            comboBoxCity.Size = new Size(121, 41);
-            comboBoxCity.SelectedIndexChanged += comboBoxCity_SelectedIndexChanged;
+            this.comboBoxCity.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            this.comboBoxCity.Name = "comboBoxCity";
+            this.comboBoxCity.Size = new System.Drawing.Size(92, 33);
             // 
             // comboBoxDistrict
             // 
-            comboBoxDistrict.DropDownStyle = ComboBoxStyle.DropDownList;
-            comboBoxDistrict.Name = "comboBoxDistrict";
-            comboBoxDistrict.Size = new Size(121, 41);
+            this.comboBoxDistrict.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            this.comboBoxDistrict.Name = "comboBoxDistrict";
+            this.comboBoxDistrict.Size = new System.Drawing.Size(92, 33);
             // 
             // buttonSearch
             // 
-            buttonSearch.DisplayStyle = ToolStripItemDisplayStyle.Text;
-            buttonSearch.Image = (Image)resources.GetObject("buttonSearch.Image");
-            buttonSearch.ImageTransparentColor = Color.Magenta;
-            buttonSearch.Name = "buttonSearch";
-            buttonSearch.Size = new Size(66, 35);
-            buttonSearch.Text = "查询";
-            buttonSearch.Click += buttonSearch_Click;
+            this.buttonSearch.DisplayStyle = System.Windows.Forms.ToolStripItemDisplayStyle.Text;
+            this.buttonSearch.Image = ((System.Drawing.Image)(resources.GetObject("buttonSearch.Image")));
+            this.buttonSearch.ImageTransparentColor = System.Drawing.Color.Magenta;
+            this.buttonSearch.Name = "buttonSearch";
+            this.buttonSearch.Size = new System.Drawing.Size(50, 28);
+            this.buttonSearch.Text = "查询";
             // 
             // buttonCustom
             // 
-            buttonCustom.DisplayStyle = ToolStripItemDisplayStyle.Text;
-            buttonCustom.Image = (Image)resources.GetObject("buttonCustom.Image");
-            buttonCustom.ImageTransparentColor = Color.Magenta;
-            buttonCustom.Name = "buttonCustom";
-            buttonCustom.Size = new Size(84, 35);
-            buttonCustom.Text = "保存";
+            this.buttonCustom.DisplayStyle = System.Windows.Forms.ToolStripItemDisplayStyle.Text;
+            this.buttonCustom.Image = ((System.Drawing.Image)(resources.GetObject("buttonCustom.Image")));
+            this.buttonCustom.ImageTransparentColor = System.Drawing.Color.Magenta;
+            this.buttonCustom.Name = "buttonCustom";
+            this.buttonCustom.Size = new System.Drawing.Size(64, 28);
+            this.buttonCustom.Text = "保存";
             // 
             // buttonAbout
             // 
-            buttonAbout.DisplayStyle = ToolStripItemDisplayStyle.Text;
-            buttonAbout.Image = (Image)resources.GetObject("buttonAbout.Image");
-            buttonAbout.ImageTransparentColor = Color.Magenta;
-            buttonAbout.Name = "buttonAbout";
-            buttonAbout.Size = new Size(66, 35);
-            buttonAbout.Text = "关于";
-            buttonAbout.ToolTipText = "关于我们";
-            buttonAbout.Click += buttonAbout_Click;
+            this.buttonAbout.DisplayStyle = System.Windows.Forms.ToolStripItemDisplayStyle.Text;
+            this.buttonAbout.Image = ((System.Drawing.Image)(resources.GetObject("buttonAbout.Image")));
+            this.buttonAbout.ImageTransparentColor = System.Drawing.Color.Magenta;
+            this.buttonAbout.Name = "buttonAbout";
+            this.buttonAbout.Size = new System.Drawing.Size(50, 28);
+            this.buttonAbout.Text = "关于";
+            this.buttonAbout.ToolTipText = "关于我们";
             // 
             // weatherDay1
             // 
-            weatherDay1.BorderStyle = BorderStyle.Fixed3D;
-            weatherDay1.Day = null;
-            weatherDay1.Info = null;
-            weatherDay1.Location = new Point(4, 44);
-            weatherDay1.Name = "weatherDay1";
-            weatherDay1.Size = new Size(200, 457);
-            weatherDay1.TabIndex = 1;
-            weatherDay1.Temperature = null;
-            weatherDay1.WeatherStatus = WeatherStatus.Weizhi;
-            weatherDay1.Wind = null;
+            this.weatherDay1.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
+            this.weatherDay1.Day = null;
+            this.weatherDay1.Info = null;
+            this.weatherDay1.Location = new System.Drawing.Point(3, 33);
+            this.weatherDay1.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.weatherDay1.Name = "weatherDay1";
+            this.weatherDay1.Size = new System.Drawing.Size(151, 344);
+            this.weatherDay1.TabIndex = 1;
+            this.weatherDay1.Temperature = null;
+            this.weatherDay1.WeatherStatus = Weather_space.WeatherStatus.Weizhi;
+            this.weatherDay1.Wind = null;
             // 
             // weatherDay2
             // 
-            weatherDay2.BorderStyle = BorderStyle.Fixed3D;
-            weatherDay2.Day = null;
-            weatherDay2.Info = null;
-            weatherDay2.Location = new Point(204, 45);
-            weatherDay2.Name = "weatherDay2";
-            weatherDay2.Size = new Size(202, 457);
-            weatherDay2.TabIndex = 2;
-            weatherDay2.Temperature = null;
-            weatherDay2.WeatherStatus = WeatherStatus.Weizhi;
-            weatherDay2.Wind = null;
+            this.weatherDay2.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
+            this.weatherDay2.Day = null;
+            this.weatherDay2.Info = null;
+            this.weatherDay2.Location = new System.Drawing.Point(153, 34);
+            this.weatherDay2.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.weatherDay2.Name = "weatherDay2";
+            this.weatherDay2.Size = new System.Drawing.Size(152, 344);
+            this.weatherDay2.TabIndex = 2;
+            this.weatherDay2.Temperature = null;
+            this.weatherDay2.WeatherStatus = Weather_space.WeatherStatus.Weizhi;
+            this.weatherDay2.Wind = null;
             // 
             // weatherDay3
             // 
-            weatherDay3.BorderStyle = BorderStyle.Fixed3D;
-            weatherDay3.Day = null;
-            weatherDay3.Info = null;
-            weatherDay3.Location = new Point(404, 45);
-            weatherDay3.Name = "weatherDay3";
-            weatherDay3.Size = new Size(202, 457);
-            weatherDay3.TabIndex = 3;
-            weatherDay3.Temperature = null;
-            weatherDay3.WeatherStatus = WeatherStatus.Weizhi;
-            weatherDay3.Wind = null;
+            this.weatherDay3.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
+            this.weatherDay3.Day = null;
+            this.weatherDay3.Info = null;
+            this.weatherDay3.Location = new System.Drawing.Point(303, 34);
+            this.weatherDay3.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.weatherDay3.Name = "weatherDay3";
+            this.weatherDay3.Size = new System.Drawing.Size(152, 344);
+            this.weatherDay3.TabIndex = 3;
+            this.weatherDay3.Temperature = null;
+            this.weatherDay3.WeatherStatus = Weather_space.WeatherStatus.Weizhi;
+            this.weatherDay3.Wind = null;
             // 
             // weatherDay4
             // 
-            weatherDay4.BorderStyle = BorderStyle.Fixed3D;
-            weatherDay4.Day = null;
-            weatherDay4.Info = null;
-            weatherDay4.Location = new Point(604, 45);
-            weatherDay4.Name = "weatherDay4";
-            weatherDay4.Size = new Size(202, 457);
-            weatherDay4.TabIndex = 4;
-            weatherDay4.Temperature = null;
-            weatherDay4.WeatherStatus = WeatherStatus.Weizhi;
-            weatherDay4.Wind = null;
+            this.weatherDay4.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
+            this.weatherDay4.Day = null;
+            this.weatherDay4.Info = null;
+            this.weatherDay4.Location = new System.Drawing.Point(453, 34);
+            this.weatherDay4.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.weatherDay4.Name = "weatherDay4";
+            this.weatherDay4.Size = new System.Drawing.Size(152, 344);
+            this.weatherDay4.TabIndex = 4;
+            this.weatherDay4.Temperature = null;
+            this.weatherDay4.WeatherStatus = Weather_space.WeatherStatus.Weizhi;
+            this.weatherDay4.Wind = null;
             // 
             // weatherDay5
             // 
-            weatherDay5.BorderStyle = BorderStyle.Fixed3D;
-            weatherDay5.Day = null;
-            weatherDay5.Info = null;
-            weatherDay5.Location = new Point(804, 44);
-            weatherDay5.Name = "weatherDay5";
-            weatherDay5.Size = new Size(203, 457);
-            weatherDay5.TabIndex = 5;
-            weatherDay5.Temperature = null;
-            weatherDay5.WeatherStatus = WeatherStatus.Weizhi;
-            weatherDay5.Wind = null;
+            this.weatherDay5.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
+            this.weatherDay5.Day = null;
+            this.weatherDay5.Info = null;
+            this.weatherDay5.Location = new System.Drawing.Point(603, 33);
+            this.weatherDay5.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.weatherDay5.Name = "weatherDay5";
+            this.weatherDay5.Size = new System.Drawing.Size(153, 344);
+            this.weatherDay5.TabIndex = 5;
+            this.weatherDay5.Temperature = null;
+            this.weatherDay5.WeatherStatus = Weather_space.WeatherStatus.Weizhi;
+            this.weatherDay5.Wind = null;
             // 
             // weatherDay6
             // 
-            weatherDay6.BorderStyle = BorderStyle.Fixed3D;
-            weatherDay6.Day = null;
-            weatherDay6.Info = null;
-            weatherDay6.Location = new Point(1004, 44);
-            weatherDay6.Name = "weatherDay6";
-            weatherDay6.Size = new Size(203, 457);
-            weatherDay6.TabIndex = 6;
-            weatherDay6.Temperature = null;
-            weatherDay6.WeatherStatus = WeatherStatus.Weizhi;
-            weatherDay6.Wind = null;
+            this.weatherDay6.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
+            this.weatherDay6.Day = null;
+            this.weatherDay6.Info = null;
+            this.weatherDay6.Location = new System.Drawing.Point(753, 33);
+            this.weatherDay6.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.weatherDay6.Name = "weatherDay6";
+            this.weatherDay6.Size = new System.Drawing.Size(153, 344);
+            this.weatherDay6.TabIndex = 6;
+            this.weatherDay6.Temperature = null;
+            this.weatherDay6.WeatherStatus = Weather_space.WeatherStatus.Weizhi;
+            this.weatherDay6.Wind = null;
             // 
             // weatherDay7
             // 
-            weatherDay7.BorderStyle = BorderStyle.Fixed3D;
-            weatherDay7.Day = null;
-            weatherDay7.Info = null;
-            weatherDay7.Location = new Point(1204, 45);
-            weatherDay7.Name = "weatherDay7";
-            weatherDay7.Size = new Size(202, 457);
-            weatherDay7.TabIndex = 7;
-            weatherDay7.Temperature = null;
-            weatherDay7.WeatherStatus = WeatherStatus.Weizhi;
-            weatherDay7.Wind = null;
+            this.weatherDay7.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
+            this.weatherDay7.Day = null;
+            this.weatherDay7.Info = null;
+            this.weatherDay7.Location = new System.Drawing.Point(903, 34);
+            this.weatherDay7.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.weatherDay7.Name = "weatherDay7";
+            this.weatherDay7.Size = new System.Drawing.Size(145, 344);
+            this.weatherDay7.TabIndex = 7;
+            this.weatherDay7.Temperature = null;
+            this.weatherDay7.WeatherStatus = Weather_space.WeatherStatus.Weizhi;
+            this.weatherDay7.Wind = null;
             // 
             // Travel_Weather
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(12F, 24F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(9F, 18F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.Controls.Add(this.weatherDay7);
             this.Controls.Add(this.weatherDay6);
@@ -212,8 +221,9 @@ namespace Weather_space
             this.Controls.Add(this.weatherDay2);
             this.Controls.Add(this.weatherDay1);
             this.Controls.Add(this.toolStrip1);
+            this.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.Name = "Travel_Weather";
-            this.Size = new System.Drawing.Size(1400, 728);
+            this.Size = new System.Drawing.Size(1050, 546);
             this.Load += new System.EventHandler(this.Travel_Weather_Load);
             this.toolStrip1.ResumeLayout(false);
             this.toolStrip1.PerformLayout();

@@ -7,11 +7,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
-
-using System.Runtime.InteropServices;       //添加类对COM可见-ComVisibleAttribute(true)/ 
-using System.IO;
-using System.Threading;
-using System.Collections;
+using System.Windows.Forms.VisualStyles;
 
 namespace TravelApp
 {
@@ -26,7 +22,7 @@ namespace TravelApp
 
         private void Walk_Routing_Load(object sender, EventArgs e)
         {
-            string str_url = Application.StartupPath + "\\Walk_Map.html";
+            string str_url = Application.StartupPath + "\\Bike_Map.html";
             webBrowser_walk.Navigate(new Uri(str_url));
             webBrowser_walk.ObjectForScripting = this;
             pictureBox1.BackColor = Color.Transparent;
@@ -37,5 +33,9 @@ namespace TravelApp
             this.Close();
         }
 
+        private void webBrowser_walk_DocumentCompleted(object sender, WebBrowserDocumentCompletedEventArgs e)
+        {
+
+        }
     }
 }

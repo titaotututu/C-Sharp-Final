@@ -27,7 +27,7 @@ namespace TravelApp
 
         private void Car_Routing_Load(object sender, EventArgs e)
         {
-            pictureBox1.BackColor = Color.Transparent;
+            pictureBox2.BackColor = Color.Transparent;
             string str_url = Application.StartupPath + "\\Car_Map.html";
             webBrowser_car.Navigate(new Uri(str_url));
             webBrowser_car.ObjectForScripting = this;
@@ -40,6 +40,11 @@ namespace TravelApp
         }
 
         private void pictureBox1_Click(object sender, EventArgs e)
+        {
+            this.Close();
+        }
+
+        private void pictureBox2_Click(object sender, EventArgs e)
         {
             this.Close();
         }

@@ -201,12 +201,6 @@
     <Compile Include="Login.Designer.cs">
       <DependentUpon>Login.cs</DependentUpon>
     </Compile>
-    <Compile Include="MainForm.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="MainForm.Designer.cs">
-      <DependentUpon>MainForm.cs</DependentUpon>
-    </Compile>
     <Compile Include="MainFormFinal.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -285,6 +279,9 @@
     <EmbeddedResource Include="controller\OldTravel.resx">
       <DependentUpon>OldTravel.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="controller\Personalinfo.byn.resx">
+      <DependentUpon>Personalinfo.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="controller\Personalinfo.resx">
       <DependentUpon>Personalinfo.cs</DependentUpon>
     </EmbeddedResource>
@@ -305,9 +302,6 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Login.resx">
       <DependentUpon>Login.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="MainForm.resx">
-      <DependentUpon>MainForm.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="MainFormFinal.resx">
       <DependentUpon>MainFormFinal.cs</DependentUpon>

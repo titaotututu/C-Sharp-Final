@@ -47,7 +47,7 @@
             // pictureBox1
             // 
             this.pictureBox1.Image = global::TravelApp.Properties.Resources.退出black_;
-            this.pictureBox1.Location = new System.Drawing.Point(878, 3);
+            this.pictureBox1.Location = new System.Drawing.Point(877, 20);
             this.pictureBox1.Name = "pictureBox1";
             this.pictureBox1.Size = new System.Drawing.Size(35, 34);
             this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
@@ -64,12 +64,13 @@
             this.webBrowser_walk.ScrollBarsEnabled = false;
             this.webBrowser_walk.Size = new System.Drawing.Size(949, 544);
             this.webBrowser_walk.TabIndex = 0;
+            this.webBrowser_walk.DocumentCompleted += new System.Windows.Forms.WebBrowserDocumentCompletedEventHandler(this.webBrowser_walk_DocumentCompleted);
             // 
             // Walk_Routing
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(9F, 18F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(936, 568);
+            this.ClientSize = new System.Drawing.Size(1142, 610);
             this.Controls.Add(this.panel1);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
             this.Name = "Walk_Routing";

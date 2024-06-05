@@ -78,17 +78,17 @@
             this.panel1.Controls.Add(this.button_UserInfo);
             this.panel1.Controls.Add(this.label1);
             this.panel1.Location = new System.Drawing.Point(1, 1);
+            this.panel1.Margin = new System.Windows.Forms.Padding(2);
             this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(311, 725);
+            this.panel1.Size = new System.Drawing.Size(233, 544);
             this.panel1.TabIndex = 0;
             // 
             // pictureBox8
             // 
             this.pictureBox8.Image = global::TravelApp.Properties.Resources.精灵;
-            this.pictureBox8.Location = new System.Drawing.Point(33, 21);
-            this.pictureBox8.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.pictureBox8.Location = new System.Drawing.Point(25, 16);
             this.pictureBox8.Name = "pictureBox8";
-            this.pictureBox8.Size = new System.Drawing.Size(123, 104);
+            this.pictureBox8.Size = new System.Drawing.Size(92, 78);
             this.pictureBox8.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
             this.pictureBox8.TabIndex = 15;
             this.pictureBox8.TabStop = false;
@@ -96,10 +96,9 @@
             // pictureBox7
             // 
             this.pictureBox7.Image = global::TravelApp.Properties.Resources.其他;
-            this.pictureBox7.Location = new System.Drawing.Point(201, 616);
-            this.pictureBox7.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.pictureBox7.Location = new System.Drawing.Point(151, 462);
             this.pictureBox7.Name = "pictureBox7";
-            this.pictureBox7.Size = new System.Drawing.Size(56, 56);
+            this.pictureBox7.Size = new System.Drawing.Size(42, 42);
             this.pictureBox7.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
             this.pictureBox7.TabIndex = 14;
             this.pictureBox7.TabStop = false;
@@ -107,10 +106,9 @@
             // pictureBox6
             // 
             this.pictureBox6.Image = global::TravelApp.Properties.Resources.日志;
-            this.pictureBox6.Location = new System.Drawing.Point(201, 536);
-            this.pictureBox6.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.pictureBox6.Location = new System.Drawing.Point(151, 402);
             this.pictureBox6.Name = "pictureBox6";
-            this.pictureBox6.Size = new System.Drawing.Size(60, 63);
+            this.pictureBox6.Size = new System.Drawing.Size(45, 47);
             this.pictureBox6.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
             this.pictureBox6.TabIndex = 13;
             this.pictureBox6.TabStop = false;
@@ -118,10 +116,9 @@
             // pictureBox5
             // 
             this.pictureBox5.Image = global::TravelApp.Properties.Resources.点亮;
-            this.pictureBox5.Location = new System.Drawing.Point(201, 464);
-            this.pictureBox5.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.pictureBox5.Location = new System.Drawing.Point(151, 348);
             this.pictureBox5.Name = "pictureBox5";
-            this.pictureBox5.Size = new System.Drawing.Size(60, 64);
+            this.pictureBox5.Size = new System.Drawing.Size(45, 48);
             this.pictureBox5.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
             this.pictureBox5.TabIndex = 12;
             this.pictureBox5.TabStop = false;
@@ -129,10 +126,9 @@
             // pictureBox4
             // 
             this.pictureBox4.Image = global::TravelApp.Properties.Resources.天气;
-            this.pictureBox4.Location = new System.Drawing.Point(201, 399);
-            this.pictureBox4.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.pictureBox4.Location = new System.Drawing.Point(151, 299);
             this.pictureBox4.Name = "pictureBox4";
-            this.pictureBox4.Size = new System.Drawing.Size(60, 57);
+            this.pictureBox4.Size = new System.Drawing.Size(45, 43);
             this.pictureBox4.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
             this.pictureBox4.TabIndex = 11;
             this.pictureBox4.TabStop = false;
@@ -140,10 +136,9 @@
             // pictureBox3
             // 
             this.pictureBox3.Image = global::TravelApp.Properties.Resources.导航地址;
-            this.pictureBox3.Location = new System.Drawing.Point(201, 328);
-            this.pictureBox3.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.pictureBox3.Location = new System.Drawing.Point(151, 246);
             this.pictureBox3.Name = "pictureBox3";
-            this.pictureBox3.Size = new System.Drawing.Size(61, 55);
+            this.pictureBox3.Size = new System.Drawing.Size(46, 41);
             this.pictureBox3.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
             this.pictureBox3.TabIndex = 10;
             this.pictureBox3.TabStop = false;
@@ -151,10 +146,9 @@
             // pictureBox2
             // 
             this.pictureBox2.Image = global::TravelApp.Properties.Resources.历史行程;
-            this.pictureBox2.Location = new System.Drawing.Point(201, 247);
-            this.pictureBox2.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.pictureBox2.Location = new System.Drawing.Point(151, 185);
             this.pictureBox2.Name = "pictureBox2";
-            this.pictureBox2.Size = new System.Drawing.Size(61, 65);
+            this.pictureBox2.Size = new System.Drawing.Size(46, 49);
             this.pictureBox2.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
             this.pictureBox2.TabIndex = 9;
             this.pictureBox2.TabStop = false;
@@ -162,10 +156,9 @@
             // pictureBox1
             // 
             this.pictureBox1.Image = global::TravelApp.Properties.Resources.个人信息;
-            this.pictureBox1.Location = new System.Drawing.Point(201, 173);
-            this.pictureBox1.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.pictureBox1.Location = new System.Drawing.Point(151, 130);
             this.pictureBox1.Name = "pictureBox1";
-            this.pictureBox1.Size = new System.Drawing.Size(61, 65);
+            this.pictureBox1.Size = new System.Drawing.Size(46, 49);
             this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
             this.pictureBox1.TabIndex = 8;
             this.pictureBox1.TabStop = false;
@@ -177,9 +170,10 @@
             this.button_Journal.Font = new System.Drawing.Font("宋体", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
             this.button_Journal.ForeColor = System.Drawing.SystemColors.ButtonFace;
             this.button_Journal.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.button_Journal.Location = new System.Drawing.Point(0, 533);
+            this.button_Journal.Location = new System.Drawing.Point(0, 400);
+            this.button_Journal.Margin = new System.Windows.Forms.Padding(2);
             this.button_Journal.Name = "button_Journal";
-            this.button_Journal.Size = new System.Drawing.Size(311, 67);
+            this.button_Journal.Size = new System.Drawing.Size(233, 50);
             this.button_Journal.TabIndex = 7;
             this.button_Journal.Text = " 旅行日志";
             this.button_Journal.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
@@ -193,9 +187,10 @@
             this.button_Other.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.button_Other.Font = new System.Drawing.Font("宋体", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
             this.button_Other.ForeColor = System.Drawing.SystemColors.ButtonFace;
-            this.button_Other.Location = new System.Drawing.Point(0, 605);
+            this.button_Other.Location = new System.Drawing.Point(0, 454);
+            this.button_Other.Margin = new System.Windows.Forms.Padding(2);
             this.button_Other.Name = "button_Other";
-            this.button_Other.Size = new System.Drawing.Size(311, 67);
+            this.button_Other.Size = new System.Drawing.Size(233, 50);
             this.button_Other.TabIndex = 6;
             this.button_Other.Text = " 其他";
             this.button_Other.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
@@ -208,9 +203,10 @@
             this.button_Lighting.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.button_Lighting.Font = new System.Drawing.Font("宋体", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
             this.button_Lighting.ForeColor = System.Drawing.SystemColors.ButtonFace;
-            this.button_Lighting.Location = new System.Drawing.Point(-3, 461);
+            this.button_Lighting.Location = new System.Drawing.Point(-2, 346);
+            this.button_Lighting.Margin = new System.Windows.Forms.Padding(2);
             this.button_Lighting.Name = "button_Lighting";
-            this.button_Lighting.Size = new System.Drawing.Size(311, 67);
+            this.button_Lighting.Size = new System.Drawing.Size(233, 50);
             this.button_Lighting.TabIndex = 5;
             this.button_Lighting.Text = " 点亮地图";
             this.button_Lighting.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
@@ -224,9 +220,10 @@
             this.button_Weather.Font = new System.Drawing.Font("宋体", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
             this.button_Weather.ForeColor = System.Drawing.SystemColors.ButtonFace;
             this.button_Weather.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.button_Weather.Location = new System.Drawing.Point(0, 389);
+            this.button_Weather.Location = new System.Drawing.Point(0, 292);
+            this.button_Weather.Margin = new System.Windows.Forms.Padding(2);
             this.button_Weather.Name = "button_Weather";
-            this.button_Weather.Size = new System.Drawing.Size(311, 67);
+            this.button_Weather.Size = new System.Drawing.Size(233, 50);
             this.button_Weather.TabIndex = 4;
             this.button_Weather.Text = " 天气";
             this.button_Weather.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
@@ -240,9 +237,10 @@
             this.button_Navigation.Font = new System.Drawing.Font("宋体", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
             this.button_Navigation.ForeColor = System.Drawing.SystemColors.ButtonFace;
             this.button_Navigation.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.button_Navigation.Location = new System.Drawing.Point(0, 317);
+            this.button_Navigation.Location = new System.Drawing.Point(0, 238);
+            this.button_Navigation.Margin = new System.Windows.Forms.Padding(2);
             this.button_Navigation.Name = "button_Navigation";
-            this.button_Navigation.Size = new System.Drawing.Size(311, 67);
+            this.button_Navigation.Size = new System.Drawing.Size(233, 50);
             this.button_Navigation.TabIndex = 3;
             this.button_Navigation.Text = " 导航";
             this.button_Navigation.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
@@ -256,9 +254,10 @@
             this.button_Travel.Font = new System.Drawing.Font("宋体", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
             this.button_Travel.ForeColor = System.Drawing.SystemColors.ButtonFace;
             this.button_Travel.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.button_Travel.Location = new System.Drawing.Point(3, 245);
+            this.button_Travel.Location = new System.Drawing.Point(2, 184);
+            this.button_Travel.Margin = new System.Windows.Forms.Padding(2);
             this.button_Travel.Name = "button_Travel";
-            this.button_Travel.Size = new System.Drawing.Size(311, 67);
+            this.button_Travel.Size = new System.Drawing.Size(233, 50);
             this.button_Travel.TabIndex = 2;
             this.button_Travel.Text = " 行程";
             this.button_Travel.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
@@ -272,9 +271,10 @@
             this.button_UserInfo.Font = new System.Drawing.Font("宋体", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
             this.button_UserInfo.ForeColor = System.Drawing.SystemColors.ButtonFace;
             this.button_UserInfo.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.button_UserInfo.Location = new System.Drawing.Point(0, 173);
+            this.button_UserInfo.Location = new System.Drawing.Point(0, 130);
+            this.button_UserInfo.Margin = new System.Windows.Forms.Padding(2);
             this.button_UserInfo.Name = "button_UserInfo";
-            this.button_UserInfo.Size = new System.Drawing.Size(311, 67);
+            this.button_UserInfo.Size = new System.Drawing.Size(233, 50);
             this.button_UserInfo.TabIndex = 1;
             this.button_UserInfo.Text = " 个人信息    ";
             this.button_UserInfo.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
@@ -286,29 +286,32 @@
             this.label1.AutoSize = true;
             this.label1.Font = new System.Drawing.Font("幼圆", 14F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
             this.label1.ForeColor = System.Drawing.SystemColors.ControlLightLight;
-            this.label1.Location = new System.Drawing.Point(169, 31);
+            this.label1.Location = new System.Drawing.Point(127, 23);
+            this.label1.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(115, 76);
+            this.label1.Size = new System.Drawing.Size(85, 56);
             this.label1.TabIndex = 0;
             this.label1.Text = "行 迹\r\n精 灵";
             // 
             // panelControl
             // 
-            this.panelControl.BackColor = System.Drawing.Color.Transparent;
-            this.panelControl.Location = new System.Drawing.Point(303, 1);
+            this.panelControl.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(188)))), ((int)(((byte)(204)))), ((int)(((byte)(172)))));
+            this.panelControl.Location = new System.Drawing.Point(227, 1);
+            this.panelControl.Margin = new System.Windows.Forms.Padding(2);
             this.panelControl.Name = "panelControl";
-            this.panelControl.Size = new System.Drawing.Size(1264, 725);
+            this.panelControl.Size = new System.Drawing.Size(1050, 546);
             this.panelControl.TabIndex = 1;
             // 
             // MainFormFinal
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(12F, 24F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(9F, 18F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.Honeydew;
-            this.ClientSize = new System.Drawing.Size(1565, 725);
+            this.ClientSize = new System.Drawing.Size(1174, 544);
             this.Controls.Add(this.panelControl);
             this.Controls.Add(this.panel1);
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
+            this.Margin = new System.Windows.Forms.Padding(2);
             this.Name = "MainFormFinal";
             this.Text = "主页";
             this.Load += new System.EventHandler(this.MainFormFianl_Load);
