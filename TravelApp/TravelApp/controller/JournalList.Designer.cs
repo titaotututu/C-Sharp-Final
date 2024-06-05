@@ -30,22 +30,22 @@
         {
             this.labelIcon = new System.Windows.Forms.Label();
             this.flpHead = new System.Windows.Forms.FlowLayoutPanel();
-            this.pictureBoxIcon = new System.Windows.Forms.PictureBox();
             this.label3 = new System.Windows.Forms.Label();
             this.flpJournalList = new System.Windows.Forms.FlowLayoutPanel();
-            this.pbAdd = new System.Windows.Forms.PictureBox();
             this.panelControl = new System.Windows.Forms.Panel();
+            this.pbAdd = new System.Windows.Forms.PictureBox();
+            this.pictureBoxIcon = new System.Windows.Forms.PictureBox();
             this.flpHead.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBoxIcon)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pbAdd)).BeginInit();
             this.panelControl.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pbAdd)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBoxIcon)).BeginInit();
             this.SuspendLayout();
             // 
             // labelIcon
             // 
             this.labelIcon.AutoSize = true;
             this.labelIcon.Font = new System.Drawing.Font("幼圆", 15F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
-            this.labelIcon.ForeColor = System.Drawing.Color.SeaGreen;
+            this.labelIcon.ForeColor = System.Drawing.Color.DarkGreen;
             this.labelIcon.Location = new System.Drawing.Point(101, 35);
             this.labelIcon.Margin = new System.Windows.Forms.Padding(10, 35, 3, 0);
             this.labelIcon.Name = "labelIcon";
@@ -55,23 +55,13 @@
             // 
             // flpHead
             // 
+            this.flpHead.BackColor = System.Drawing.Color.White;
             this.flpHead.Controls.Add(this.pictureBoxIcon);
             this.flpHead.Controls.Add(this.labelIcon);
             this.flpHead.Location = new System.Drawing.Point(3, 3);
             this.flpHead.Name = "flpHead";
             this.flpHead.Size = new System.Drawing.Size(819, 88);
             this.flpHead.TabIndex = 2;
-            // 
-            // pictureBoxIcon
-            // 
-            this.pictureBoxIcon.Image = global::TravelApp.Properties.Resources.旅行日志;
-            this.pictureBoxIcon.Location = new System.Drawing.Point(30, 20);
-            this.pictureBoxIcon.Margin = new System.Windows.Forms.Padding(30, 20, 3, 3);
-            this.pictureBoxIcon.Name = "pictureBoxIcon";
-            this.pictureBoxIcon.Size = new System.Drawing.Size(58, 57);
-            this.pictureBoxIcon.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-            this.pictureBoxIcon.TabIndex = 0;
-            this.pictureBoxIcon.TabStop = false;
             // 
             // label3
             // 
@@ -92,8 +82,20 @@
             this.flpJournalList.TabIndex = 13;
             this.flpJournalList.WrapContents = false;
             // 
+            // panelControl
+            // 
+            this.panelControl.BackColor = System.Drawing.Color.White;
+            this.panelControl.Controls.Add(this.flpJournalList);
+            this.panelControl.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.panelControl.Location = new System.Drawing.Point(0, 0);
+            this.panelControl.Margin = new System.Windows.Forms.Padding(2);
+            this.panelControl.Name = "panelControl";
+            this.panelControl.Size = new System.Drawing.Size(953, 550);
+            this.panelControl.TabIndex = 15;
+            // 
             // pbAdd
             // 
+            this.pbAdd.BackColor = System.Drawing.Color.Transparent;
             this.pbAdd.Cursor = System.Windows.Forms.Cursors.Hand;
             this.pbAdd.Image = global::TravelApp.Properties.Resources.add;
             this.pbAdd.Location = new System.Drawing.Point(865, 23);
@@ -105,15 +107,16 @@
             this.pbAdd.TabStop = false;
             this.pbAdd.Click += new System.EventHandler(this.pbAdd_Click);
             // 
-            // panelControl
+            // pictureBoxIcon
             // 
-            this.panelControl.Controls.Add(this.flpJournalList);
-            this.panelControl.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.panelControl.Location = new System.Drawing.Point(0, 0);
-            this.panelControl.Margin = new System.Windows.Forms.Padding(2);
-            this.panelControl.Name = "panelControl";
-            this.panelControl.Size = new System.Drawing.Size(953, 550);
-            this.panelControl.TabIndex = 15;
+            this.pictureBoxIcon.Image = global::TravelApp.Properties.Resources.旅行日志;
+            this.pictureBoxIcon.Location = new System.Drawing.Point(30, 20);
+            this.pictureBoxIcon.Margin = new System.Windows.Forms.Padding(30, 20, 3, 3);
+            this.pictureBoxIcon.Name = "pictureBoxIcon";
+            this.pictureBoxIcon.Size = new System.Drawing.Size(58, 57);
+            this.pictureBoxIcon.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.pictureBoxIcon.TabIndex = 0;
+            this.pictureBoxIcon.TabStop = false;
             // 
             // JournalList
             // 
@@ -128,9 +131,9 @@
             this.Size = new System.Drawing.Size(953, 550);
             this.flpHead.ResumeLayout(false);
             this.flpHead.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBoxIcon)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pbAdd)).EndInit();
             this.panelControl.ResumeLayout(false);
+            ((System.ComponentModel.ISupportInitialize)(this.pbAdd)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBoxIcon)).EndInit();
             this.ResumeLayout(false);
 
         }

@@ -86,6 +86,7 @@ namespace TravelApp
                         MessageBox.Show("注册成功!您的ID是" +user.UserId);
                         using (MainFormFinal mff = new MainFormFinal(user.UserId))
                         {
+                            mff.changePanel = mff.AddControlsToPanel;
                             this.Hide();
                             mff.ShowDialog();
                             this.Dispose();

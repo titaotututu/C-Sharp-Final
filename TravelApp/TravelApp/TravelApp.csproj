@@ -448,5 +448,17 @@
   <ItemGroup>
     <None Include="Resources\微信图片_20240605163032.jpg" />
   </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\天气预报.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\用户.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\route.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\streetsign.png" />
+  </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

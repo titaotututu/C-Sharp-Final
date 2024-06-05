@@ -224,3 +224,4 @@ C:\Users\asus\Desktop\gitgit\C-Sharp-Final\TravelApp\TravelApp\obj\Debug\byn\Tra
 C:\Users\asus\Desktop\gitgit\C-Sharp-Final\TravelApp\TravelApp\obj\Debug\TravelApp.csproj.Up2Date
 C:\Users\asus\Desktop\gitgit\C-Sharp-Final\TravelApp\TravelApp\obj\Debug\TravelApp.exe
 C:\Users\asus\Desktop\gitgit\C-Sharp-Final\TravelApp\TravelApp\obj\Debug\TravelApp.pdb
+D:\Git\tmp\C-Sharp-Final\TravelApp\TravelApp\obj\Debug\Weather_space.WeatherDay.resources

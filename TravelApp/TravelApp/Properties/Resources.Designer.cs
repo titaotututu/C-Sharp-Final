@@ -93,6 +93,26 @@ namespace TravelApp.Properties {
         /// <summary>
         ///   查找 System.Drawing.Bitmap 类型的本地化资源。
         /// </summary>
+        internal static System.Drawing.Bitmap route {
+            get {
+                object obj = ResourceManager.GetObject("route", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   查找 System.Drawing.Bitmap 类型的本地化资源。
+        /// </summary>
+        internal static System.Drawing.Bitmap streetsign {
+            get {
+                object obj = ResourceManager.GetObject("streetsign", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   查找 System.Drawing.Bitmap 类型的本地化资源。
+        /// </summary>
         internal static System.Drawing.Bitmap test1 {
             get {
                 object obj = ResourceManager.GetObject("test1", resourceCulture);
@@ -213,6 +233,16 @@ namespace TravelApp.Properties {
         /// <summary>
         ///   查找 System.Drawing.Bitmap 类型的本地化资源。
         /// </summary>
+        internal static System.Drawing.Bitmap 天气预报 {
+            get {
+                object obj = ResourceManager.GetObject("天气预报", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   查找 System.Drawing.Bitmap 类型的本地化资源。
+        /// </summary>
         internal static System.Drawing.Bitmap 导航地址 {
             get {
                 object obj = ResourceManager.GetObject("导航地址", resourceCulture);
@@ -326,6 +356,16 @@ namespace TravelApp.Properties {
         internal static System.Drawing.Bitmap 甜美云 {
             get {
                 object obj = ResourceManager.GetObject("甜美云", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   查找 System.Drawing.Bitmap 类型的本地化资源。
+        /// </summary>
+        internal static System.Drawing.Bitmap 用户 {
+            get {
+                object obj = ResourceManager.GetObject("用户", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
