@@ -28,15 +28,11 @@
         /// </summary>
         private void InitializeComponent()
         {
-            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(JournalDetail));
-            this.pbBack = new System.Windows.Forms.PictureBox();
             this.flowLayoutPanel1 = new System.Windows.Forms.FlowLayoutPanel();
             this.btnEdit = new System.Windows.Forms.Button();
             this.btnSave = new System.Windows.Forms.Button();
             this.flpTitle = new System.Windows.Forms.FlowLayoutPanel();
-            this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.tbTitle = new System.Windows.Forms.TextBox();
-            this.pbAdd = new System.Windows.Forms.PictureBox();
             this.label1 = new System.Windows.Forms.Label();
             this.flpImage = new System.Windows.Forms.FlowLayoutPanel();
             this.rtbDescription = new System.Windows.Forms.RichTextBox();
@@ -48,27 +44,17 @@
             this.label4 = new System.Windows.Forms.Label();
             this.tbEmotion = new System.Windows.Forms.TextBox();
             this.panelControl = new System.Windows.Forms.Panel();
-            ((System.ComponentModel.ISupportInitialize)(this.pbBack)).BeginInit();
+            this.pictureBox1 = new System.Windows.Forms.PictureBox();
+            this.pbAdd = new System.Windows.Forms.PictureBox();
+            this.pbBack = new System.Windows.Forms.PictureBox();
             this.flowLayoutPanel1.SuspendLayout();
             this.flpTitle.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pbAdd)).BeginInit();
             this.flowLayoutPanel2.SuspendLayout();
             this.panelControl.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pbAdd)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pbBack)).BeginInit();
             this.SuspendLayout();
-            // 
-            // pbBack
-            // 
-            this.pbBack.BackColor = System.Drawing.Color.MediumSeaGreen;
-            this.pbBack.Image = ((System.Drawing.Image)(resources.GetObject("pbBack.Image")));
-            this.pbBack.Location = new System.Drawing.Point(20, 10);
-            this.pbBack.Margin = new System.Windows.Forms.Padding(20, 10, 3, 3);
-            this.pbBack.Name = "pbBack";
-            this.pbBack.Size = new System.Drawing.Size(59, 59);
-            this.pbBack.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-            this.pbBack.TabIndex = 17;
-            this.pbBack.TabStop = false;
-            this.pbBack.Click += new System.EventHandler(this.pbBack_Click);
             // 
             // flowLayoutPanel1
             // 
@@ -123,18 +109,6 @@
             this.flpTitle.Size = new System.Drawing.Size(946, 76);
             this.flpTitle.TabIndex = 19;
             // 
-            // pictureBox1
-            // 
-            this.pictureBox1.BackColor = System.Drawing.Color.Transparent;
-            this.pictureBox1.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox1.Image")));
-            this.pictureBox1.Location = new System.Drawing.Point(40, 20);
-            this.pictureBox1.Margin = new System.Windows.Forms.Padding(40, 20, 3, 3);
-            this.pictureBox1.Name = "pictureBox1";
-            this.pictureBox1.Size = new System.Drawing.Size(48, 46);
-            this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-            this.pictureBox1.TabIndex = 20;
-            this.pictureBox1.TabStop = false;
-            // 
             // tbTitle
             // 
             this.tbTitle.BackColor = System.Drawing.Color.White;
@@ -143,29 +117,16 @@
             this.tbTitle.Location = new System.Drawing.Point(111, 30);
             this.tbTitle.Margin = new System.Windows.Forms.Padding(20, 30, 3, 3);
             this.tbTitle.Name = "tbTitle";
-            this.tbTitle.Size = new System.Drawing.Size(330, 31);
+            this.tbTitle.Size = new System.Drawing.Size(342, 31);
             this.tbTitle.TabIndex = 0;
             this.tbTitle.Text = "快乐旅游";
-            // 
-            // pbAdd
-            // 
-            this.pbAdd.BackColor = System.Drawing.Color.Transparent;
-            this.pbAdd.Image = ((System.Drawing.Image)(resources.GetObject("pbAdd.Image")));
-            this.pbAdd.Location = new System.Drawing.Point(774, 20);
-            this.pbAdd.Margin = new System.Windows.Forms.Padding(330, 20, 3, 3);
-            this.pbAdd.Name = "pbAdd";
-            this.pbAdd.Size = new System.Drawing.Size(47, 46);
-            this.pbAdd.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-            this.pbAdd.TabIndex = 22;
-            this.pbAdd.TabStop = false;
-            this.pbAdd.Click += new System.EventHandler(this.pbAdd_Click);
             // 
             // label1
             // 
             this.label1.AutoSize = true;
             this.label1.Font = new System.Drawing.Font("幼圆", 10.5F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
             this.label1.ForeColor = System.Drawing.SystemColors.ControlDarkDark;
-            this.label1.Location = new System.Drawing.Point(824, 35);
+            this.label1.Location = new System.Drawing.Point(836, 35);
             this.label1.Margin = new System.Windows.Forms.Padding(0, 35, 3, 0);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(102, 21);
@@ -183,7 +144,7 @@
             // 
             // rtbDescription
             // 
-            this.rtbDescription.Font = new System.Drawing.Font("微软雅黑", 10.5F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
+            this.rtbDescription.Font = new System.Drawing.Font("微软雅黑", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
             this.rtbDescription.Location = new System.Drawing.Point(3, 360);
             this.rtbDescription.Name = "rtbDescription";
             this.rtbDescription.ScrollBars = System.Windows.Forms.RichTextBoxScrollBars.ForcedVertical;
@@ -290,6 +251,44 @@
             this.panelControl.Size = new System.Drawing.Size(950, 541);
             this.panelControl.TabIndex = 23;
             // 
+            // pictureBox1
+            // 
+            this.pictureBox1.BackColor = System.Drawing.Color.Transparent;
+            this.pictureBox1.Image = global::TravelApp.Properties.Resources.旅游;
+            this.pictureBox1.Location = new System.Drawing.Point(40, 20);
+            this.pictureBox1.Margin = new System.Windows.Forms.Padding(40, 20, 3, 3);
+            this.pictureBox1.Name = "pictureBox1";
+            this.pictureBox1.Size = new System.Drawing.Size(48, 46);
+            this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.pictureBox1.TabIndex = 20;
+            this.pictureBox1.TabStop = false;
+            // 
+            // pbAdd
+            // 
+            this.pbAdd.BackColor = System.Drawing.Color.Transparent;
+            this.pbAdd.Image = global::TravelApp.Properties.Resources.添加;
+            this.pbAdd.Location = new System.Drawing.Point(786, 20);
+            this.pbAdd.Margin = new System.Windows.Forms.Padding(330, 20, 3, 3);
+            this.pbAdd.Name = "pbAdd";
+            this.pbAdd.Size = new System.Drawing.Size(47, 46);
+            this.pbAdd.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.pbAdd.TabIndex = 22;
+            this.pbAdd.TabStop = false;
+            this.pbAdd.Click += new System.EventHandler(this.pbAdd_Click);
+            // 
+            // pbBack
+            // 
+            this.pbBack.BackColor = System.Drawing.Color.MediumSeaGreen;
+            this.pbBack.Image = global::TravelApp.Properties.Resources.back;
+            this.pbBack.Location = new System.Drawing.Point(20, 10);
+            this.pbBack.Margin = new System.Windows.Forms.Padding(20, 10, 3, 3);
+            this.pbBack.Name = "pbBack";
+            this.pbBack.Size = new System.Drawing.Size(59, 59);
+            this.pbBack.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.pbBack.TabIndex = 17;
+            this.pbBack.TabStop = false;
+            this.pbBack.Click += new System.EventHandler(this.pbBack_Click);
+            // 
             // JournalDetail
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(9F, 18F);
@@ -301,15 +300,15 @@
             this.Controls.Add(this.panelControl);
             this.Name = "JournalDetail";
             this.Size = new System.Drawing.Size(950, 541);
-            ((System.ComponentModel.ISupportInitialize)(this.pbBack)).EndInit();
             this.flowLayoutPanel1.ResumeLayout(false);
             this.flpTitle.ResumeLayout(false);
             this.flpTitle.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pbAdd)).EndInit();
             this.flowLayoutPanel2.ResumeLayout(false);
             this.flowLayoutPanel2.PerformLayout();
             this.panelControl.ResumeLayout(false);
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pbAdd)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pbBack)).EndInit();
             this.ResumeLayout(false);
 
         }

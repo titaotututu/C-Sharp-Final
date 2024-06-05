@@ -106,7 +106,6 @@ D:\Git\tmp\C-Sharp-Final\TravelApp\TravelApp\obj\Debug\TravelApp.controller.Todo
 D:\Git\tmp\C-Sharp-Final\TravelApp\TravelApp\obj\Debug\Weather_space.Travel_Weather.resources
 D:\Git\tmp\C-Sharp-Final\TravelApp\TravelApp\obj\Debug\TravelApp.Else.resources
 D:\Git\tmp\C-Sharp-Final\TravelApp\TravelApp\obj\Debug\TravelApp.Lighting.resources
-D:\Git\tmp\C-Sharp-Final\TravelApp\TravelApp\obj\Debug\TravelApp.MainForm.resources
 D:\Git\tmp\C-Sharp-Final\TravelApp\TravelApp\obj\Debug\TravelApp.MainFormFinal.resources
 D:\Git\tmp\C-Sharp-Final\TravelApp\TravelApp\obj\Debug\TravelApp.Navigation.resources
 D:\Git\tmp\C-Sharp-Final\TravelApp\TravelApp\obj\Debug\TravelApp.Properties.Resources.resources
@@ -182,3 +181,6 @@ D:\learngit\Csharp-work\C-Sharp-Final\TravelApp\TravelApp\obj\Debug\TravelApp.Re
 D:\Git\tmp\C-Sharp-Final\TravelApp\TravelApp\obj\Debug\TravelApp.controller.Personalinfo.resources
 D:\Git\tmp\C-Sharp-Final\TravelApp\TravelApp\obj\Debug\TravelApp.Login.resources
 D:\Git\tmp\C-Sharp-Final\TravelApp\TravelApp\obj\Debug\TravelApp.Register.resources
+D:\Git\tmp\C-Sharp-Final\TravelApp\TravelApp\bin\Debug\byn\TravelApp.resources.dll
+D:\Git\tmp\C-Sharp-Final\TravelApp\TravelApp\obj\Debug\TravelApp.controller.Personalinfo.byn.resources
+D:\Git\tmp\C-Sharp-Final\TravelApp\TravelApp\obj\Debug\byn\TravelApp.resources.dll

@@ -33,6 +33,7 @@ namespace TravelApp.controller
             InitializeComponent();
             IsFromToDo = false;
             this.ChangePanel = changePanel;
+            this.Refresh = ImgRefresh;
             Init0(journal);
         }
         public JournalDetail(Journal journal, Travel travel)
@@ -40,6 +41,7 @@ namespace TravelApp.controller
             InitializeComponent();
             this.travel = travel;
             IsFromToDo = true;
+            this.Refresh = ImgRefresh;
             Init0(journal);
         }
         public JournalDetail(long journalId, ChangePanel changePanel)

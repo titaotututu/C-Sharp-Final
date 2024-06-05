@@ -26,8 +26,11 @@ namespace TravelApp.controller
         {
             todo = todo_;
             InitializeComponent();
-            checkBox1.Enabled = false;
-            checkBox1.Checked = todo.IsCompleted;
+            if(todo.IsCompleted)
+            {
+                buttonLight.Enabled = false;
+                pictureBox.Visible = true;
+            }
             labelTime.Text = todo.Time.ToString();
             this.labelPlace.Text = todo.Place.ToString();
             this.labelDescription.Text = todo.Description.ToString();
@@ -43,14 +46,14 @@ namespace TravelApp.controller
                 HttpResponseMessage result = await client.Delete(url);
                 if (result.IsSuccessStatusCode)
                 {
-                    MessageBox.Show("Todo item deleted successfully.", "Success", MessageBoxButtons.OK, MessageBoxIcon.Information);
+                    MessageBox.Show("删除成功！", "Success", MessageBoxButtons.OK, MessageBoxIcon.Information);
                     // 在此处添加删除成功后的逻辑，例如刷新界面或重新加载数据
                     TodoDeleted?.Invoke(this, EventArgs.Empty); // 触发事件
                 }
                 else
                 {
                     string errorMessage = await result.Content.ReadAsStringAsync();
-                    MessageBox.Show($"Failed to delete todo item. Error: {errorMessage}", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                    MessageBox.Show($"删除失败！ Error: {errorMessage}", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
                 }
 
             }
@@ -100,7 +103,7 @@ namespace TravelApp.controller
             newtodo.Place = todo.Place;
             newtodo.Description = todo.Description;
             newtodo.IsCompleted = true;
-            checkBox1.Checked = true;
+            pictureBox.Visible = true;
 
             string url = "http://localhost:5199/api/TodoItem/update?itemid=" + newtodo.ItemId;
             Client client = new Client();

@@ -77,10 +77,10 @@
             this.panel1.Controls.Add(this.button_Travel);
             this.panel1.Controls.Add(this.button_UserInfo);
             this.panel1.Controls.Add(this.label1);
-            this.panel1.Location = new System.Drawing.Point(1, 1);
+            this.panel1.Location = new System.Drawing.Point(0, 0);
             this.panel1.Margin = new System.Windows.Forms.Padding(2);
             this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(233, 544);
+            this.panel1.Size = new System.Drawing.Size(230, 544);
             this.panel1.TabIndex = 0;
             // 
             // pictureBox8
@@ -299,7 +299,7 @@
             this.panelControl.Location = new System.Drawing.Point(227, 1);
             this.panelControl.Margin = new System.Windows.Forms.Padding(2);
             this.panelControl.Name = "panelControl";
-            this.panelControl.Size = new System.Drawing.Size(1050, 546);
+            this.panelControl.Size = new System.Drawing.Size(948, 546);
             this.panelControl.TabIndex = 1;
             // 
             // MainFormFinal

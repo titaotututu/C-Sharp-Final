@@ -61,7 +61,7 @@ namespace Weather_space
             this.buttonAbout});
             this.toolStrip1.Location = new System.Drawing.Point(0, 0);
             this.toolStrip1.Name = "toolStrip1";
-            this.toolStrip1.Size = new System.Drawing.Size(1050, 33);
+            this.toolStrip1.Size = new System.Drawing.Size(948, 33);
             this.toolStrip1.TabIndex = 0;
             this.toolStrip1.Text = "toolStrip1";
             // 
@@ -221,9 +221,9 @@ namespace Weather_space
             this.Controls.Add(this.weatherDay2);
             this.Controls.Add(this.weatherDay1);
             this.Controls.Add(this.toolStrip1);
-            this.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.Margin = new System.Windows.Forms.Padding(2);
             this.Name = "Travel_Weather";
-            this.Size = new System.Drawing.Size(1050, 546);
+            this.Size = new System.Drawing.Size(948, 546);
             this.Load += new System.EventHandler(this.Travel_Weather_Load);
             this.toolStrip1.ResumeLayout(false);
             this.toolStrip1.PerformLayout();

@@ -28,7 +28,6 @@
         /// </summary>
         private void InitializeComponent()
         {
-            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(PictureBox));
             this.pbClose = new System.Windows.Forms.PictureBox();
             this.picBox = new System.Windows.Forms.PictureBox();
             ((System.ComponentModel.ISupportInitialize)(this.pbClose)).BeginInit();
@@ -38,7 +37,7 @@
             // pbClose
             // 
             this.pbClose.BackColor = System.Drawing.Color.Transparent;
-            this.pbClose.Image = ((System.Drawing.Image)(resources.GetObject("pbClose.Image")));
+            this.pbClose.Image = global::TravelApp.Properties.Resources.关闭;
             this.pbClose.Location = new System.Drawing.Point(250, 0);
             this.pbClose.Margin = new System.Windows.Forms.Padding(20, 20, 3, 3);
             this.pbClose.Name = "pbClose";

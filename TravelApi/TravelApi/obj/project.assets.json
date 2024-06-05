@@ -2898,19 +2898,19 @@
     ]
   },
   "packageFolders": {
-    "C:\\Users\\lenovo\\.nuget\\packages\\": {}
+    "C:\\Users\\hua'wei\\.nuget\\packages\\": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "D:\\learngit\\Csharp-work\\C-Sharp-Final\\TravelApi\\TravelApi\\TravelApi.csproj",
+      "projectUniqueName": "D:\\Git\\tmp\\C-Sharp-Final\\TravelApi\\TravelApi\\TravelApi.csproj",
       "projectName": "TravelApi",
-      "projectPath": "D:\\learngit\\Csharp-work\\C-Sharp-Final\\TravelApi\\TravelApi\\TravelApi.csproj",
-      "packagesPath": "C:\\Users\\lenovo\\.nuget\\packages\\",
-      "outputPath": "D:\\learngit\\Csharp-work\\C-Sharp-Final\\TravelApi\\TravelApi\\obj\\",
+      "projectPath": "D:\\Git\\tmp\\C-Sharp-Final\\TravelApi\\TravelApi\\TravelApi.csproj",
+      "packagesPath": "C:\\Users\\hua'wei\\.nuget\\packages\\",
+      "outputPath": "D:\\Git\\tmp\\C-Sharp-Final\\TravelApi\\TravelApi\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
-        "C:\\Users\\lenovo\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "C:\\Users\\hua'wei\\AppData\\Roaming\\NuGet\\NuGet.Config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
       ],
       "originalTargetFrameworks": [
@@ -2918,7 +2918,6 @@
       ],
       "sources": {
         "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
-        "C:\\Program Files\\dotnet\\library-packs": {},
         "https://api.nuget.org/v3/index.json": {}
       },
       "frameworks": {
@@ -2974,7 +2973,7 @@
             "privateAssets": "all"
           }
         },
-        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.300/PortableRuntimeIdentifierGraph.json"
+        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.205/PortableRuntimeIdentifierGraph.json"
       }
     }
   }

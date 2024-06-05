@@ -28,7 +28,6 @@
         /// </summary>
         private void InitializeComponent()
         {
-            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(JournalList));
             this.labelIcon = new System.Windows.Forms.Label();
             this.flpHead = new System.Windows.Forms.FlowLayoutPanel();
             this.pictureBoxIcon = new System.Windows.Forms.PictureBox();
@@ -65,7 +64,7 @@
             // 
             // pictureBoxIcon
             // 
-            this.pictureBoxIcon.Image = ((System.Drawing.Image)(resources.GetObject("pictureBoxIcon.Image")));
+            this.pictureBoxIcon.Image = global::TravelApp.Properties.Resources.旅行日志;
             this.pictureBoxIcon.Location = new System.Drawing.Point(30, 20);
             this.pictureBoxIcon.Margin = new System.Windows.Forms.Padding(30, 20, 3, 3);
             this.pictureBoxIcon.Name = "pictureBoxIcon";
@@ -96,7 +95,7 @@
             // pbAdd
             // 
             this.pbAdd.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.pbAdd.Image = ((System.Drawing.Image)(resources.GetObject("pbAdd.Image")));
+            this.pbAdd.Image = global::TravelApp.Properties.Resources.add;
             this.pbAdd.Location = new System.Drawing.Point(865, 23);
             this.pbAdd.Margin = new System.Windows.Forms.Padding(30, 20, 3, 3);
             this.pbAdd.Name = "pbAdd";
