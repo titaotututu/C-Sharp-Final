@@ -26,6 +26,7 @@ namespace TravelApp
             this.TravelId=travelid;
             this.TravelTime=traveltime;
             InitializeComponent();
+            this.labelTravelTitle.Text = TravelTitle;
             getTask();
             
         }
@@ -42,7 +43,7 @@ namespace TravelApp
                 if (result.IsSuccessStatusCode)
                 {
                     string jsonContent = await result.Content.ReadAsStringAsync();
-                    
+                    int yPosition = 20; // 起始位置
                     List<TodoItem> todoItems = JsonConvert.DeserializeObject<List<TodoItem>>(jsonContent);
                     foreach (TodoItem todo in todoItems)
                     {
@@ -50,7 +51,9 @@ namespace TravelApp
                         TodoPage todoPage = new TodoPage(todo);
                         todoPage.TodoDeleted += TodoPage_TodoDeleted; // 订阅事件
                         todoPage.JournalDetailRequested += SwitchToJournalDetail; // 订阅切换事件
+                        todoPage.Location = new Point(0, yPosition); // 设置位置
                         panelTodo.Controls.Add(todoPage);
+                        yPosition += todoPage.Height + 20; // 更新y位置
                     }
                 }
                 else

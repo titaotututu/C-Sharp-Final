@@ -20,6 +20,9 @@ namespace TravelApp.controller
         {
             this.travel = travel_;
             InitializeComponent();
+            this.labelTitle.Text=travel.TravelTitle;
+            this.labelTime.Text=travel.TravelTime.ToString();
+            this.labelPlace.Text = travel.TravelCity;
         }
 
         private async void buttonDelete_Click(object sender, EventArgs e)

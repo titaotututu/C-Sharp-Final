@@ -27,6 +27,10 @@ namespace TravelApp.controller
             todo = todo_;
             InitializeComponent();
             checkBox1.Enabled = false;
+            checkBox1.Checked = todo.IsCompleted;
+            labelTime.Text = todo.Time.ToString();
+            this.labelPlace.Text = todo.Place.ToString();
+            this.labelDescription.Text = todo.Description.ToString();
         }
 
         private async void buttonDelete_Click(object sender, EventArgs e)
