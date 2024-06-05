@@ -38,9 +38,10 @@
             this.new_id = new System.Windows.Forms.TextBox();
             this.label5 = new System.Windows.Forms.Label();
             this.flpHead = new System.Windows.Forms.FlowLayoutPanel();
-            this.labelIcon = new System.Windows.Forms.Label();
             this.pictureBoxIcon = new System.Windows.Forms.PictureBox();
+            this.labelIcon = new System.Windows.Forms.Label();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
+            this.checkBox1 = new System.Windows.Forms.CheckBox();
             this.flpHead.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBoxIcon)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
@@ -78,7 +79,7 @@
             // 
             resources.ApplyResources(this.button1, "button1");
             this.button1.Name = "button1";
-            this.button1.UseVisualStyleBackColor = true;
+            this.button1.UseVisualStyleBackColor = false;
             this.button1.Click += new System.EventHandler(this.button1_Click);
             // 
             // new_id
@@ -100,18 +101,18 @@
             resources.ApplyResources(this.flpHead, "flpHead");
             this.flpHead.Name = "flpHead";
             // 
-            // labelIcon
-            // 
-            resources.ApplyResources(this.labelIcon, "labelIcon");
-            this.labelIcon.ForeColor = System.Drawing.Color.DarkGreen;
-            this.labelIcon.Name = "labelIcon";
-            // 
             // pictureBoxIcon
             // 
             this.pictureBoxIcon.Image = global::TravelApp.Properties.Resources.用户;
             resources.ApplyResources(this.pictureBoxIcon, "pictureBoxIcon");
             this.pictureBoxIcon.Name = "pictureBoxIcon";
             this.pictureBoxIcon.TabStop = false;
+            // 
+            // labelIcon
+            // 
+            resources.ApplyResources(this.labelIcon, "labelIcon");
+            this.labelIcon.ForeColor = System.Drawing.Color.DarkGreen;
+            this.labelIcon.Name = "labelIcon";
             // 
             // pictureBox1
             // 
@@ -120,11 +121,19 @@
             this.pictureBox1.Name = "pictureBox1";
             this.pictureBox1.TabStop = false;
             // 
+            // checkBox1
+            // 
+            resources.ApplyResources(this.checkBox1, "checkBox1");
+            this.checkBox1.Name = "checkBox1";
+            this.checkBox1.UseVisualStyleBackColor = false;
+            this.checkBox1.CheckedChanged += new System.EventHandler(this.checkBox1_CheckedChanged_1);
+            // 
             // Personalinfo
             // 
             resources.ApplyResources(this, "$this");
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(188)))), ((int)(((byte)(204)))), ((int)(((byte)(172)))));
+            this.Controls.Add(this.checkBox1);
             this.Controls.Add(this.flpHead);
             this.Controls.Add(this.pictureBox1);
             this.Controls.Add(this.label5);
@@ -159,5 +168,6 @@
         private System.Windows.Forms.FlowLayoutPanel flpHead;
         private System.Windows.Forms.PictureBox pictureBoxIcon;
         private System.Windows.Forms.Label labelIcon;
+        private System.Windows.Forms.CheckBox checkBox1;
     }
 }

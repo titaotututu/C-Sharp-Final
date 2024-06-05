@@ -103,5 +103,17 @@ namespace TravelApp
                 return encryptedValue ^ key;
             }
         }
+
+        private void checkBox1_CheckedChanged(object sender, EventArgs e)
+        {
+            if (checkBox1.Checked)
+            {
+                textBox2.PasswordChar = '\0';   //显示输入
+            }
+            else
+            {
+                textBox2.PasswordChar = '*';   //显示*
+            }
+        }
     }
 }

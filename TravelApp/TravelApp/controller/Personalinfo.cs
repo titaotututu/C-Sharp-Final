@@ -13,6 +13,8 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 using TravelApp.models;
+using static System.Windows.Forms.VisualStyles.VisualStyleElement;
+
 
 namespace TravelApp.controller
 
@@ -55,8 +57,21 @@ namespace TravelApp.controller
                     new_id.Text = user.UserId.ToString();
                     new_name.Text = user.UserName;
                     //cbGender.Text = user.Sex;
+                    //密码显示与不显示
                     long pwd = SimpleEncryptionHelper.DecryptLong(user.password);
-                    new_pwd.Text = Convert.ToString(pwd);
+                    if (checkBox1.Checked)
+                    {
+                        new_pwd.Text = Convert.ToString(pwd);
+                        //tBoxPassword.PasswordChar = '\0';   //显示输入
+                    }
+                    else
+                    {
+                        int length = (int)(Math.Log10(pwd) + 1);
+                        new_pwd.Text = new string('*', length);
+
+                        //new_pwd.PasswordChar = '*';   //显示*
+                    }
+                    //new_pwd.Text = Convert.ToString(pwd);
                 }
             }
             catch (Exception e)
@@ -72,6 +87,8 @@ namespace TravelApp.controller
           //  long newUserid=long.Parse(id);
             string newUsername=new_name.Text;
             string Userpwd=new_pwd.Text;
+            //long pwd = SimpleEncryptionHelper.DecryptLong(user.password);
+            //string Userpwd = Convert.ToString(pwd);
             long newUserpwd = long.Parse(Userpwd);
             newUserpwd=SimpleEncryptionHelper.EncryptLong(newUserpwd);
             string url = baseUrl + "/" + user.UserId;
@@ -125,6 +142,23 @@ namespace TravelApp.controller
             public static long DecryptLong(long encryptedValue)
             {
                 return encryptedValue ^ key;
+            }
+        }
+
+        private void checkBox1_CheckedChanged_1(object sender, EventArgs e)
+        {
+            long pwd = SimpleEncryptionHelper.DecryptLong(user.password);
+            if (checkBox1.Checked)
+            {
+                new_pwd.Text = Convert.ToString(pwd);
+                //tBoxPassword.PasswordChar = '\0';   //显示输入
+            }
+            else
+            {
+                int length = (int)(Math.Log10(pwd) + 1);
+                new_pwd.Text = new string('*', length);
+
+                //new_pwd.PasswordChar = '*';   //显示*
             }
         }
     }

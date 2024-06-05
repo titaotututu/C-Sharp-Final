@@ -14,6 +14,7 @@ using System.Net.Http;
 using TravelApp.models;
 using System.Security.Cryptography;
 using Newtonsoft.Json;
+using static System.Windows.Forms.VisualStyles.VisualStyleElement;
 
 
 namespace TravelApp
@@ -113,6 +114,18 @@ namespace TravelApp
             public static long DecryptLong(long encryptedValue)
             {
                 return encryptedValue ^ key;
+            }
+        }
+
+        private void checkBox1_CheckedChanged(object sender, EventArgs e)
+        {
+            if (checkBox1.Checked)
+            {
+                reg_pwd.PasswordChar = '\0';   //显示输入
+            }
+            else
+            {
+                reg_pwd.PasswordChar = '*';   //显示*
             }
         }
     }
