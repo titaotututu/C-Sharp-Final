@@ -265,5 +265,3 @@ E:\classes\5大二下\软件构造基础\大作业\克隆项目\C-Sharp-Final\Tr
 E:\classes\5大二下\软件构造基础\大作业\克隆项目\C-Sharp-Final\TravelApp\TravelApp\obj\Debug\TravelApp.csproj.Up2Date
 E:\classes\5大二下\软件构造基础\大作业\克隆项目\C-Sharp-Final\TravelApp\TravelApp\obj\Debug\TravelApp.exe
 E:\classes\5大二下\软件构造基础\大作业\克隆项目\C-Sharp-Final\TravelApp\TravelApp\obj\Debug\TravelApp.pdb
-E:\classes\5大二下\软件构造基础\大作业\克隆项目\C-Sharp-Final\TravelApp\TravelApp\bin\Debug\SunnyUI.Common.dll
-E:\classes\5大二下\软件构造基础\大作业\克隆项目\C-Sharp-Final\TravelApp\TravelApp\bin\Debug\SunnyUI.dll

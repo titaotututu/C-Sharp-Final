@@ -59,19 +59,19 @@ namespace TravelApp.controller
                     //cbGender.Text = user.Sex;
                     //密码显示与不显示
                     long pwd = SimpleEncryptionHelper.DecryptLong(user.password);
-                    if (checkBox1.Checked)
-                    {
-                        new_pwd.Text = Convert.ToString(pwd);
+                    //if (checkBox1.Checked)
+                    //{
+                    //    new_pwd.Text = Convert.ToString(pwd);
                         //tBoxPassword.PasswordChar = '\0';   //显示输入
-                    }
-                    else
-                    {
-                        int length = (int)(Math.Log10(pwd) + 1);
-                        new_pwd.Text = new string('*', length);
+                    //}
+                    //else
+                    //{
+                    //    int length = (int)(Math.Log10(pwd) + 1);
+                    //    new_pwd.Text = new string('*', length);
 
                         //new_pwd.PasswordChar = '*';   //显示*
-                    }
-                    //new_pwd.Text = Convert.ToString(pwd);
+                    //}
+                    new_pwd.Text = Convert.ToString(pwd);
                 }
             }
             catch (Exception e)
@@ -145,21 +145,21 @@ namespace TravelApp.controller
             }
         }
 
-        private void checkBox1_CheckedChanged_1(object sender, EventArgs e)
-        {
-            long pwd = SimpleEncryptionHelper.DecryptLong(user.password);
-            if (checkBox1.Checked)
-            {
-                new_pwd.Text = Convert.ToString(pwd);
+        //private void checkBox1_CheckedChanged_1(object sender, EventArgs e)
+        //{
+        //    long pwd = SimpleEncryptionHelper.DecryptLong(user.password);
+        //    if (checkBox1.Checked)
+        //    {
+        //        new_pwd.Text = Convert.ToString(pwd);
                 //tBoxPassword.PasswordChar = '\0';   //显示输入
-            }
-            else
-            {
-                int length = (int)(Math.Log10(pwd) + 1);
-                new_pwd.Text = new string('*', length);
+        //    }
+        //    else
+        //   {
+        //        int length = (int)(Math.Log10(pwd) + 1);
+        //        new_pwd.Text = new string('*', length);
 
                 //new_pwd.PasswordChar = '*';   //显示*
-            }
-        }
+        //    }
+        //}
     }
 }
