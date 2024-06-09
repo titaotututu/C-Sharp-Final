@@ -41,6 +41,7 @@
             this.pictureBoxIcon = new System.Windows.Forms.PictureBox();
             this.labelIcon = new System.Windows.Forms.Label();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
+            this.button2 = new System.Windows.Forms.Button();
             this.flpHead.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBoxIcon)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
@@ -83,6 +84,7 @@
             // 
             // new_id
             // 
+            this.new_id.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(188)))), ((int)(((byte)(204)))), ((int)(((byte)(172)))));
             resources.ApplyResources(this.new_id, "new_id");
             this.new_id.Name = "new_id";
             // 
@@ -120,11 +122,19 @@
             this.pictureBox1.Name = "pictureBox1";
             this.pictureBox1.TabStop = false;
             // 
+            // button2
+            // 
+            resources.ApplyResources(this.button2, "button2");
+            this.button2.Name = "button2";
+            this.button2.UseVisualStyleBackColor = false;
+            this.button2.Click += new System.EventHandler(this.button2_Click);
+            // 
             // Personalinfo
             // 
             resources.ApplyResources(this, "$this");
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(188)))), ((int)(((byte)(204)))), ((int)(((byte)(172)))));
+            this.Controls.Add(this.button2);
             this.Controls.Add(this.flpHead);
             this.Controls.Add(this.pictureBox1);
             this.Controls.Add(this.label5);
@@ -159,5 +169,6 @@
         private System.Windows.Forms.FlowLayoutPanel flpHead;
         private System.Windows.Forms.PictureBox pictureBoxIcon;
         private System.Windows.Forms.Label labelIcon;
+        private System.Windows.Forms.Button button2;
     }
 }

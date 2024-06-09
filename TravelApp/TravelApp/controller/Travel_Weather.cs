@@ -165,7 +165,7 @@ namespace Weather_space
 
             }
             //今天的天气
-            switch (weatherDays[1].WeatherStatus)
+            switch (weatherDays[0].WeatherStatus)
             {
                 case WeatherStatus.Qing:
                     MessageBox.Show("今天天气很好，您可以放心出行！", "天气提醒", MessageBoxButtons.OK, MessageBoxIcon.Information);

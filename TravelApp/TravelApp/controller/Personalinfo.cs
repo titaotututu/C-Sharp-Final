@@ -32,6 +32,7 @@ namespace TravelApp.controller
             this.Uid = uid;
             InitInfo();
             this.changePanel = changePanel;
+            new_pwd.PasswordChar = '*';
         }
 
         private async void InitInfo()
@@ -82,6 +83,11 @@ namespace TravelApp.controller
 
         private async void button1_Click(object sender, EventArgs e)
         {
+            button1.Enabled = false;
+            button2.Enabled = true;
+            new_name.Enabled = false;
+            new_pwd.Enabled = false;
+            new_pwd.PasswordChar = '*';
             //进行代码提交
            // string id = new_id.Text;
           //  long newUserid=long.Parse(id);
@@ -145,20 +151,29 @@ namespace TravelApp.controller
             }
         }
 
+        private void button2_Click(object sender, EventArgs e)
+        {
+            new_name.Enabled = true;
+            new_pwd.Enabled = true;
+            new_pwd.PasswordChar = '\0';
+            button1.Enabled = true;
+            button2.Enabled = false;
+        }
+
         //private void checkBox1_CheckedChanged_1(object sender, EventArgs e)
         //{
         //    long pwd = SimpleEncryptionHelper.DecryptLong(user.password);
         //    if (checkBox1.Checked)
         //    {
         //        new_pwd.Text = Convert.ToString(pwd);
-                //tBoxPassword.PasswordChar = '\0';   //显示输入
+        //tBoxPassword.PasswordChar = '\0';   //显示输入
         //    }
         //    else
         //   {
         //        int length = (int)(Math.Log10(pwd) + 1);
         //        new_pwd.Text = new string('*', length);
 
-                //new_pwd.PasswordChar = '*';   //显示*
+        //new_pwd.PasswordChar = '*';   //显示*
         //    }
         //}
     }

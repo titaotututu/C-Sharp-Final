@@ -72,7 +72,7 @@ namespace TravelApp.controller
 
                     // 获取返回的 travelId
                     travel.TravelId = responseObject.travelId;
-                    MessageBox.Show("Travel added successfully!", "Success", MessageBoxButtons.OK, MessageBoxIcon.Information);
+                    MessageBox.Show("新行程已添加成功!", "Success", MessageBoxButtons.OK, MessageBoxIcon.Information);
                     // 跳转到待办界面
                     // 这里get到的id是0.因为id是在加入数据库的时候自己生成的、、
                     // 解决：在这边模拟生成id的方法进行生成。（好麻烦）
@@ -86,7 +86,7 @@ namespace TravelApp.controller
                 else
                 {
                     string errorMessage = await result.Content.ReadAsStringAsync();
-                    MessageBox.Show($"Failed to add travel. Error: {errorMessage}", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                    MessageBox.Show($"行程添加失败. Error: {errorMessage}", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
                 }
             }
             catch (Exception e1)

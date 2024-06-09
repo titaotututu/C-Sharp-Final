@@ -49,7 +49,7 @@
             // buttonAddTodo
             // 
             this.buttonAddTodo.Location = new System.Drawing.Point(827, 23);
-            this.buttonAddTodo.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.buttonAddTodo.Margin = new System.Windows.Forms.Padding(2);
             this.buttonAddTodo.Name = "buttonAddTodo";
             this.buttonAddTodo.Size = new System.Drawing.Size(118, 41);
             this.buttonAddTodo.TabIndex = 2;
@@ -60,7 +60,7 @@
             // buttonShow
             // 
             this.buttonShow.Location = new System.Drawing.Point(679, 23);
-            this.buttonShow.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.buttonShow.Margin = new System.Windows.Forms.Padding(2);
             this.buttonShow.Name = "buttonShow";
             this.buttonShow.Size = new System.Drawing.Size(118, 41);
             this.buttonShow.TabIndex = 3;
@@ -82,7 +82,7 @@
             // 
             this.panelTodo.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
             this.panelTodo.Location = new System.Drawing.Point(6, 78);
-            this.panelTodo.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.panelTodo.Margin = new System.Windows.Forms.Padding(2);
             this.panelTodo.Name = "panelTodo";
             this.panelTodo.Size = new System.Drawing.Size(954, 544);
             this.panelTodo.TabIndex = 4;
@@ -99,7 +99,9 @@
             this.Controls.Add(this.buttonAddTodo);
             this.Controls.Add(this.labelTravelTitle);
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
-            this.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.Margin = new System.Windows.Forms.Padding(2);
+            this.MaximizeBox = false;
+            this.MinimizeBox = false;
             this.Name = "TravelTodo";
             this.Text = "旅程-待办";
             this.ResumeLayout(false);

@@ -130,10 +130,10 @@
     <value>NoControl</value>
   </data>
   <data name="label1.Location" type="System.Drawing.Point, System.Drawing">
-    <value>280, 112</value>
+    <value>315, 134</value>
   </data>
   <data name="label1.Size" type="System.Drawing.Size, System.Drawing">
-    <value>73, 20</value>
+    <value>86, 24</value>
   </data>
   <data name="label1.TabIndex" type="System.Int32, mscorlib">
     <value>0</value>
@@ -151,7 +151,7 @@
     <value>$this</value>
   </data>
   <data name="&gt;&gt;label1.ZOrder" xml:space="preserve">
-    <value>9</value>
+    <value>10</value>
   </data>
   <data name="label2.AutoSize" type="System.Boolean, mscorlib">
     <value>True</value>
@@ -163,10 +163,10 @@
     <value>NoControl</value>
   </data>
   <data name="label2.Location" type="System.Drawing.Point, System.Drawing">
-    <value>301, 198</value>
+    <value>339, 238</value>
   </data>
   <data name="label2.Size" type="System.Drawing.Size, System.Drawing">
-    <value>51, 20</value>
+    <value>60, 24</value>
   </data>
   <data name="label2.TabIndex" type="System.Int32, mscorlib">
     <value>1</value>
@@ -184,7 +184,7 @@
     <value>$this</value>
   </data>
   <data name="&gt;&gt;label2.ZOrder" xml:space="preserve">
-    <value>8</value>
+    <value>9</value>
   </data>
   <data name="label3.AutoSize" type="System.Boolean, mscorlib">
     <value>True</value>
@@ -196,10 +196,10 @@
     <value>NoControl</value>
   </data>
   <data name="label3.Location" type="System.Drawing.Point, System.Drawing">
-    <value>301, 278</value>
+    <value>339, 334</value>
   </data>
   <data name="label3.Size" type="System.Drawing.Size, System.Drawing">
-    <value>51, 20</value>
+    <value>60, 24</value>
   </data>
   <data name="label3.TabIndex" type="System.Int32, mscorlib">
     <value>2</value>
@@ -217,13 +217,19 @@
     <value>$this</value>
   </data>
   <data name="&gt;&gt;label3.ZOrder" xml:space="preserve">
-    <value>7</value>
+    <value>8</value>
+  </data>
+  <data name="new_pwd.Enabled" type="System.Boolean, mscorlib">
+    <value>False</value>
   </data>
   <data name="new_pwd.Location" type="System.Drawing.Point, System.Drawing">
-    <value>389, 278</value>
+    <value>438, 334</value>
+  </data>
+  <data name="new_pwd.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>3, 4, 3, 4</value>
   </data>
   <data name="new_pwd.Size" type="System.Drawing.Size, System.Drawing">
-    <value>195, 25</value>
+    <value>219, 28</value>
   </data>
   <data name="new_pwd.TabIndex" type="System.Int32, mscorlib">
     <value>4</value>
@@ -238,13 +244,19 @@
     <value>$this</value>
   </data>
   <data name="&gt;&gt;new_pwd.ZOrder" xml:space="preserve">
-    <value>6</value>
+    <value>7</value>
+  </data>
+  <data name="new_name.Enabled" type="System.Boolean, mscorlib">
+    <value>False</value>
   </data>
   <data name="new_name.Location" type="System.Drawing.Point, System.Drawing">
-    <value>389, 198</value>
+    <value>438, 238</value>
+  </data>
+  <data name="new_name.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>3, 4, 3, 4</value>
   </data>
   <data name="new_name.Size" type="System.Drawing.Size, System.Drawing">
-    <value>195, 25</value>
+    <value>219, 28</value>
   </data>
   <data name="new_name.TabIndex" type="System.Int32, mscorlib">
     <value>5</value>
@@ -259,7 +271,10 @@
     <value>$this</value>
   </data>
   <data name="&gt;&gt;new_name.ZOrder" xml:space="preserve">
-    <value>5</value>
+    <value>6</value>
+  </data>
+  <data name="button1.Enabled" type="System.Boolean, mscorlib">
+    <value>False</value>
   </data>
   <data name="button1.FlatStyle" type="System.Windows.Forms.FlatStyle, System.Windows.Forms">
     <value>Flat</value>
@@ -271,10 +286,13 @@
     <value>NoControl</value>
   </data>
   <data name="button1.Location" type="System.Drawing.Point, System.Drawing">
-    <value>357, 377</value>
+    <value>754, 452</value>
+  </data>
+  <data name="button1.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>3, 4, 3, 4</value>
   </data>
   <data name="button1.Size" type="System.Drawing.Size, System.Drawing">
-    <value>127, 43</value>
+    <value>143, 52</value>
   </data>
   <data name="button1.TabIndex" type="System.Int32, mscorlib">
     <value>6</value>
@@ -292,13 +310,19 @@
     <value>$this</value>
   </data>
   <data name="&gt;&gt;button1.ZOrder" xml:space="preserve">
-    <value>4</value>
+    <value>5</value>
+  </data>
+  <data name="new_id.Enabled" type="System.Boolean, mscorlib">
+    <value>False</value>
   </data>
   <data name="new_id.Location" type="System.Drawing.Point, System.Drawing">
-    <value>389, 112</value>
+    <value>438, 134</value>
+  </data>
+  <data name="new_id.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>3, 4, 3, 4</value>
   </data>
   <data name="new_id.Size" type="System.Drawing.Size, System.Drawing">
-    <value>195, 25</value>
+    <value>219, 28</value>
   </data>
   <data name="new_id.TabIndex" type="System.Int32, mscorlib">
     <value>7</value>
@@ -313,16 +337,16 @@
     <value>$this</value>
   </data>
   <data name="&gt;&gt;new_id.ZOrder" xml:space="preserve">
-    <value>3</value>
+    <value>4</value>
   </data>
   <data name="label5.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
     <value>NoControl</value>
   </data>
   <data name="label5.Location" type="System.Drawing.Point, System.Drawing">
-    <value>-3, 59</value>
+    <value>-3, 71</value>
   </data>
   <data name="label5.Size" type="System.Drawing.Size, System.Drawing">
-    <value>889, 2</value>
+    <value>1000, 2</value>
   </data>
   <data name="label5.TabIndex" type="System.Int32, mscorlib">
     <value>12</value>
@@ -340,7 +364,7 @@
     <value>$this</value>
   </data>
   <data name="&gt;&gt;label5.ZOrder" xml:space="preserve">
-    <value>2</value>
+    <value>3</value>
   </data>
   <data name="&gt;&gt;pictureBoxIcon.Name" xml:space="preserve">
     <value>pictureBoxIcon</value>
@@ -373,7 +397,7 @@
     <value>3, 2, 3, 2</value>
   </data>
   <data name="flpHead.Size" type="System.Drawing.Size, System.Drawing">
-    <value>843, 63</value>
+    <value>948, 76</value>
   </data>
   <data name="flpHead.TabIndex" type="System.Int32, mscorlib">
     <value>14</value>
@@ -388,19 +412,19 @@
     <value>$this</value>
   </data>
   <data name="&gt;&gt;flpHead.ZOrder" xml:space="preserve">
-    <value>0</value>
+    <value>1</value>
   </data>
   <data name="pictureBoxIcon.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
     <value>NoControl</value>
   </data>
   <data name="pictureBoxIcon.Location" type="System.Drawing.Point, System.Drawing">
-    <value>27, 8</value>
+    <value>30, 10</value>
   </data>
   <data name="pictureBoxIcon.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
-    <value>27, 8, 3, 2</value>
+    <value>30, 10, 3, 2</value>
   </data>
   <data name="pictureBoxIcon.Size" type="System.Drawing.Size, System.Drawing">
-    <value>52, 47</value>
+    <value>58, 56</value>
   </data>
   <data name="pictureBoxIcon.SizeMode" type="System.Windows.Forms.PictureBoxSizeMode, System.Windows.Forms">
     <value>StretchImage</value>
@@ -430,13 +454,13 @@
     <value>NoControl</value>
   </data>
   <data name="labelIcon.Location" type="System.Drawing.Point, System.Drawing">
-    <value>91, 21</value>
+    <value>101, 25</value>
   </data>
   <data name="labelIcon.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
-    <value>9, 21, 3, 0</value>
+    <value>10, 25, 3, 0</value>
   </data>
   <data name="labelIcon.Size" type="System.Drawing.Size, System.Drawing">
-    <value>120, 25</value>
+    <value>137, 30</value>
   </data>
   <data name="labelIcon.TabIndex" type="System.Int32, mscorlib">
     <value>1</value>
@@ -460,13 +484,13 @@
     <value>NoControl</value>
   </data>
   <data name="pictureBox1.Location" type="System.Drawing.Point, System.Drawing">
-    <value>27, 88</value>
+    <value>30, 106</value>
   </data>
   <data name="pictureBox1.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
     <value>2, 2, 2, 2</value>
   </data>
   <data name="pictureBox1.Size" type="System.Drawing.Size, System.Drawing">
-    <value>137, 151</value>
+    <value>154, 181</value>
   </data>
   <data name="pictureBox1.SizeMode" type="System.Windows.Forms.PictureBoxSizeMode, System.Windows.Forms">
     <value>Zoom</value>
@@ -484,16 +508,55 @@
     <value>$this</value>
   </data>
   <data name="&gt;&gt;pictureBox1.ZOrder" xml:space="preserve">
-    <value>1</value>
+    <value>2</value>
+  </data>
+  <data name="button2.FlatStyle" type="System.Windows.Forms.FlatStyle, System.Windows.Forms">
+    <value>Flat</value>
+  </data>
+  <data name="button2.Font" type="System.Drawing.Font, System.Drawing">
+    <value>幼圆, 12pt</value>
+  </data>
+  <data name="button2.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+    <value>NoControl</value>
+  </data>
+  <data name="button2.Location" type="System.Drawing.Point, System.Drawing">
+    <value>556, 452</value>
+  </data>
+  <data name="button2.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>3, 4, 3, 4</value>
+  </data>
+  <data name="button2.Size" type="System.Drawing.Size, System.Drawing">
+    <value>143, 52</value>
+  </data>
+  <data name="button2.TabIndex" type="System.Int32, mscorlib">
+    <value>15</value>
+  </data>
+  <data name="button2.Text" xml:space="preserve">
+    <value>请求修改</value>
+  </data>
+  <data name="&gt;&gt;button2.Name" xml:space="preserve">
+    <value>button2</value>
+  </data>
+  <data name="&gt;&gt;button2.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Button, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;button2.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="&gt;&gt;button2.ZOrder" xml:space="preserve">
+    <value>0</value>
   </data>
   <metadata name="$this.Localizable" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
     <value>True</value>
   </metadata>
   <data name="$this.AutoScaleDimensions" type="System.Drawing.SizeF, System.Drawing">
-    <value>8, 15</value>
+    <value>9, 18</value>
+  </data>
+  <data name="$this.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>3, 4, 3, 4</value>
   </data>
   <data name="$this.Size" type="System.Drawing.Size, System.Drawing">
-    <value>834, 449</value>
+    <value>938, 539</value>
   </data>
   <data name="&gt;&gt;$this.Name" xml:space="preserve">
     <value>Personalinfo</value>
